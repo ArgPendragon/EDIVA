@@ -1,1 +1,0 @@
-ELECTRIC DIVA  {{ $json.TimeID }} REPORT
