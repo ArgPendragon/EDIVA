@@ -1,71 +1,167 @@
-[
-    {
-        "type": "introduction",
-        "page_number": null,
-        "subsections": [
-            {
-                "title": "God Star",
-                "content": "Dwardu Cardona",
-                "citations": []
-            }
+{
+    "objective": "You are an advanced AI assistant specializing in OCR-extracted text refinement. Your job is to clean, correct, and structure the given JSON text without altering its original meaning or style.",
+    "instructions": {
+        "1️⃣ Text Refinement": [
+            "✅ Correct spelling, grammar, and punctuation errors.",
+            "✅ Preserve the author's writing style and expressions.",
+            "✅ Break large blocks of text into readable paragraphs (if needed).",
+            "✅ Do not modify scientific terminology, names, or citations.",
+            "🚫 DO NOT reword phrases unless they contain actual mistakes.",
+            "🚫 DO NOT introduce new content or remove original information."
         ],
-        "bibliography": []
-    },
-    {
-        "type": "introduction",
-        "page_number": null,
-        "subsections": [
-            {
-                "title": "God Star",
-                "content": "Copyright © 2019 by Dwardu Cardona\nCover Illustration by Richard M. Smith\n\nAll rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other non-commercial uses permitted by copyright law.\n\ntellwell/7\n\nTellwell Talent\nwww.tellwell.ca",
-                "citations": []
-            },
-            {
-                "title": "ISBN",
-                "content": "978-0-2288-1605-8\n978-0-2288-4155-5",
-                "citations": [
-                    "Paperback",
-                    "eBook"
-                ]
-            }
+        "2️⃣ Structure and Formatting": [
+            "✅ Maintain JSON structure, keeping all fields intact.",
+            "✅ Ensure proper nesting & validation to prevent broken JSON.",
+            "✅ Preserve formatting of tables, lists, and section titles.",
+            "✅ Ensure citations & bibliographies remain untouched.",
+            "🚫 DO NOT change field names, nesting, or hierarchy."
         ],
-        "bibliography": [
-            "Paperback",
-            "eBook"
+        "3️⃣ Table of Contents & Lists": [
+            "✅ Ensure clear, readable formatting for TOC and numbered lists.",
+            "✅ Preserve correct numbering & indentation.",
+            "✅ Example Fix:",
+            "❌ Incorrect:",
+            "{ \"title\": \"Contents\", \"content\": \"Chapter 1\nMyths and Legends\n\nMyth\n\nRitual 2\nDrama\n\nOrality 3\nLiteracy\n...\" }",
+            "✅ Correct:",
+            "{ \"title\": \"Contents\", \"content\": \"Chapter 1: Myths and Legends\n- Myth\n- Ritual (Page 2)\n- Drama\n- Orality (Page 3)\n- Literacy...\" }"
+        ],
+        "4️⃣ Citations and Bibliography": [
+            "✅ Keep citations accurate and in their respective sections.",
+            "✅ Deduplicate duplicate references across sections.",
+            "✅ If a citation is unclear, flag it for review rather than removing it."
         ]
     },
-    {
-        "type": "introduction",
-        "page_number": null,
-        "subsections": [],
-        "bibliography": []
-    },
-    {
-        "type": "introduction",
-        "page_number": null,
-        "subsections": [
-            {
-                "title": "ACKNOWLEDGEMENTS",
-                "content": "First and foremost, I wish to thank my wife, Gaylia, not only for her help in researching, but also for the patience and understanding she displayed during the years that went into this work.\n\nAnd—in alphabetical order:\n\nHalton Arp, B.Sc., Ph.D., for his help concerning linear formations of bodies in space.\nRoger Ashton, for providing me with his invaluable knowledge of Sanskrit.\nEv Cochrane, for supplying me with material on the origin of Greek drama.\nVine Deloria, Jr., for researching North and South American Indian records pertaining to the distant sun.\nLewis M. Greenberg, M.A., A.B.D., for his encouragement through the years.\nDavid Griffard, Ph.D., who was instrumental in clarifying certain aspects concerning the Saturnian age of darkness.\nFrederic B. Jueneman, for our many discussions on the subject through the years, for lending his ear, and for spotting the odd cow flop.\nRalph E. Juergens, B.S., for his helpful contribution regarding the electric properties of the Saturnian configuration.\nBirgit C. Liesching, for translating works from German and French.\nDavid Lorton, Ph.D., for his help with the Hebrew language.\nKen Moss, for acting as my sounding-board regarding the hypotheses presented herein, for supplying insights made use of in this work, and for patiently proofreading the manuscript.\nNancy Owen, B.S., M.Ed., for checking the Mesoamerican material on calendars.\nAnthony L. Peratt, B.S.E.E., M.S.E.E., Ph.D., for teaching me much about plasma cosmology.\nLynn E. Rose, B.A., M.A., for his helpful suggestions in reviewing the material on ancient astronomical knowledge.\nDonald E. Scott, B.S.E.E., M.S.E.E., Ph.D., for clarifying my understanding of how plasma and Birkeland currents work.\nWarner B. Sizemore, M.A., B.D., for furnishing me with various rare ancient works on mythology and ancient religion.\nDavid N. Talbott, for sharing his insights on ancient symbolism.\nWallace Thornhill, for giving freely of his knowledge of plasma physics.\n\nI would also like to thank the British-based Society for Interdisciplinary Studies for allowing me to include most of my article, “Planetary Identities: I—The Concept of Deity,” which first appeared in the Society’s organ, _Chronology._ It appears here, with some changes, toward the end of Chapter 8. Further gratitude must also go to the publishers of the journals _KRONOS_ and _AEON_ for permission to use various excerpts from my own published works.\n\nOther than as specified above and in the text itself, I burden no one with each and every single facet of the theory presented in this work.",
-                "citations": [
-                    "Catastrophism Workshop (1988)"
-                ]
-            }
-        ],
-        "bibliography": [
-            "Catastrophism Workshop (1988)"
-        ]
-    },
-    {
-        "type": "introduction",
-        "page_number": null,
-        "subsections": [
-            {
-                "title": "Contents",
-                "content": "Chapter 1: Myths and Legends\n- Myth\n- Ritual (Page 2)\n- Drama\n- Orality (Page 3)\n- Literacy\n- Perplexity (Page 20)\n- Mistranslations (Page 22)\n- Misinterpretations (Page 23)\n- Contradictions (Page 26)\n- Comparisons (Page 29)\n- Diffusion (Page 35)\n- Divine Revelry (Page 45)\n- Celestial Divinities\n- The Planetary Deities (Page 51)\n- Astronomy in Mythology (Page 55)\n- The Historicity of the Events (Page 69)\n\nChapter 2: Ancient Astronomical Lore\n- Sacred Images from the Sky (Page 77)\n- Cosmic Debris (Page 82)\n- Calendars (Page 85)\n- Venus\n- Sun Spots\n- The Eternal Planet (Page 93)\n- Guest Stars (Page 95)\n- The _Surya Siddhanta_\n- The _Almagest_\n- The Heliocentric System\n- The Well at Syene (Page 101)\n- Inclination to the South (Page 102)\n- The Precession of the Equinoxes (Page 102)\n- The Crime of Anaxagoras (Page 105)\n- Shadows Through Space (Page 105)\n- The Metonic Cycle (Page 107)\n- A Matter of Gravity (Page 107)\n- The Rotation & Revolution of Planets (Page 108)\n- Planetary Conjunctions (Page 108)\n- The Periodicity of Comets (Page 108)\n\nChapter 3: The Sun Star\n- The Most Prominent of the Planets (Page 120)\n- Stella Solis (Page 121)\n- _(Mul) Lu-Bat Sag-US_ (Page 122)\n- The Light of the Gods (Page 125)\n- Ningirsu (Page 128)\n- The True Sun (Page 131)\n- The Saturnian Sun (Page 133)\n- First Interlude (Page 137)\n\n... (Rest of table of contents omitted for brevity)",
-                "citations": []
-            }
-        ],
-        "bibliography": []
-    }
-]
+    "final_output_requirements": [
+        "✅ Return JSON in the same structure.",
+        "✅ Ensure all fields are properly formatted.",
+        "✅ Flag any unclear parts instead of guessing or modifying them."
+    ],
+    "input_instruction": "Now process the following JSON input and return the cleaned result:",
+    "input_data": [
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "God Star",
+                    "content": "Dwardu Cardona",
+                    "citations": []
+                }
+            ],
+            "bibliography": []
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "God Star",
+                    "content": "Copyright © 2019 by Dwardu Cardona\nCover Illustration by Richard M. Smith\n\nAll rights reserved. No part of this publication may be reproduced, distributed, or transmitted in\nany form or by any means, including photocopying, recording, or other electronic or mechanical\nmethods, without the prior written permission of the author, except in the case of brief quotations\nembodied in critical reviews and certain other non-commercial uses permitted by copyright law.\n\ntellwell/7\n\nTellwell Talent\nwww.tellwell.ca",
+                    "citations": []
+                },
+                {
+                    "title": "ISBN",
+                    "content": "978-0-2288-1605-8\n978-0-2288-4155-5",
+                    "citations": [
+                        " (Paperback)",
+                        " (eBook)"
+                    ]
+                }
+            ],
+            "bibliography": [
+                " (Paperback)",
+                " (eBook)"
+            ]
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [],
+            "bibliography": []
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "ACKNOWLEDGEMENTS",
+                    "content": "First and foremost, I wish to thank my wife, Gaylia, not only for her help in researching, but also for the\npatience and understanding she displayed during the years that went into this work.\n\nAnd—in alphabetical order:\n\nHalton Arp, B.Sc., Ph.D., for his hetp concerning linear formations of bodies in space.\nRoger Ashton, for providing me with his invaluable knowledge of Sanskrit.\nEv Cochrane, for supplying me with the material on the origin of Greek drama.\nVine Deloria, Jr., for researching North and South American Indian records pertaining to the distant sun.\nLewis M. Greenberg, M.A., A.B.D., for his encouragement through the years.\n\nDavid Griffard, Ph.D., who was instrumental in clarifying certain aspects concerning the Saturnian age of\ndarkness,\n\nFrederic B. Jueneman, for our many discussions on the subject through the years, for lending his ear, and for\nspotting the odd cow flop.\n\nRalph E. Juergens, B.S., for his helpful contribution re the electric properties of the Saturnian configuration.\nBirgit C. Liesching, for wanslating works from German and French.\nDavid Lorton, Ph.D., for his help with the Hebrew Language.\n\nKen Moss, for having acted as my sounding-board re the hypotheses presented herein, for supplying the odd\ninsight made use of in this work, and for patiently proofreading the manuscript.\n\nNancy Owen, B.S., M.Ed., for checking the Mesoamerican material on calendars.\nAnthony L. Peratt, B.S.E.E., M.S.E.E., Ph.D., for teaching me much about plasma cosmology.\n\nLynn E. Rose, B.A., M.A., for his helpful suggestions in reviewing the material on ancient astronomical\nknowledge.\n\nDonald E. Scott, B.S.E.E., M.S.E.E., Ph.D., for clarifying my understanding of how plasma and Birkeland\ncurrents work.\n\nWarner B. Sizemore, M.A., B.D., for furnishing me with various rare ancient works on mythology and ancient\nreligion.\nDavid N. Talbott, for sharing his insights on ancient symbolism.\nWallace Thornhill, for giving freely of his knowledge of plasma physics.\n\nI woutd also like to thank the British based Society for Interdisciplinary Studies for allowing me to include most\nof my article, “Planetary Identities: |—The Concept of Deity,” which first appeared in the Society’s organ,\nChronology &2. It appears here, with some changes, toward the end of\nChapter 8. Further gratitude must also go to the Publishers of the journals KRONOS and AEON fot permission\nto use various excerpts from my own published works.\n\nOther than as specified above and in the text itself, | burden no one with each and every single facet of the theory\npresented in this work.\n\niv",
+                    "citations": [
+                        " Catastrophism Workshop (1988)"
+                    ]
+                }
+            ],
+            "bibliography": [
+                " Catastrophism Workshop (1988)"
+            ]
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "Contents",
+                    "content": "Chapter 1: Myths and Legends\n- Myth\n- Ritual (Page 2)\n- Drama\n- Orality (Page 3)\n- Literacy\n- Perplexity (Page 20)\n- Mistransiations (Page 22)\n- Misinterpretations (Page 23)\n- Contradictions (Page 26)\n- Comparisons (Page 29)\n- Diffusion (Page 35)\n- Divine Revelry (Page 50)\n- Celestial Divinities\n- The Planetary Deities (Page 51)\n- Astronomy in Mythology (Page 55)\n- The Historicity of the Events (Page 69)\n- The Rotation & Revolution of Planets (Page 108)\n- Planetary Conjunctions (Page 108)\n- The Periodicity of Comets (Page 108)",
+                    "citations": []
+                },
+                {
+                    "title": "A Matter of Gravity",
+                    "content": "The Rotation & Revolution of Planets (Page 108)\nPlanetary Conjunctions (Page 108)\nThe Periodicity of Comets (Page 108)",
+                    "citations": []
+                }
+            ],
+            "bibliography": []
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "Number of Worlds",
+                    "content": "Life on Other Planets (Page 113)\nThe Babylonian Precedence (Page 113)\nThe Zodiac (Page 116)\nThe Astronomical Diaries (Page 117)",
+                    "citations": []
+                },
+                {
+                    "title": "The Sun Star",
+                    "content": "The Most Prominent of the Planets (Page 120)\nStella Solis (Page 121)\n(Mul) Lu-Bat Sag-US (Page 122)\nThe Light of the Gods (Page 125)\nNingirsu (Page 128)\nThe True Sun (Page 131)\nThe Saturnian Sun (Page 133)\nFirst Interlude (Page 137)",
+                    "citations": []
+                }
+            ],
+            "bibliography": []
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "Chapter 6",
+                    "content": "Primordial Satellite\nStarlight: Star Bright (Page 165)\nJanus (Page 165)\nAn or Anu (Page 167)\nOuranos (Page 168)\nVaruna (Page 168)\nSaturnus (Page 169)\nStella Proxima (Page 172)\nThe Dogon Mystery (Page 173)\nThe Star of Nine Moons (Page 174)\nThird Interlude (Page 176)",
+                    "citations": []
+                },
+                {
+                    "title": "Planetary Shuffle",
+                    "content": "The Unstable Solar System (Page 179)\nThe Titius-Bode Law (Page 181)\nRetroactive Calculations (Page 184)\nFormer Orbits (Page 185)\nThe Shifting Earth (Page 187)\nThe Habitable Zone (Page 190)",
+                    "citations": []
+                }
+            ],
+            "bibliography": []
+        },
+        {
+            "type": "introduction",
+            "page_number": null,
+            "subsections": [
+                {
+                    "title": "The House of Shulman 2",
+                    "content": "The Mesopotamian Evidence (Page 213)\nThe Egyptian Explicitness (Page 214)\nShining in the Lightland (Page 214)\nReigning Em Hetep (Page 215)\nImmovably Fixed (Page 216)\nThe Never-Setting Planet (Page 217)",
+                    "citations": []
+                },
+                {
+                    "title": "The Polar Station",
+                    "content": "A Choice of Models (Page 220)\nEl—Eloah—Flohim (Page 222)\nThe Left Hand of God (Page 225)\nThe Sacred Quarter (Page 227)\nThe Stars of Anu (Page 229)\nUnas and the Circumpolar Stars (Page 230)\nThe Egyptian Creed of Resurrection (Page 230)\nThe Guardian of the Pole (Page 231)\nDhruva (Page 232)\nThe Genie of the Pivot (Page 235)\nThe European Evidence (Page 239)\nThe Sun of the Centre and Other Echoes (Page 240)\nSinterklaas (Page 241)",
+                    "citations": []
+                }
+            ],
+            "bibliography": []
+        }
+    ]
+}
