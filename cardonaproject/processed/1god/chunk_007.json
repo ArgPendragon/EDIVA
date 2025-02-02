@@ -1,0 +1,95 @@
+{
+    "cleaned_data": [
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 49,
+            "content": "Socrates was defending himself at his trial. Accused of preaching against the gods and corrupting the youth of his time, Socrates was found guilty and sentenced to death. Surrounded by his saddened friends, he carried out the sentence by drinking hemlock. (Illustration by John Green.)",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 50,
+            "content": "Kronos, holding the sickle with which he castrated his father.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 51,
+            "content": "Rhea, giving Kronos a stone in swaddling clothes instead of her son Zeus for him to devour. (From a relief now in the Capitoline Museum, Rome.)",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": false,
+            "page_number": 52,
+            "content": "Why were the planets revered to such an extent by the ancient Greeks? After all, unlike the Sun and Moon, to the unaided eye, they appear no more than small flickering pinpoints of light lost amid a starry sea. The ancient Greeks deified all visible heavenly bodies of the Solar System. Saturn was Kronos, who was once king of heaven. Jupiter was Zeus, who seized the kingdom of the gods from his father Kronos/Saturn. Mars was known as Ares, the blood-thirsty god of war. Aphrodite, the goddess of love and perhaps the most popular Greek deity, was the personification of Venus. The planet Mercury was Hermes, with his winged sandals, the swiftest god among the Olympians. These planetary identifications were even adopted by those ancient peoples who came into direct contact with the Greeks. In the Graeco-Jewish work, The Book of the Secrets of Enoch, the names of the planets are given in Greek: Kruno for Kronos/Saturn; Zeus for Jupiter; Aris for Ares/Mars; Aphrodit for Aphrodite/Venus; and Ermis for Hermes/Mercury.",
+            "bibliography": [
+                "1. Enoch, XXX:4. (NOTE: The difference in the spelling of the names is merely due to different transcription from the Greek.)",
+                "2. G. de Santillana & H. von Dechend, Hamlet’s Mill: An Essay on Myth and the Frame of Time (Boston, 1969), p. 177.",
+                "3. F.G. Bratton, op. cit., p. 21."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 53,
+            "content": "Ares, the blood-thirsty god of war, personification of the planet Mars. (From an ancient marble statue—the Ares Ludovisi—now in Rome.)",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 54,
+            "content": "According to ancient authors, Aristotle noted that the gods were originally stars, although popular fantasy had later obscured this truth. Aristotle's own words read as follows: 'A tradition has been handed down by the ancient thinkers of very early times ... to the effect that these heavenly bodies are gods ... The rest of their tradition has been added later in a mythological form to influence the vulgar.' Translators and commentators have attempted to critique Aristotle's assertion, as the gods are not identified as planets until the 4th century B.C.",
+            "bibliography": [
+                "1. G. de Santillana & H. von Dechend, op. cit., p. 4.",
+                "2. Aristotle, Metaphysics, 12:8:19."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": false,
+            "page_number": 55,
+            "content": "Some names of the planets, as given by Plato in Epinomis, are said to be 'Syrian.' These Greek names: Phaenon [Saturn], Phaethon [Jupiter], Pyroeis [Mars] appear not to occur in earlier texts.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 56,
+            "content": "Aristotle had no reason to invent the equation of planets with gods. Having been widely forgotten by his immediate ancestors, he rediscovered this truth. Others maintained identical views. Among the Greeks, Lucian of Samosata noted that from both Homer and Hesiod, the ancients were of one mind with astrologers, stating, 'the conjunction of Venus and Mars creates the poetry of Homer.' Plato, who recognized this truth, had it verified by the Egyptians. The Romans borrowed many deities from the Greeks and retained the planetary names.",
+            "bibliography": [
+                "1. G. de Santillana & H. von Dechend, op. cit., p. 177.",
+                "2. Lucian, De Astrologia 22.",
+                "3. Plato, op. cit., 22."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 57,
+            "content": "The Roman Jupiter—Iuppiter, Diespiter, lovis—king of the gods, who personified the planet of the same name. (From a wall painting at the Casa dei Dioscuri.)",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 58,
+            "content": "The Roman Mercury —Mirqurius, Mercurius—god of merchandise, who personified the planet of the same name. (From a sculpture by Giovanni di Bologna.)",
+            "bibliography": [],
+            "captions": []
+        }
+    ]
+}
