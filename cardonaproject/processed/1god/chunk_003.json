@@ -1,0 +1,95 @@
+{
+    "cleaned_data": [
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 9,
+            "content": "The sacred precinct was constructed in honor of the god. It should be noted that the rites of Dionysus closely resembled those of the Egyptian god Osiris, leading Herodotus to believe it was impossible for the Greek rites to have developed independently of the Egyptian ones. He suggested that the Greeks must have borrowed their rites from the Egyptians and, with slight alterations, passed them on as their own. Plutarch also maintained that there were detailed resemblances between the rites of Osiris and those of Dionysus, indicating that comparative mythology is a significant field of study, contrary to its critics. In many instances, however, no borrowing need be assumed; rather, both Dionysus and Osiris represented the same original phenomenon, merely interpreted under different cultural guises. Some have argued that the similarity between Greek and Egyptian rituals stemmed from a lack of understanding of Egyptian customs among the Greeks. For instance, Gwyn Griffiths contended that Greek observers were often not in a position to fully grasp Egyptian religion due to their ignorance of the language and cultural context.",
+            "bibliography": [
+                "1. W. Oates & E. O’Neil, The Complete Greek Drama (1938), p. xxiii.",
+                "2. J. G. Frazer, The Golden Bough (London, 1974, abridged edition), p. 507.",
+                "3. G. J. Griffiths, 'Interpretatio Graeca,' in W. Helck & E. Otto, Lexikon der Ägyptologie, Vol. II (1980), col. 167."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 10,
+            "content": "Performance of Oedipus Rex in the theater of Dionysus on the south slope of the Acropolis of Athens. Actors wore masks, each playing more than one role.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 11,
+            "content": "Note the altar of Dionysus in the center of the orchestra. (Illustration(s) by John Green.)",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 12,
+            "content": "Actors performing in a Roman theater. Although it has been stated that Roman drama was a secular diversion with its roots in sacred Etruscan funeral rites, it was actually derived from Greek traditions.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": false,
+            "page_number": 13,
+            "content": "Discussions surrounding misunderstandings of Egyptian phenomena and how modifications were introduced in what were perceived as Greek parallels suggest that even slight deviations contributed to distortions of the original narratives. Ancient Egyptian religion, which includes what Martin Bernal referred to as 'Egyptian philosophy,' has often been subject to mischaracterization. However, notable individuals like Eudoxus had substantial interaction with Egyptian culture and language, demonstrating a deep respect and understanding of its complexities. While I may not fully endorse all of Bernal's claims regarding the Afroasiatic roots of Classical Greek culture, he has raised a valid critique of modern mythologists who presume to have a greater understanding of ancient civilizations than the civilizations had of themselves. The perceived origins of tragedy and its connections to Dionysiac ritual have sparked significant scholarly debate. Modern interpretations reflect a consensus among the Greeks themselves regarding these origins, suggesting that the term 'tragedy' originates from the Greek word 'tragodia,' meaning 'goat song,' which honors Dionysus.",
+            "bibliography": [
+                "1. M. Bernal, Black Athena (New Brunswick, 1988), p. 118.",
+                "2. R. M. Dorson, “The Debate Over the Trustworthiness of Oral Traditional History,” cited by D. B. Vitaliano, Legends of the Earth (Bloomington, 1973), p. 4."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": false,
+            "page_number": 14,
+            "content": "The accuracy with which the people of sub-Saharan Africa preserved their history without a writing system is notable, especially until the colonial period. Peter Hallberg's observations about Icelandic skalds indicate that history can be reliably transmitted through generations of trained bards. This method supports the idea that certain narrative forms, like those seen in works like Homer's epics, were maintained through oral tradition.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 15,
+            "content": "Scandinavian skald, or bard, reciting a saga from memory to a chieftain and his tribe.",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 16,
+            "content": "Heroes of the Trojan War. From left to right: Menelaus, Paris, Diomedes, Odysseus, Nestor, Achilles, Agamemnon. An artist’s impression. The long-standing question remains: Did the protagonists of Homer’s Iliad owe their characters to poetic meter?",
+            "bibliography": [],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 17,
+            "content": "Regions of Austria, Greece and Asia Minor, Poland, Russia, Sweden, Denmark, England, Germany, France, Spain and, to an extent, Morocco and Tunisia have been significant in understanding the cultural stories of the Gudrun Epic. Wiencke-Lotz’s research highlights that the epic is deeply rooted in the territories previously occupied by the Goths.",
+            "bibliography": [
+                "1. D. Griffard, from the “Introductory Notes” to H. Wiencke-Lotz, “Folklore: Its Stability and Self-correcting Power,” HORUS II:2 (Summer 1986), p. 29."
+            ],
+            "captions": []
+        },
+        {
+            "page_type": "main",
+            "image_present": true,
+            "page_number": 18,
+            "content": "Making and writing on papyrus. Many Egyptians were unable to read or write, and those who could became valuable scribes. The English term 'paper' is derived from the Greek name for the sedge-like plant, papyrus. The invention of writing significantly altered the cognitive landscape, but it also diminished the necessity for memorization. Plato’s Thamus stresses that writing produces forgetfulness among those who rely excessively on it. The texts left by ancestors, though read, lacked a comprehensive understanding since the later generations did not experience the events themselves.",
+            "bibliography": [
+                "1. Plato, Phaedrus, as translated by H. N. Fowler, 274-275 (emphasis added)."
+            ],
+            "captions": []
+        }
+    ]
+}
