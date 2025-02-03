@@ -1,0 +1,12 @@
+Here's a brief reminder of the key expression changes in n8n 1.9.0+:
+
+New Templating Language: n8n now uses Tournament instead of RiotTmpl.
+Switching Back: Self-hosted users can revert to the old engine using:
+plaintext
+Copia
+Modifica
+N8N_EXPRESSION_EVALUATOR=tmpl
+JSON Querying: Uses JMESPath for extracting data (e.g., {{$json.body.city}}).
+JavaScript Only: Expressions must use JavaScript (no Python support).
+Single-Line Expressions: No multi-line functions or variable assignments.
+Built-in Libraries: Supports Luxon (dates/times) and JMESPath (JSON querying).
