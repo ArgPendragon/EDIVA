@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "One-Click Git Fix",
+            "type": "shell",
+            "command": "git add -A; git commit -m 'Auto-commit'; git push origin main",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
