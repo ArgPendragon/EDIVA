@@ -1,11 +1,12 @@
-{
+# --- Predefined Keywords ---
+PREDEFINED_KEYWORDS = {
     "personaggi": [
-        "Gaia", "Parvati", "Maya", "Farhad", "Abbas", "Anahita", "Mohammadi", "Omar, "Al-Fayed",
+        "Gaia", "Parvati", "Maya", "Farhad", "Abbas", "Anahita", "Mohammadi", "Omar", "Al-Fayed",
         "Aurora", "Biancofiore", "Shabtai", "Klein", "Fei", "Shenlong", "Ilya", "Ivanov",
         "Robert Davis", "Kali"
     ],
     "concetti": [
-	"IA", "Plasma Cosmology", "Universo Elettrico",
+        "IA", "Plasma Cosmology", "Universo Elettrico",
         "Cybergnostici", "Teoria Polare di Saturno", "Avatar Olografico",
         "Singolarità Tecnologica", "Mondi Virtuali", "Olympus Mons", "Albero dei Pensieri",
         "Teddy", "AI MaIA", "Sette Dee"
@@ -15,7 +16,26 @@
         "Luna", "Terra", "Singapore", "Janus HQ", "Bougainville", "Birkeland Sail"
     ],
     "fazioni": [
-        "Janus Dynamics", "Figli di Nun", "Legione", "New Thunderbolt",
+        "Janus Dynamics", "Figli di Nun", "Legione", "New Thunderbolt", "Mondi Virtuali",
         "Colonia Lunare", "Esercito Cinese", "CCP", "USA", "ONU", "IA Militari"
     ]
+}
+
+# --- Extended Stop Words (Italian and English) ---
+STOP_WORDS = {
+    # Italian stop words
+    "il", "la", "lo", "i", "gli", "le", "un", "una", "uno", "no", "ma", "non", "dopo", "solo", "era", "erano",
+    "per", "tra", "fra", "dei", "degli", "delle", "del", "della", "e", "di", "a", "al", "da", "in", "con", "su",
+    "ogni", "quando", "sullo", "sulla", "sul", "sulle", "sulle", "alcuni", "questi", "questa", "questo",
+    "tutti", "tutto", "nessun", "qualcuno", "nessuno","tutte", "altri", "altro", "nella", "dentro", "fuori",
+    "certo", "immagina", "anche", "alla", "ed", "se", "dall", "torna", "uso", "atto", "cosa", "cose", "prendi",
+    "rappresenta", 
+
+    # English stop words
+    "the", "The", "and", "or", "but", "if", "then", "with", "a", "an", "of", "for", "some", "many", "much",
+    "both", "follow", "in", "on", "at", "to", "by", "is", "are", "was", "were", "be", "been", "am",
+    "take", "like", "just", "so", "then", "now", "well", "also", "though", "because", "as", "until",
+    "between", "among", "without", "within", "against", "during", "along", "following", "across",
+    "behind", "beside", "opposed", "regarding", "concerning", "about", "above", "below", "over",
+    "under", "again", "further",
 }
