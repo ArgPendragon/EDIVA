@@ -10,3 +10,6 @@ JSON Querying: Uses JMESPath for extracting data (e.g., {{$json.body.city}}).
 JavaScript Only: Expressions must use JavaScript (no Python support).
 Single-Line Expressions: No multi-line functions or variable assignments.
 Built-in Libraries: Supports Luxon (dates/times) and JMESPath (JSON querying).
+
+JSON Schema is a vocabulary that you can use to annotate and validate JSON documents. 
+JSON Schema Tooling

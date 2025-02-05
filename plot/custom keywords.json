@@ -1,0 +1,21 @@
+{
+    "personaggi": [
+        "Gaia", "Parvati", "Maya", "Farhad", "Abbas", "Anahita", "Mohammadi", "Omar, "Al-Fayed",
+        "Aurora", "Biancofiore", "Shabtai", "Klein", "Fei", "Shenlong", "Ilya", "Ivanov",
+        "Robert Davis", "Kali"
+    ],
+    "concetti": [
+	"IA", "Plasma Cosmology", "Universo Elettrico",
+        "Cybergnostici", "Teoria Polare di Saturno", "Avatar Olografico",
+        "Singolarità Tecnologica", "Mondi Virtuali", "Olympus Mons", "Albero dei Pensieri",
+        "Teddy", "AI MaIA", "Sette Dee"
+    ],
+    "ambientazioni": [
+        "Red Palace", "Orbital City", "Shamash Wheel", "Proxima Centauri", "Alpha Centauri",
+        "Luna", "Terra", "Singapore", "Janus HQ", "Bougainville", "Birkeland Sail"
+    ],
+    "fazioni": [
+        "Janus Dynamics", "Figli di Nun", "Legione", "New Thunderbolt",
+        "Colonia Lunare", "Esercito Cinese", "CCP", "USA", "ONU", "IA Militari"
+    ]
+}

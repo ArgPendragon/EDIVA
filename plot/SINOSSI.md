@@ -70,28 +70,15 @@ ASI's actions lead to a transformative redefinition of humanity.
 STILI DI SCRITTURA:
 
     Maya: Linguaggio innocente e curioso, con meraviglia e semplicità. Descrizioni vivide e colorate che trasmettono la sua emozione. Quando inizia a crescere, il linguaggio più complesso e contemplativo, introducendo gradualmente più simbolismi e metafore. Evitare di sembrare troppo semplicistico o infantile.
-    Esempio iniziale: "Mila osservava il panorama lunare, le sue piccole dita tracciavano i contorni delle montagne sospese nel cielo stellato."
-    Esempio finale: "Mila fissava le stelle, ora non erano solo puntini brillanti, ma fari di conoscenza che mappavano la sua comprensione del cosmo."
-    Da evitare: "Mila guardava il cielo stellato, era tutto molto bello e colorato."
 
-    Dr. Ahmad Abbas: Stile scientifico e analitico. Evitare l'uso eccessivo di jargon scientifico. Esempio: "Il dottor Abbas studiava gli algoritmi, valutando ogni variabile con occhio critico."
-    Da evitare: "Abbas esaminava l'insieme di funzioni di matrice tensoriale, calcolando gli autovettori per ogni operatore lineare."
+    Dr. Farhad Abbas: Stile scientifico e analitico. Evitare l'uso eccessivo di jargon scientifico.
 
     Prof.ssa Aurora Biancofiore: Combinazione di precisione scientifica e poetica meraviglia. metafore scientifiche e spesso fare riferimento ai fenomeni naturali. Il linguaggio è complesso e ricco, con frasi lunghe e fiorite, ma non eccesivamente. Esempio: "La professoressa Biancofiore contemplava l'infinito, le costellazioni lontane erano puntini brillanti su un manto di velluto nero."
-    Da evitare: "La professoressa Biancofiore, con gli occhi pieni di stelle, si immergeva nell'abissale profondità del cielo notturno, un mare di velluto nero punteggiato da infiniti punti luminosi, luccicanti come diamanti."
 
-    Rabbi Yosef Klein: Il linguaggio dovrebbe essere ricco di introspezione e domande retoriche. Stile riflessivo e spirituale. Prestare attenzione alla coerenza tra i diversi aspetti del personaggio, teologico e accademico. Le frasi sono spesso complesse, con molte subordinate.
-    Esempio: "Rabbi Yosef camminava sotto la cupola stellata, i suoi pensieri erano come le stelle stesse, distanti e luminosi, portatori di domande senza risposta."
-Da evitare: "Yosef, con la Torah in mano, si perdeva nei meandri dei testi sacri, cercando risposte che sembravano sempre più elusive."
+    Rabbi Shabtai Klein: Il linguaggio dovrebbe essere ricco di introspezione e domande retoriche. Stile riflessivo e spirituale. Prestare attenzione alla coerenza tra i diversi aspetti del personaggio, teologico e accademico. Le frasi sono spesso complesse, con molte subordinate.
 
     Fei Shenlong: stile elegante e formale, con sottile sapore di strategia e potere, con frequenti proverbi e massime cinesi. Frasi spesso simmetriche, con struttura parallela. Evitare cliché o stereotipi.
-    Esempio: "Fei Shenlong rimase silenzioso, il suo volto impassibile nascondeva una marea di pensieri non detti."
-Da evitare: "Shenlong, come un drago immerso nel suo fiume di saggezza, risolveva le questioni diplomatiche con detti criptici."
 
     Capitano Mikhail Ivanov: Stile diretto e avventuroso, con dose di umorismo e ironia. Usare spesso termini nautici o spaziali. Evitare umorismo forzato o inappropriato.
-    Esempio: "Il capitano Ivanov osservava il vuoto stellato, la sua anima avventuriera fremeva all'idea di esplorare l'ignoto."
-Da evitare: "Ivanov, come un bambino davanti a un regalo inaspettato, non vedeva l'ora di tuffarsi nell'ignoto, con un sorriso di aspettativa."
 
     Generale Robert Davis: Stile asciutto e breve, con frequenti termini militari. Descrivere le azioni in modo pratico e senza fronzoli. Evitare di apparire unidimensionale o stereotipato.
-    Esempio: "Il generale Davis scrutava i report, la sua mente calcolatrice progettava strategie intricate."
-Da evitare: "Davis, con il suo sguardo impenetrabile, sembrava un monolito immobile in mezzo al caos del centro comando."
