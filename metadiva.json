@@ -1,0 +1,3918 @@
+{
+  "novel": {
+    "Antefatto": {
+      "chapters": {
+        "Krug": [
+          {
+            "title": "Scene 1",
+            "i": 1
+          },
+          {
+            "title": "Scene 2",
+            "i": 2
+          },
+          {
+            "title": "Scene 3",
+            "i": 3
+          },
+          {
+            "title": "Scene 4",
+            "i": 4
+          }
+        ]
+      }
+    },
+    "Interludio": {
+      "chapters": {
+        "Chapter 1: Markelos": [
+          {
+            "title": "Scene 5",
+            "i": 5
+          },
+          {
+            "title": "Scene 1",
+            "i": 6
+          },
+          {
+            "title": "Scene 2",
+            "i": 7
+          },
+          {
+            "title": "Scene 3",
+            "i": 8
+          },
+          {
+            "title": "Scene 4",
+            "i": 9
+          },
+          {
+            "title": "Scene 5",
+            "i": 10
+          },
+          {
+            "title": "Scene 6",
+            "i": 11
+          },
+          {
+            "title": "Scene 7",
+            "i": 12
+          },
+          {
+            "title": "Scene 8",
+            "i": 13
+          },
+          {
+            "title": "Scene 9",
+            "i": 14
+          }
+        ]
+      }
+    },
+    "Prologo (annullato)": {
+      "chapters": {
+        "Prologo": [
+          {
+            "title": "Scene 10",
+            "i": 15
+          }
+        ]
+      }
+    },
+    "Gaia": {
+      "chapters": {
+        "Chapter 2: Abbas": [
+          {
+            "title": "Scene 1",
+            "i": 16
+          },
+          {
+            "title": "Scene 1",
+            "i": 17
+          },
+          {
+            "title": "Scene 2",
+            "i": 18
+          },
+          {
+            "title": "Scene 3",
+            "i": 19
+          },
+          {
+            "title": "Scene 4",
+            "i": 20
+          },
+          {
+            "title": "Scene 5",
+            "i": 21
+          }
+        ],
+        "Chapter 3: Davis": [
+          {
+            "title": "Scene 6",
+            "i": 22
+          },
+          {
+            "title": "Scene 1",
+            "i": 23
+          },
+          {
+            "title": "Scene 2",
+            "i": 24
+          },
+          {
+            "title": "Scene 3",
+            "i": 25
+          }
+        ],
+        "Chapter 4: Maya": [
+          {
+            "title": "Scene 4",
+            "i": 26
+          },
+          {
+            "title": "Scene 1",
+            "i": 27
+          },
+          {
+            "title": "Scene 2",
+            "i": 28
+          },
+          {
+            "title": "Scene 3",
+            "i": 29
+          }
+        ],
+        "Chapter 5: Aurora": [
+          {
+            "title": "Scene 4",
+            "i": 30
+          },
+          {
+            "title": "Scene 1",
+            "i": 31
+          },
+          {
+            "title": "Scene 2",
+            "i": 32
+          },
+          {
+            "title": "Scene 3",
+            "i": 33
+          },
+          {
+            "title": "Scene 4",
+            "i": 34
+          }
+        ],
+        "Chapter 6: Abbas": [
+          {
+            "title": "Scene 5",
+            "i": 35
+          },
+          {
+            "title": "Scene 1",
+            "i": 36
+          },
+          {
+            "title": "Scene 2",
+            "i": 37
+          },
+          {
+            "title": "Scene 3",
+            "i": 38
+          },
+          {
+            "title": "Scene 4",
+            "i": 39
+          }
+        ],
+        "Chapter 7: Davis": [
+          {
+            "title": "Scene 5",
+            "i": 40
+          },
+          {
+            "title": "Scene 1",
+            "i": 41
+          },
+          {
+            "title": "Scene 2",
+            "i": 42
+          },
+          {
+            "title": "Scene 3",
+            "i": 43
+          },
+          {
+            "title": "Scene 4",
+            "i": 44
+          }
+        ],
+        "Chapter 8: Aurora": [
+          {
+            "title": "Scene 5",
+            "i": 45
+          },
+          {
+            "title": "Scene 1",
+            "i": 46
+          },
+          {
+            "title": "Scene 2",
+            "i": 47
+          },
+          {
+            "title": "Scene 3",
+            "i": 48
+          },
+          {
+            "title": "Scene 4",
+            "i": 49
+          }
+        ],
+        "Chapter 9: Maya": [
+          {
+            "title": "Scene 5",
+            "i": 50
+          },
+          {
+            "title": "Scene 1",
+            "i": 51
+          },
+          {
+            "title": "Scene 2",
+            "i": 52
+          },
+          {
+            "title": "Scene 3",
+            "i": 53
+          },
+          {
+            "title": "Scene 4",
+            "i": 54
+          }
+        ],
+        "Chapter 10: Ivanov": [
+          {
+            "title": "Scene 5",
+            "i": 55
+          },
+          {
+            "title": "Scene 1",
+            "i": 56
+          },
+          {
+            "title": "Scene 2",
+            "i": 57
+          },
+          {
+            "title": "Scene 3",
+            "i": 58
+          },
+          {
+            "title": "Scene 4",
+            "i": 59
+          }
+        ],
+        "Chapter 11: Davis": [
+          {
+            "title": "Scene 5",
+            "i": 60
+          },
+          {
+            "title": "Scene 1",
+            "i": 61
+          },
+          {
+            "title": "Scene 2",
+            "i": 62
+          },
+          {
+            "title": "Scene 3",
+            "i": 63
+          },
+          {
+            "title": "Scene 4",
+            "i": 64
+          }
+        ],
+        "Chapter 12: Abbas": [
+          {
+            "title": "Scene 5",
+            "i": 65
+          },
+          {
+            "title": "Scene 1",
+            "i": 66
+          },
+          {
+            "title": "Scene 2",
+            "i": 67
+          },
+          {
+            "title": "Scene 3",
+            "i": 68
+          },
+          {
+            "title": "Scene 4",
+            "i": 69
+          }
+        ],
+        "Chapter 13": [
+          {
+            "title": "Scene 5",
+            "i": 70
+          }
+        ]
+      }
+    },
+    "Parvati": {
+      "chapters": {
+        "Chapter 14: Fei": [
+          {
+            "title": "Scene 1",
+            "i": 71
+          },
+          {
+            "title": "Scene 1",
+            "i": 72
+          },
+          {
+            "title": "Scene 2",
+            "i": 73
+          },
+          {
+            "title": "Scene 3",
+            "i": 74
+          }
+        ],
+        "Chapter 15: Aurora": [
+          {
+            "title": "Scene 4",
+            "i": 75
+          },
+          {
+            "title": "Scene 1",
+            "i": 76
+          }
+        ],
+        "Chapter 16: Abbas": [
+          {
+            "title": "Scene 2",
+            "i": 77
+          },
+          {
+            "title": "Scene 1",
+            "i": 78
+          },
+          {
+            "title": "Scene 2",
+            "i": 79
+          }
+        ],
+        "Chapter 17: Maya": [
+          {
+            "title": "Scene 3",
+            "i": 80
+          },
+          {
+            "title": "Scene 1",
+            "i": 81
+          },
+          {
+            "title": "Scene 2",
+            "i": 82
+          },
+          {
+            "title": "Scene 3",
+            "i": 83
+          }
+        ],
+        "Chapter 18: Ivanov": [
+          {
+            "title": "Scene 4",
+            "i": 84
+          },
+          {
+            "title": "Scene 1",
+            "i": 85
+          },
+          {
+            "title": "Scene 2",
+            "i": 86
+          },
+          {
+            "title": "Scene 3",
+            "i": 87
+          },
+          {
+            "title": "Scene 4",
+            "i": 88
+          }
+        ],
+        "Chapter 19: Maya": [
+          {
+            "title": "Scene 5",
+            "i": 89
+          },
+          {
+            "title": "Scene 1",
+            "i": 90
+          },
+          {
+            "title": "Scene 2",
+            "i": 91
+          }
+        ],
+        "Chapter 20: Abbas": [
+          {
+            "title": "Scene 3",
+            "i": 92
+          },
+          {
+            "title": "Scene 1",
+            "i": 93
+          },
+          {
+            "title": "Scene 2",
+            "i": 94
+          },
+          {
+            "title": "Scene 3",
+            "i": 95
+          },
+          {
+            "title": "Scene 4",
+            "i": 96
+          }
+        ],
+        "Chapter 21: Fei": [
+          {
+            "title": "Scene 5",
+            "i": 97
+          },
+          {
+            "title": "Scene 1",
+            "i": 98
+          },
+          {
+            "title": "Scene 2",
+            "i": 99
+          }
+        ],
+        "Chapter 22: Shabtai": [
+          {
+            "title": "Scene 3",
+            "i": 100
+          },
+          {
+            "title": "Scene 1",
+            "i": 101
+          },
+          {
+            "title": "Scene 2",
+            "i": 102
+          },
+          {
+            "title": "Scene 3",
+            "i": 103
+          }
+        ],
+        "Chapter 23: Ivanov": [
+          {
+            "title": "Scene 4",
+            "i": 104
+          },
+          {
+            "title": "Scene 1",
+            "i": 105
+          },
+          {
+            "title": "Scene 2",
+            "i": 106
+          }
+        ],
+        "Chapter 24": [
+          {
+            "title": "Scene 3",
+            "i": 107
+          }
+        ]
+      }
+    },
+    "Kali": {
+      "chapters": {
+        "Chapter 25": [
+          {
+            "title": "Scene 1",
+            "i": 108
+          }
+        ],
+        "Chapter 26: Abbas": [
+          {
+            "title": "Scene 1",
+            "i": 109
+          },
+          {
+            "title": "Scene 1",
+            "i": 110
+          },
+          {
+            "title": "Scene 2",
+            "i": 111
+          },
+          {
+            "title": "Scene 3",
+            "i": 112
+          },
+          {
+            "title": "Scene 4",
+            "i": 113
+          }
+        ],
+        "Chapter 27: Abbas": [
+          {
+            "title": "Scene 5",
+            "i": 114
+          },
+          {
+            "title": "Scene 1",
+            "i": 115
+          },
+          {
+            "title": "Scene 2",
+            "i": 116
+          }
+        ],
+        "Chapter 28: Fei": [
+          {
+            "title": "Scene 3",
+            "i": 117
+          },
+          {
+            "title": "Scene 1",
+            "i": 118
+          }
+        ]
+      }
+    },
+    "Epilogo": {
+      "chapters": {
+        "Chapter 29": [
+          {
+            "title": "Scene 2",
+            "i": 119
+          },
+          {
+            "title": "Scene 1",
+            "i": 120
+          }
+        ]
+      }
+    }
+  },
+  "database": [
+    {
+      "t": "Descrizione: Le 999 Guerriere di...",
+      "ty": "Characters"
+    },
+    {
+      "t": "allat",
+      "ty": "Characters",
+      "id": "33a185d9"
+    },
+    {
+      "t": "amm sean blackwell",
+      "ty": "Characters",
+      "id": "f2cec9ee"
+    },
+    {
+      "t": "apulio",
+      "ty": "Characters",
+      "id": "2c3f5c41"
+    },
+    {
+      "t": "arjun patel",
+      "ty": "Characters",
+      "id": "f0d09c3c"
+    },
+    {
+      "t": "asherah",
+      "ty": "Characters",
+      "id": "8cfff4b8"
+    },
+    {
+      "t": "aurelian thornebridge",
+      "ty": "Characters",
+      "id": "591bfd7b"
+    },
+    {
+      "t": "bambang kusumo",
+      "ty": "Characters",
+      "id": "a62410ea"
+    },
+    {
+      "t": "califfato del mahdi",
+      "ty": "Characters",
+      "id": "25821e5c"
+    },
+    {
+      "t": "capitano marcus elliot",
+      "ty": "Characters",
+      "id": "643560fe"
+    },
+    {
+      "t": "celina bautista",
+      "ty": "Characters",
+      "id": "445c2812"
+    },
+    {
+      "t": "col cia albert jennings",
+      "ty": "Characters",
+      "id": "e378a607"
+    },
+    {
+      "t": "col duncan wolverine o connor",
+      "ty": "Characters",
+      "id": "dda6459d"
+    },
+    {
+      "t": "col nicholas stick up briggs",
+      "ty": "Characters",
+      "id": "78ae086a"
+    },
+    {
+      "t": "cpt ilya ivanov",
+      "ty": "Characters",
+      "id": "2342b7be"
+    },
+    {
+      "t": "dekimos",
+      "ty": "Characters",
+      "id": "40ffd736"
+    },
+    {
+      "t": "dimitri volkov",
+      "ty": "Characters",
+      "id": "1045e5a8"
+    },
+    {
+      "t": "dr christoph baumgartner",
+      "ty": "Characters",
+      "id": "ffa126ae"
+    },
+    {
+      "t": "dr farhad abbas",
+      "ty": "Characters",
+      "id": "b671f4cd"
+    },
+    {
+      "t": "dr han li",
+      "ty": "Characters",
+      "id": "2a029d2f"
+    },
+    {
+      "t": "dr ssa anahita mohammadi",
+      "ty": "Characters",
+      "id": "18c6aa46"
+    },
+    {
+      "t": "dr ssa sakuya ishikawa",
+      "ty": "Characters",
+      "id": "8a685a35"
+    },
+    {
+      "t": "essenzialisti",
+      "ty": "Characters",
+      "id": "22635d60"
+    },
+    {
+      "t": "figli di nun",
+      "ty": "Characters",
+      "id": "436e1fff"
+    },
+    {
+      "t": "fulgor",
+      "ty": "Characters",
+      "id": "c4b8ae42"
+    },
+    {
+      "t": "gaia",
+      "ty": "Characters",
+      "id": "d6b27146"
+    },
+    {
+      "t": "gen robert bob davis",
+      "ty": "Characters",
+      "id": "781e7536"
+    },
+    {
+      "t": "grande albero",
+      "ty": "Characters",
+      "id": "763f072a"
+    },
+    {
+      "t": "guan yin",
+      "ty": "Characters",
+      "id": "23bf36de"
+    },
+    {
+      "t": "imperatore rosso",
+      "ty": "Characters",
+      "id": "efe338be"
+    },
+    {
+      "t": "jafar al sadiq",
+      "ty": "Characters",
+      "id": "e635f28d"
+    },
+    {
+      "t": "janine davis",
+      "ty": "Characters",
+      "id": "748130cb"
+    },
+    {
+      "t": "janus dynamics",
+      "ty": "Characters",
+      "id": "d146766c"
+    },
+    {
+      "t": "kali",
+      "ty": "Characters",
+      "id": "433c6901"
+    },
+    {
+      "t": "krug",
+      "ty": "Characters",
+      "id": "1e214c09"
+    },
+    {
+      "t": "kuintos",
+      "ty": "Characters",
+      "id": "279b173d"
+    },
+    {
+      "t": "la trimurti",
+      "ty": "Characters",
+      "id": "ed8849f9"
+    },
+    {
+      "t": "laika",
+      "ty": "Characters",
+      "id": "253a958e"
+    },
+    {
+      "t": "laila",
+      "ty": "Characters",
+      "id": "8dfae87f"
+    },
+    {
+      "t": "le sette dee",
+      "ty": "Characters",
+      "id": "0b210285"
+    },
+    {
+      "t": "loukia rhea silvia",
+      "ty": "Characters",
+      "id": "b133266e"
+    },
+    {
+      "t": "lu fenghuang",
+      "ty": "Characters",
+      "id": "7705a24a"
+    },
+    {
+      "t": "luca",
+      "ty": "Characters",
+      "id": "2e96b263"
+    },
+    {
+      "t": "maggiore sean leprechaun o brien",
+      "ty": "Characters",
+      "id": "8905856d"
+    },
+    {
+      "t": "mama robot",
+      "ty": "Characters",
+      "id": "63b79160"
+    },
+    {
+      "t": "marcius",
+      "ty": "Characters",
+      "id": "62b8464d"
+    },
+    {
+      "t": "mardu korps",
+      "ty": "Characters",
+      "id": "44cc8635"
+    },
+    {
+      "t": "markelos",
+      "ty": "Characters",
+      "id": "7a99d419"
+    },
+    {
+      "t": "mavors",
+      "ty": "Characters",
+      "id": "c0d267aa"
+    },
+    {
+      "t": "maya",
+      "ty": "Characters",
+      "id": "46efea52"
+    },
+    {
+      "t": "niva",
+      "ty": "Characters",
+      "id": "57a52c74"
+    },
+    {
+      "t": "noor al mahdi",
+      "ty": "Characters",
+      "id": "8088fd8f"
+    },
+    {
+      "t": "nu gua nuwa",
+      "ty": "Characters",
+      "id": "165884bf"
+    },
+    {
+      "t": "omar al fayed",
+      "ty": "Characters",
+      "id": "b6267098"
+    },
+    {
+      "t": "parvati",
+      "ty": "Characters",
+      "id": "3dbbc36b"
+    },
+    {
+      "t": "primo sergente maggiore tavita sugar cane lua",
+      "ty": "Characters",
+      "id": "2493353e"
+    },
+    {
+      "t": "prof pierre marceau",
+      "ty": "Characters",
+      "id": "bd3ba879"
+    },
+    {
+      "t": "prof ssa aurora biancofiore",
+      "ty": "Characters",
+      "id": "26b1d4bd"
+    },
+    {
+      "t": "rabbi shabtai klein",
+      "ty": "Characters",
+      "id": "b3c37e01"
+    },
+    {
+      "t": "rumia",
+      "ty": "Characters",
+      "id": "db0cb827"
+    },
+    {
+      "t": "sanada yukimura",
+      "ty": "Characters",
+      "id": "86c28d29"
+    },
+    {
+      "t": "savti chava",
+      "ty": "Characters",
+      "id": "28c66c9c"
+    },
+    {
+      "t": "shakti",
+      "ty": "Characters",
+      "id": "b259bef3"
+    },
+    {
+      "t": "shamshel cohen",
+      "ty": "Characters",
+      "id": "187d4d67"
+    },
+    {
+      "t": "shekinah",
+      "ty": "Characters",
+      "id": "f7b7dcc3"
+    },
+    {
+      "t": "shenlong fei",
+      "ty": "Characters",
+      "id": "a6523258"
+    },
+    {
+      "t": "sofia",
+      "ty": "Characters",
+      "id": "e461a87c"
+    },
+    {
+      "t": "taro",
+      "ty": "Characters",
+      "id": "e392aa96"
+    },
+    {
+      "t": "transumanisti",
+      "ty": "Characters",
+      "id": "53786603"
+    },
+    {
+      "t": "tullius",
+      "ty": "Characters",
+      "id": "7fbeee2a"
+    },
+    {
+      "t": "zoe andrade chakravartin",
+      "ty": "Characters",
+      "id": "84e1a5af"
+    },
+    {
+      "t": "anfiteatro dionisiaco",
+      "ty": "Locations",
+      "id": "c1060654"
+    },
+    {
+      "t": "artemis station",
+      "ty": "Locations",
+      "id": "9797cdae"
+    },
+    {
+      "t": "ashram di shiva",
+      "ty": "Locations",
+      "id": "bc7c2e83"
+    },
+    {
+      "t": "citta delle stelle",
+      "ty": "Locations",
+      "id": "bdba6cdc"
+    },
+    {
+      "t": "dimora degli dei provvisorio",
+      "ty": "Locations",
+      "id": "d8bde08b"
+    },
+    {
+      "t": "fort richardson",
+      "ty": "Locations",
+      "id": "b34d6aba"
+    },
+    {
+      "t": "ganesha ghar",
+      "ty": "Locations",
+      "id": "516c7130"
+    },
+    {
+      "t": "giardino lunare incantato",
+      "ty": "Locations",
+      "id": "4c708b64"
+    },
+    {
+      "t": "giardino paleozoico",
+      "ty": "Locations",
+      "id": "9d9007eb"
+    },
+    {
+      "t": "grande muraglia",
+      "ty": "Locations",
+      "id": "9fbdde8b"
+    },
+    {
+      "t": "green haven bali",
+      "ty": "Locations",
+      "id": "ec2c25e7"
+    },
+    {
+      "t": "iaia",
+      "ty": "Locations",
+      "id": "b52c55ce"
+    },
+    {
+      "t": "la galleria dei mondi",
+      "ty": "Locations",
+      "id": "1cee8505"
+    },
+    {
+      "t": "le fauci di pietra",
+      "ty": "Locations",
+      "id": "edc500b1"
+    },
+    {
+      "t": "lupercale",
+      "ty": "Locations",
+      "id": "5e0507e3"
+    },
+    {
+      "t": "maya space",
+      "ty": "Locations",
+      "id": "edea2de5"
+    },
+    {
+      "t": "monte soratte",
+      "ty": "Locations",
+      "id": "3dd8ef09"
+    },
+    {
+      "t": "museum of asian antiquities",
+      "ty": "Locations",
+      "id": "55d4c893"
+    },
+    {
+      "t": "proto roma",
+      "ty": "Locations",
+      "id": "cca88ced"
+    },
+    {
+      "t": "scenari virtuali di parvati",
+      "ty": "Locations",
+      "id": "62618b11"
+    },
+    {
+      "t": "shackleton crater",
+      "ty": "Locations",
+      "id": "dc084d83"
+    },
+    {
+      "t": "shamash wheel space station",
+      "ty": "Locations",
+      "id": "ba5cfc1f"
+    },
+    {
+      "t": "silva ciminia",
+      "ty": "Locations",
+      "id": "2f779f88"
+    },
+    {
+      "t": "tempio di apollo lykeios",
+      "ty": "Locations",
+      "id": "57bd2078"
+    },
+    {
+      "t": "tomba di qin shi huang",
+      "ty": "Locations",
+      "id": "2dcf1237"
+    },
+    {
+      "t": "veio etrusca",
+      "ty": "Locations",
+      "id": "4303a2a4"
+    },
+    {
+      "t": "xingapur",
+      "ty": "Locations",
+      "id": "e15a0bc1"
+    },
+    {
+      "t": "allergia alla terra",
+      "ty": "Lore",
+      "id": "2ed4ef2a"
+    },
+    {
+      "t": "avatar di parvati",
+      "ty": "Lore",
+      "id": "721d3ef8"
+    },
+    {
+      "t": "axis mundi",
+      "ty": "Lore",
+      "id": "7e46c810"
+    },
+    {
+      "t": "battaglia di roma",
+      "ty": "Lore",
+      "id": "ac177eb8"
+    },
+    {
+      "t": "birkeland currents",
+      "ty": "Lore",
+      "id": "b58cfa5d"
+    },
+    {
+      "t": "birkeland sail",
+      "ty": "Lore",
+      "id": "964da483"
+    },
+    {
+      "t": "brown dwarfs",
+      "ty": "Lore",
+      "id": "74d6f5b0"
+    },
+    {
+      "t": "cesare vs oggi",
+      "ty": "Lore",
+      "id": "2556a7a1"
+    },
+    {
+      "t": "dajjal",
+      "ty": "Lore",
+      "id": "45fe9236"
+    },
+    {
+      "t": "dark magnetism",
+      "ty": "Lore",
+      "id": "afa1d26b"
+    },
+    {
+      "t": "dei proto latini",
+      "ty": "Lore",
+      "id": "c87048e3"
+    },
+    {
+      "t": "diffusione di parvati kali",
+      "ty": "Lore",
+      "id": "5d5c7d9f"
+    },
+    {
+      "t": "dolp displasia ossea lunare progressiva",
+      "ty": "Lore",
+      "id": "34c11423"
+    },
+    {
+      "t": "dresscode imperiale",
+      "ty": "Lore",
+      "id": "2dd4ada5"
+    },
+    {
+      "t": "electric universe",
+      "ty": "Lore",
+      "id": "8f38b8fb"
+    },
+    {
+      "t": "enuma elish",
+      "ty": "Lore",
+      "id": "904d7fcb"
+    },
+    {
+      "t": "fase i",
+      "ty": "Lore",
+      "id": "ffd39bf6"
+    },
+    {
+      "t": "fase ii",
+      "ty": "Lore",
+      "id": "3704344d"
+    },
+    {
+      "t": "ia marziali",
+      "ty": "Lore",
+      "id": "d2eb46bc"
+    },
+    {
+      "t": "iaia stuff",
+      "ty": "Lore",
+      "id": "df7d65b7"
+    },
+    {
+      "t": "kali yuga",
+      "ty": "Lore",
+      "id": "16ae8573"
+    },
+    {
+      "t": "kanya puja",
+      "ty": "Lore",
+      "id": "e80ec752"
+    },
+    {
+      "t": "la catastrofe di gerusalemme",
+      "ty": "Lore",
+      "id": "a27c987e"
+    },
+    {
+      "t": "lascesa delle ia",
+      "ty": "Lore",
+      "id": "c9f97d46"
+    },
+    {
+      "t": "libagione",
+      "ty": "Lore",
+      "id": "eb0bd109"
+    },
+    {
+      "t": "lupercalia antico",
+      "ty": "Lore",
+      "id": "f4d4c838"
+    },
+    {
+      "t": "maladattamenti alla terra di maya",
+      "ty": "Lore",
+      "id": "30f94acb"
+    },
+    {
+      "t": "notte rossa",
+      "ty": "Lore",
+      "id": "41fe47f6"
+    },
+    {
+      "t": "operazione feng huang",
+      "ty": "Lore",
+      "id": "b29c72ee"
+    },
+    {
+      "t": "parvati kali shakti evolutions",
+      "ty": "Lore",
+      "id": "64ce9fa5"
+    },
+    {
+      "t": "parvatis social vision",
+      "ty": "Lore",
+      "id": "635ace0a"
+    },
+    {
+      "t": "parvatismo",
+      "ty": "Lore",
+      "id": "58c20de1"
+    },
+    {
+      "t": "poteri hirpi sorani",
+      "ty": "Lore",
+      "id": "9c4aec2c"
+    },
+    {
+      "t": "protocollo moloch",
+      "ty": "Lore",
+      "id": "b0b6b2b9"
+    },
+    {
+      "t": "red aurora",
+      "ty": "Lore",
+      "id": "c461845b"
+    },
+    {
+      "t": "saturn polar theory",
+      "ty": "Lore",
+      "id": "0e82ee23"
+    },
+    {
+      "t": "schema neurale gaia parvati shakti",
+      "ty": "Lore",
+      "id": "087d0f92"
+    },
+    {
+      "t": "seconda guerra civile americana",
+      "ty": "Lore",
+      "id": "572348da"
+    },
+    {
+      "t": "siege of taiwan",
+      "ty": "Lore",
+      "id": "44f93b42"
+    },
+    {
+      "t": "simbolismo di maya",
+      "ty": "Lore",
+      "id": "e6523d81"
+    },
+    {
+      "t": "simbolismo di sofia",
+      "ty": "Lore",
+      "id": "cfb8e80f"
+    },
+    {
+      "t": "starfish prime",
+      "ty": "Lore",
+      "id": "63486a4a"
+    },
+    {
+      "t": "tips",
+      "ty": "Lore",
+      "id": "03f61a1d"
+    },
+    {
+      "t": "velikovsky affair",
+      "ty": "Lore",
+      "id": "5e9e34c7"
+    },
+    {
+      "t": "yggdrasil",
+      "ty": "Lore",
+      "id": "b19c6979"
+    },
+    {
+      "t": "a l i a i tollah",
+      "ty": "Objects",
+      "id": "75141ba0"
+    },
+    {
+      "t": "adam ant",
+      "ty": "Objects",
+      "id": "02bea4c3"
+    },
+    {
+      "t": "ardur sorani",
+      "ty": "Objects",
+      "id": "acd6aaf3"
+    },
+    {
+      "t": "ccc",
+      "ty": "Objects",
+      "id": "288cc537"
+    },
+    {
+      "t": "chakram",
+      "ty": "Objects",
+      "id": "aadddac7"
+    },
+    {
+      "t": "ciondolo via lattea",
+      "ty": "Objects",
+      "id": "c29f28d7"
+    },
+    {
+      "t": "corona del drago longwangguan",
+      "ty": "Objects",
+      "id": "579394cd"
+    },
+    {
+      "t": "danu",
+      "ty": "Objects",
+      "id": "72e6c77a"
+    },
+    {
+      "t": "derviscio cosmico",
+      "ty": "Objects",
+      "id": "309e6ee3"
+    },
+    {
+      "t": "festival lunare",
+      "ty": "Objects",
+      "id": "f2935def"
+    },
+    {
+      "t": "fiore di luna",
+      "ty": "Objects",
+      "id": "b538b050"
+    },
+    {
+      "t": "gharqad",
+      "ty": "Objects",
+      "id": "f4d62bd1"
+    },
+    {
+      "t": "goccia di ametista",
+      "ty": "Objects",
+      "id": "eb23f593"
+    },
+    {
+      "t": "guan yu",
+      "ty": "Objects",
+      "id": "d9277505"
+    },
+    {
+      "t": "helio hydro harvester",
+      "ty": "Objects",
+      "id": "08291e0e"
+    },
+    {
+      "t": "i s a",
+      "ty": "Objects",
+      "id": "1e0c7a93"
+    },
+    {
+      "t": "kala",
+      "ty": "Objects",
+      "id": "f137a63a"
+    },
+    {
+      "t": "kartik ai",
+      "ty": "Objects",
+      "id": "c9d86c94"
+    },
+    {
+      "t": "laurum o aura link",
+      "ty": "Objects",
+      "id": "bd90cb89"
+    },
+    {
+      "t": "maschera dell onore imperiale yanmian dadi",
+      "ty": "Objects",
+      "id": "e11738c6"
+    },
+    {
+      "t": "pura singa",
+      "ty": "Objects",
+      "id": "60e084d8"
+    },
+    {
+      "t": "qianliyan",
+      "ty": "Objects",
+      "id": "7f98d554"
+    },
+    {
+      "t": "quantum key",
+      "ty": "Objects",
+      "id": "fe8abf25"
+    },
+    {
+      "t": "r e e m",
+      "ty": "Objects",
+      "id": "15bd149d"
+    },
+    {
+      "t": "scraper",
+      "ty": "Objects",
+      "id": "2e2dc36c"
+    },
+    {
+      "t": "settima flotta",
+      "ty": "Objects",
+      "id": "0a00609e"
+    },
+    {
+      "t": "solenopsis invicta fire ants",
+      "ty": "Objects",
+      "id": "62fc2112"
+    },
+    {
+      "t": "terrarium",
+      "ty": "Objects",
+      "id": "0762170e"
+    },
+    {
+      "t": "theo ai teddy",
+      "ty": "Objects",
+      "id": "ec0c05e2"
+    },
+    {
+      "t": "Descrizione dettagliata: \"La Tiara delle...",
+      "ty": "Objects"
+    },
+    {
+      "t": "uss endurance",
+      "ty": "Objects",
+      "id": "c5b6120f"
+    },
+    {
+      "t": "uss odyssey",
+      "ty": "Objects",
+      "id": "09c13073"
+    },
+    {
+      "t": "uss protector",
+      "ty": "Objects",
+      "id": "2742c3b0"
+    },
+    {
+      "t": "uss trump classe obama pioneer nova",
+      "ty": "Objects",
+      "id": "b0546b73"
+    },
+    {
+      "t": "vallum di markelos",
+      "ty": "Objects",
+      "id": "38d4c1fb"
+    },
+    {
+      "t": "virgil ai",
+      "ty": "Objects",
+      "id": "2d6d482b"
+    },
+    {
+      "t": "visore ar",
+      "ty": "Objects",
+      "id": "2c39f3f5"
+    },
+    {
+      "t": "zulfiq ai",
+      "ty": "Objects",
+      "id": "eda8f5e4"
+    },
+    {
+      "t": "abbas forze e debolezze",
+      "ty": "Other",
+      "id": "a13a72d2"
+    },
+    {
+      "t": "abbas voce",
+      "ty": "Other",
+      "id": "e7123b5a"
+    },
+    {
+      "t": "anahita voce",
+      "ty": "Other",
+      "id": "7c748ad4"
+    },
+    {
+      "t": "arriveremo a roma",
+      "ty": "Other",
+      "id": "fd121320"
+    },
+    {
+      "t": "artemis station prose guide",
+      "ty": "Other",
+      "id": "f51ab251"
+    },
+    {
+      "t": "aurora voce",
+      "ty": "Other",
+      "id": "8e088018"
+    },
+    {
+      "t": "caccia al tesoro lunare",
+      "ty": "Other",
+      "id": "74f9f190"
+    },
+    {
+      "t": "davis voce",
+      "ty": "Other",
+      "id": "9a9629af"
+    },
+    {
+      "t": "divina commedia gustav dore",
+      "ty": "Other",
+      "id": "2e66d264"
+    },
+    {
+      "t": "emozioni digitali",
+      "ty": "Other",
+      "id": "a006a2e6"
+    },
+    {
+      "t": "fei strategies",
+      "ty": "Other",
+      "id": "370967b8"
+    },
+    {
+      "t": "fei voce",
+      "ty": "Other",
+      "id": "9623c81b"
+    },
+    {
+      "t": "gaia prose style guide",
+      "ty": "Other",
+      "id": "eb4d7eaf"
+    },
+    {
+      "t": "i mamercini",
+      "ty": "Other",
+      "id": "78ad4961"
+    },
+    {
+      "t": "interfacce umani ai",
+      "ty": "Other",
+      "id": "348d13b0"
+    },
+    {
+      "t": "ivanov voce",
+      "ty": "Other",
+      "id": "db4937f8"
+    },
+    {
+      "t": "meditazione artificiale",
+      "ty": "Other",
+      "id": "9bde6886"
+    },
+    {
+      "t": "o brien voce",
+      "ty": "Other",
+      "id": "abb5e2a0"
+    },
+    {
+      "t": "olfatto di markelos",
+      "ty": "Other",
+      "id": "24dbce32"
+    },
+    {
+      "t": "parvati prose style guide",
+      "ty": "Other",
+      "id": "2028453b"
+    },
+    {
+      "t": "parvati vs parvatismo",
+      "ty": "Other",
+      "id": "f8f7717f"
+    },
+    {
+      "t": "politica di thornebridge",
+      "ty": "Other",
+      "id": "45811976"
+    },
+    {
+      "t": "psicologia del pomerium",
+      "ty": "Other",
+      "id": "ee04d049"
+    },
+    {
+      "t": "psicologia di markelos",
+      "ty": "Other",
+      "id": "1e3c48be"
+    },
+    {
+      "t": "psicologia kuintos",
+      "ty": "Other",
+      "id": "648f8ec7"
+    },
+    {
+      "t": "roma celeste",
+      "ty": "Other",
+      "id": "c3e5b285"
+    },
+    {
+      "t": "shabtai voce",
+      "ty": "Other",
+      "id": "2bb6d7fb"
+    },
+    {
+      "t": "sinossi principale",
+      "ty": "Other",
+      "id": "3708be74"
+    },
+    {
+      "t": "tecniche scrittura parvati",
+      "ty": "Other",
+      "id": "2d35ae51"
+    },
+    {
+      "t": "tom clancy style guide",
+      "ty": "Other",
+      "id": "f35e57c5"
+    },
+    {
+      "t": "arco di abbas",
+      "ty": "Subplots",
+      "id": "b472c9b1"
+    },
+    {
+      "t": "arco di davis",
+      "ty": "Subplots",
+      "id": "f36e1cb5"
+    },
+    {
+      "t": "arco di ivanov",
+      "ty": "Subplots",
+      "id": "2ba45196"
+    },
+    {
+      "t": "arco di markelos",
+      "ty": "Subplots",
+      "id": "3980018c"
+    },
+    {
+      "t": "arco di maya",
+      "ty": "Subplots",
+      "id": "775fc8d3"
+    },
+    {
+      "t": "arco di parvati",
+      "ty": "Subplots",
+      "id": "ce5f4a25"
+    },
+    {
+      "t": "farhad e anahita",
+      "ty": "Subplots",
+      "id": "1a1af554"
+    },
+    {
+      "t": "iaia vs cam",
+      "ty": "Subplots",
+      "id": "1a93e7e1"
+    },
+    {
+      "t": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><style>body { font-family:...",
+      "ty": "Unknown"
+    },
+    {
+      "t": "allat",
+      "ty": "Characters",
+      "id": "33a185d9"
+    },
+    {
+      "t": "amm sean blackwell",
+      "ty": "Characters",
+      "id": "f2cec9ee"
+    },
+    {
+      "t": "apulio",
+      "ty": "Characters",
+      "id": "2c3f5c41"
+    },
+    {
+      "t": "arjun patel",
+      "ty": "Characters",
+      "id": "f0d09c3c"
+    },
+    {
+      "t": "bambang kusumo",
+      "ty": "Characters",
+      "id": "a62410ea"
+    },
+    {
+      "t": "califfato del mahdi",
+      "ty": "Characters",
+      "id": "25821e5c"
+    },
+    {
+      "t": "capitano marcus elliot",
+      "ty": "Characters",
+      "id": "643560fe"
+    },
+    {
+      "t": "col cia albert jennings",
+      "ty": "Characters",
+      "id": "e378a607"
+    },
+    {
+      "t": "col duncan wolverine o connor",
+      "ty": "Characters",
+      "id": "dda6459d"
+    },
+    {
+      "t": "col nicholas stick up briggs",
+      "ty": "Characters",
+      "id": "78ae086a"
+    },
+    {
+      "t": "cpt ilya ivanov",
+      "ty": "Characters",
+      "id": "2342b7be"
+    },
+    {
+      "t": "dr farhad abbas",
+      "ty": "Characters",
+      "id": "b671f4cd"
+    },
+    {
+      "t": "dr ssa anahita mohammadi",
+      "ty": "Characters",
+      "id": "18c6aa46"
+    },
+    {
+      "t": "dr ssa sakuya ishikawa",
+      "ty": "Characters",
+      "id": "8a685a35"
+    },
+    {
+      "t": "figli di nun",
+      "ty": "Characters",
+      "id": "436e1fff"
+    },
+    {
+      "t": "fulgor",
+      "ty": "Characters",
+      "id": "c4b8ae42"
+    },
+    {
+      "t": "gaia",
+      "ty": "Characters",
+      "id": "d6b27146"
+    },
+    {
+      "t": "gen robert bob davis",
+      "ty": "Characters",
+      "id": "781e7536"
+    },
+    {
+      "t": "guan yin",
+      "ty": "Characters",
+      "id": "23bf36de"
+    },
+    {
+      "t": "imperatore rosso",
+      "ty": "Characters",
+      "id": "efe338be"
+    },
+    {
+      "t": "jafar al sadiq",
+      "ty": "Characters",
+      "id": "e635f28d"
+    },
+    {
+      "t": "kali",
+      "ty": "Characters",
+      "id": "433c6901"
+    },
+    {
+      "t": "kuintos",
+      "ty": "Characters",
+      "id": "279b173d"
+    },
+    {
+      "t": "laila",
+      "ty": "Characters",
+      "id": "8dfae87f"
+    },
+    {
+      "t": "loukia rhea silvia",
+      "ty": "Characters",
+      "id": "b133266e"
+    },
+    {
+      "t": "lu fenghuang",
+      "ty": "Characters",
+      "id": "7705a24a"
+    },
+    {
+      "t": "luca",
+      "ty": "Characters",
+      "id": "2e96b263"
+    },
+    {
+      "t": "maggiore sean leprechaun o brien",
+      "ty": "Characters",
+      "id": "8905856d"
+    },
+    {
+      "t": "mama robot",
+      "ty": "Characters",
+      "id": "63b79160"
+    },
+    {
+      "t": "mardu korps",
+      "ty": "Characters",
+      "id": "44cc8635"
+    },
+    {
+      "t": "markelos",
+      "ty": "Characters",
+      "id": "7a99d419"
+    },
+    {
+      "t": "maya",
+      "ty": "Characters",
+      "id": "46efea52"
+    },
+    {
+      "t": "niva",
+      "ty": "Characters",
+      "id": "57a52c74"
+    },
+    {
+      "t": "nu gua nuwa",
+      "ty": "Characters",
+      "id": "165884bf"
+    },
+    {
+      "t": "omar al fayed",
+      "ty": "Characters",
+      "id": "b6267098"
+    },
+    {
+      "t": "parvati",
+      "ty": "Characters",
+      "id": "3dbbc36b"
+    },
+    {
+      "t": "primo sergente maggiore tavita sugar cane lua",
+      "ty": "Characters",
+      "id": "2493353e"
+    },
+    {
+      "t": "prof pierre marceau",
+      "ty": "Characters",
+      "id": "bd3ba879"
+    },
+    {
+      "t": "prof ssa aurora biancofiore",
+      "ty": "Characters",
+      "id": "26b1d4bd"
+    },
+    {
+      "t": "rabbi shabtai klein",
+      "ty": "Characters",
+      "id": "b3c37e01"
+    },
+    {
+      "t": "rumia",
+      "ty": "Characters",
+      "id": "db0cb827"
+    },
+    {
+      "t": "savti chava",
+      "ty": "Characters",
+      "id": "28c66c9c"
+    },
+    {
+      "t": "shamshel cohen",
+      "ty": "Characters",
+      "id": "187d4d67"
+    },
+    {
+      "t": "shenlong fei",
+      "ty": "Characters",
+      "id": "a6523258"
+    },
+    {
+      "t": "sofia",
+      "ty": "Characters",
+      "id": "e461a87c"
+    },
+    {
+      "t": "taro",
+      "ty": "Characters",
+      "id": "e392aa96"
+    },
+    {
+      "t": "tullius",
+      "ty": "Characters",
+      "id": "7fbeee2a"
+    },
+    {
+      "t": "zoe andrade chakravartin",
+      "ty": "Characters",
+      "id": "84e1a5af"
+    },
+    {
+      "t": "Gaia Abbas User\nPlease Dottor Abbas Ambienti\nIl",
+      "ty": "Chats"
+    },
+    {
+      "t": "Robert Davis User\nPlease Il Generale Robert Davis Il Generale Davis Per Davis",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Terra Colonia Lunare User\nPlease Polo Sud",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nPer Immanuel Velikovsky David Talbott",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Farhad Abbas",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nHelp Fort Richardson Ethan Harris Main Scene Beat Generale Davis",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia IA User\nHelp Fort Richardson Civil War",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nPer Ammiraglio Blackwell Ammiraglio Sean Blackwell Medio Oriente",
+      "ty": "Chats"
+    },
+    {
+      "t": "Scene Beat User Janine Scene Beat",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Abbas IA User\nConsiderati Conflitto Interno",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Maya Abbas Aurora Universo Elettrico",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Janus Dynamics User\nVorrei Siccome Parvati La Fondazione",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Abbas User\nConsider Per Gaia Per Dr",
+      "ty": "Chats"
+    },
+    {
+      "t": "Aurora Universo Elettrico User Tuttavia Ritmo",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Abbas User\nPlease",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA User\nEspandiamo Albert Jennings Briggs Type Indicator Il Difensore",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Fei Figli di Nun User\nCrea Pierre Marceau",
+      "ty": "Chats"
+    },
+    {
+      "t": "Anahita User\nProponimi Sean Blackwell Briggs Type Indicator Il Protettore",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Il Legame Terra Natia\n\nLua La Guerra Civile Esilio\n\nNato",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nAiutami Myers Briggs Type Indicator Il Lealista Il Sette Il Giullare",
+      "ty": "Chats"
+    },
+    {
+      "t": "Aurora USA User\nTroviamo Aurora Futura Nuovo Orizzonte",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nTroviamo Colonel Stick Colonnello Nicholas Il Riformatore Il Mentore",
+      "ty": "Chats"
+    },
+    {
+      "t": "Aurora Biancofiore Universo Elettrico Luna Figli di Nun",
+      "ty": "Chats"
+    },
+    {
+      "t": "Legione User\nVorrei Imperatore Rosso Falangi Agatocle Phantom Legion",
+      "ty": "Chats"
+    },
+    {
+      "t": "Fei Shenlong User\nViolare Qin Shi Huang Imperatore Rosso",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Teddy Terra User\nCosa Colonnello Davis",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nGenera Scheda Personaggio Capitano Marcus Elliot Marcus Elliot Notte Rossa",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Teddy Terra USA User\nTroviamo",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Farhad Abbas Aurora Biancofiore",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nConsidera Dragon Crown Imperatore Rosso Onore Imperiale La Maschera",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati User\nConsidera Interfaccia Neurale Esterna Applicazione Narrativa Computer Interface",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Teddy Singapore Sudest Asiatico Han Guang",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nParliamo Fenghuang Lu Feng Lu User\nOk Se Fenghuang Lu",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Struttura Gerarchica Interfaccia Ufficiali Quantum Key Aspetti Tecnologici Avanzati",
+      "ty": "Chats"
+    },
+    {
+      "t": "Anahita Omar Al-Fayed IA User\nProponimi",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nProponimi Noor Al User Proponimi Noor",
+      "ty": "Chats"
+    },
+    {
+      "t": "Anahita Mohammadi Omar IA Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Terra User\nCreiamo Escatologia Islamica Il Califfato",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nFacciamo Malhama Al Grande Battaglia User\nElabora Khilafat Al",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Farhad Abbas Anahita",
+      "ty": "Chats"
+    },
+    {
+      "t": "Farhad Abbas Anahita Mohammadi Omar",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Luna Terra User\nCreiamo Arjun Patel",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Ivanov Universo Elettrico Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Teddy Singapore User\nLavoriamo Quantum Key",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Teddy User\nLavoriamo Quantum Key Base Scientifica",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Kali IA User\nBasandoci Sinossi Principale",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Farhad Abbas IA User\nAiutami",
+      "ty": "Chats"
+    },
+    {
+      "t": "Aurora Biancofiore Universo Elettrico Terra User\nConsidera",
+      "ty": "Chats"
+    },
+    {
+      "t": "Abbas IA User\nOra Buongiorno Dr Repubblica Islamica",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Farhad Abbas Anahita",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Luna Terra La Lunaria Controllo Ambientale",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Maya IA Terra User\nConsidera",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA USA User\nOk Harsh Realization Borrowed Time",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA USA User\nAmbientata Stati Uniti Sinossi\n\nIn",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Farhad Abbas Aurora Biancofiore",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Abbas Kali IA USA",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Abbas Anahita Omar",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati IA USA User\nCrea Myers Briggs",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nLet Han Li Aurea Oscura Celina Bautista La Maestra",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Maya Shamash Wheel Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Maya Luna User\nArtemis Station Dimitri Volkov",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Maya Luna Artemis Station Dimitri Volkov",
+      "ty": "Chats"
+    },
+    {
+      "t": "La Trimurti User Trimurti Consiglio Egitto",
+      "ty": "Chats"
+    },
+    {
+      "t": "Figli di Nun User\nProponimi Hobby Inaspettato Superstizioni Particolari Particolare Regime Alimentare",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nLavoriamo Terra Santa Terza Guerra Mondiale Ground Zero",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya User\nCosa Ganesha Ghar Ganesha Pandal Il Ganesha Ghar",
+      "ty": "Chats"
+    },
+    {
+      "t": "Klein User\nPrepariamo Savti Chava Rabbi Israel Difesa Israeliane",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA User\nLavoriamo Reality Enhancement Matrix Experience Module Enhanced Environment Module",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nVogliamo La Teoria Magnetismo Oscuro Una Nuova Frontiera Introduzione\nLa",
+      "ty": "Chats"
+    },
+    {
+      "t": "Fei Shenlong Singapore USA User\nAiutami",
+      "ty": "Chats"
+    },
+    {
+      "t": "Universo Elettrico Shamash Wheel Terra Janus Dynamics User\nConsidera",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nRiordina User\nScusa User Consider",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nPlease Grande Albero Era Tarn Il Grande Albero",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Terra User\nLavoriamo Background Culturale Unico Codice Morse Tribale",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nScriviamo Alessandro Magno Notte Rossa User Scriviamo",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nLavoriamo Notte Rossa Primo Ministro Liang Shu",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Singapore Bougainville User\nLavoriamo Septima Nova",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nNon Grande Albero User Analizza",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nArricchiamo User Arricchiamo Valuta Davis",
+      "ty": "Chats"
+    },
+    {
+      "t": "User",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA Terra User\nConsider La Scelta Strategica Protocollo Moloch",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA User\nQuale Dio Marduk Notte Rossa User",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nEnumerate User Enumerate Ecco Gigante",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Maya Aurora IA Mondi Virtuali",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Maya Kaori Obasan Zia Kaori Kaori Obachan",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Maya IA Luna Terra",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nDovremmo Outsider Illuminato Grande Albero Il Bambino Prodigio",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nVorrei Le Fauci Eco Eterno Sangue Antico",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer Come Krug User Krug Come",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Disturbo Post Krug\n\nConsiderando Conclusione\n\nIncorporare Grande Albero",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Inciting Incident Tensione Immediata Azione Dinamica Nemico Inaspettato",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "User Ecco Quale",
+      "ty": "Chats"
+    },
+    {
+      "t": "Fei Shenlong User\nCosa Impatto Visivo Contesto Politico",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Luna Terra User\nCosa Artemis Station",
+      "ty": "Chats"
+    },
+    {
+      "t": "Fei Shenlong IA USA User\nCosa",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati Farhad Abbas IA User\nPlease",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Maya Abbas Anahita",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Abbas Anahita Omar",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati Farhad Abbas Anahita",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Farhad Abbas Anahita Omar",
+      "ty": "Chats"
+    },
+    {
+      "t": "Gaia Parvati USA User\nHo Stile Visivo",
+      "ty": "Chats"
+    },
+    {
+      "t": "Parvati User\nConsidera Tecniche Scrittura Aggiuntive Il Gioco Scenari Multipli",
+      "ty": "Chats"
+    },
+    {
+      "t": "Maya Aurora Biancofiore Universo Elettrico Luna",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nCreiamo Imperatore Rosso Aspetto Esterno Thunderbolt Ion Propulsion System Energie Alternative",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nCaratterizziamo Aspetto Estetico Segni Distintivi Hirpi Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "Abbas User\nSviluppiamo Guerriero Sannita Il Protettore Il Guerriero",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Terra USA User\nDefiniamo Alta Sacerdotessa",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nBene Rhea Silvia Fico Ruminalis",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Terra User\nCrafta User\nMi Leggende Ancestrali",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nVorrei Aspetto Fisico Amicizia Iniziale Mentre Kuintos Il Punto",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna User\nSe User Kuintos Markelos",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Atmosfera Vividamente Creata Temi Rilevanti Elementi Mancanti Sensazioni Sensoriali",
+      "ty": "Chats"
+    },
+    {
+      "t": "Moneta Sonante Altri Beni Economia Locale Hirpi Soranus Strategia Militare",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nConsidera Arco Confederazione Protoroma Capi Carismatici",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Arco Narrativo User\nMarkelos Outline Rivisitato Qui Loukia",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nAiutami Alba Longa Roma Celeste User\nMi",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nAiutami La Ricerca Il Conflitto Crescente La Crisi Il Rito",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Terra USA User\nDefiniamo Aspetto Fisico",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nCome Ambientazione Sacra Elementi Rituali Differenze Culturali",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nOra Aspetto Fisico Guida Militare User Ora",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nElaboriamo Roma Celeste Rex Manus Rex Yemus",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nDefiniamo Il Rex User\nOttimo",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nVorrei Conversazione Arguta Intrattenimento Musicale Elementi Soprannaturali",
+      "ty": "Chats"
+    },
+    {
+      "t": "IA User\nVorrei Stati Riuniti Giulio Cesare Disuguaglianze Economiche\n\nEpoca",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nAiutami User Aiutami Come Purificazione",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer Bona Dea User Dio Bona",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nCosa User Aiutami Luperci Ecco",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nIntanto Simbolismo Aggiuntivo Un Momento Farli Incontrare",
+      "ty": "Chats"
+    },
+    {
+      "t": "Aurora User\nConsiderato Gli Etruschi Sol Indiges Sol Invictus",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nOk Obiettivi Narrativi Espressione Emotiva Voce Narrativa",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nOk Danza Rituale Confronto Finale User\nDal",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nConsidera Arco Tensione Drammatica Ambientazione Vivida\n\nContrasto",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nSupponiamo Rhea Silvia Aedes Vestae Hirpi Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nVorrei Gli Hirpi Sorani Carisma Ispirato",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nConsidera Arco Battaglia\nLa Fasi Principali Attacco Iniziale",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer User Ecco Markelos Punti",
+      "ty": "Chats"
+    },
+    {
+      "t": "",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nPer Hirpi Soranus Hirpus Soranus",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nDa Mostra Kuintos User\nIntegra User\nOttimo Ardur Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nStavo Mentre Markelos User Stavo",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Bona Dea User Certamente Capitolium",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nCosa Rex Sacrorum User\nEspandi User\nBene User",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer Dei Olimpici Carlo Magno User Analizziamo",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nDovremmo User\nBene User\nOttimo Che Charun",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nManca Ficus Ruminalis User Manca",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nKuintos Divi Novensiles Di Indigetes Dique Manes",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nDefiniamo Monte Soratte Hirpi Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nConsidera Toroma User\nOttimo Dekimos\n\nAspetto Fisico Conflitto Interno Kuintos\n\nCitazione Caratteristica",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nAiutami Mamercini\n\nScene Hirpi Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra USA User\nTroviamo Significato Etimologico Mentre Rumia",
+      "ty": "Chats"
+    },
+    {
+      "t": "USA User\nPer Hirpi Sorani User\nOttimo User",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer Hirpi Sorani Monte Soratte Hirpus Soranus User",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna User\nDobbiamo Silva Ciminia Hirpi Sorani Monte Soratte",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nIn Saeptum Avitum Conclusione\nIntegrando User\nOk",
+      "ty": "Chats"
+    },
+    {
+      "t": "Luna Terra User\nPer Mostrare Kuintos Hirpi Sorani",
+      "ty": "Chats"
+    },
+    {
+      "t": "User\nPer Iuno Regina User Poi Salii",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Hirpi Sorani Conoscenze Alchemiche Ardur Sorani Conoscenza Spiegata",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra User\nVorrei Hirpi Sorani Lupo Bianco Descrizioni Ambientali",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Silva Ciminia Ardur Sorani Voce Interiore Inclusioni Specifiche",
+      "ty": "Chats"
+    },
+    {
+      "t": "Terra Dea Terra User Veio Ecco",
+      "ty": "Chats"
+    },
+    {
+      "t": "anfiteatro dionisiaco",
+      "ty": "Locations",
+      "id": "c1060654"
+    },
+    {
+      "t": "artemis station",
+      "ty": "Locations",
+      "id": "9797cdae"
+    },
+    {
+      "t": "ashram di shiva",
+      "ty": "Locations",
+      "id": "bc7c2e83"
+    },
+    {
+      "t": "dimora degli dei provvisorio",
+      "ty": "Locations",
+      "id": "d8bde08b"
+    },
+    {
+      "t": "fort richardson",
+      "ty": "Locations",
+      "id": "b34d6aba"
+    },
+    {
+      "t": "ganesha ghar",
+      "ty": "Locations",
+      "id": "516c7130"
+    },
+    {
+      "t": "giardino lunare incantato",
+      "ty": "Locations",
+      "id": "4c708b64"
+    },
+    {
+      "t": "grande muraglia",
+      "ty": "Locations",
+      "id": "9fbdde8b"
+    },
+    {
+      "t": "iaia",
+      "ty": "Locations",
+      "id": "b52c55ce"
+    },
+    {
+      "t": "lupercale",
+      "ty": "Locations",
+      "id": "5e0507e3"
+    },
+    {
+      "t": "maya space",
+      "ty": "Locations",
+      "id": "edea2de5"
+    },
+    {
+      "t": "monte soratte",
+      "ty": "Locations",
+      "id": "3dd8ef09"
+    },
+    {
+      "t": "proto roma",
+      "ty": "Locations",
+      "id": "cca88ced"
+    },
+    {
+      "t": "scenari virtuali di parvati",
+      "ty": "Locations",
+      "id": "62618b11"
+    },
+    {
+      "t": "shackleton crater",
+      "ty": "Locations",
+      "id": "dc084d83"
+    },
+    {
+      "t": "tempio di apollo lykeios",
+      "ty": "Locations",
+      "id": "57bd2078"
+    },
+    {
+      "t": "tomba di qin shi huang",
+      "ty": "Locations",
+      "id": "2dcf1237"
+    },
+    {
+      "t": "veio etrusca",
+      "ty": "Locations",
+      "id": "4303a2a4"
+    },
+    {
+      "t": "xingapur",
+      "ty": "Locations",
+      "id": "e15a0bc1"
+    },
+    {
+      "t": "axis mundi",
+      "ty": "Lore",
+      "id": "7e46c810"
+    },
+    {
+      "t": "battaglia di roma",
+      "ty": "Lore",
+      "id": "ac177eb8"
+    },
+    {
+      "t": "dark magnetism",
+      "ty": "Lore",
+      "id": "afa1d26b"
+    },
+    {
+      "t": "dolp displasia ossea lunare progressiva",
+      "ty": "Lore",
+      "id": "34c11423"
+    },
+    {
+      "t": "dresscode imperiale",
+      "ty": "Lore",
+      "id": "2dd4ada5"
+    },
+    {
+      "t": "ia marziali",
+      "ty": "Lore",
+      "id": "d2eb46bc"
+    },
+    {
+      "t": "iaia stuff",
+      "ty": "Lore",
+      "id": "df7d65b7"
+    },
+    {
+      "t": "kali yuga",
+      "ty": "Lore",
+      "id": "16ae8573"
+    },
+    {
+      "t": "la catastrofe di gerusalemme",
+      "ty": "Lore",
+      "id": "a27c987e"
+    },
+    {
+      "t": "lascesa delle ia",
+      "ty": "Lore",
+      "id": "c9f97d46"
+    },
+    {
+      "t": "libagione",
+      "ty": "Lore",
+      "id": "eb0bd109"
+    },
+    {
+      "t": "lupercalia antico",
+      "ty": "Lore",
+      "id": "f4d4c838"
+    },
+    {
+      "t": "notte rossa",
+      "ty": "Lore",
+      "id": "41fe47f6"
+    },
+    {
+      "t": "operazione feng huang",
+      "ty": "Lore",
+      "id": "b29c72ee"
+    },
+    {
+      "t": "parvatis social vision",
+      "ty": "Lore",
+      "id": "635ace0a"
+    },
+    {
+      "t": "parvatismo",
+      "ty": "Lore",
+      "id": "58c20de1"
+    },
+    {
+      "t": "poteri hirpi sorani",
+      "ty": "Lore",
+      "id": "9c4aec2c"
+    },
+    {
+      "t": "protocollo moloch",
+      "ty": "Lore",
+      "id": "b0b6b2b9"
+    },
+    {
+      "t": "seconda guerra civile americana",
+      "ty": "Lore",
+      "id": "572348da"
+    },
+    {
+      "t": "simbolismo di maya",
+      "ty": "Lore",
+      "id": "e6523d81"
+    },
+    {
+      "t": "simbolismo di sofia",
+      "ty": "Lore",
+      "id": "cfb8e80f"
+    },
+    {
+      "t": "starfish prime",
+      "ty": "Lore",
+      "id": "63486a4a"
+    },
+    {
+      "t": "adam ant",
+      "ty": "Objects",
+      "id": "02bea4c3"
+    },
+    {
+      "t": "ccc",
+      "ty": "Objects",
+      "id": "288cc537"
+    },
+    {
+      "t": "ciondolo via lattea",
+      "ty": "Objects",
+      "id": "c29f28d7"
+    },
+    {
+      "t": "danu",
+      "ty": "Objects",
+      "id": "72e6c77a"
+    },
+    {
+      "t": "derviscio cosmico",
+      "ty": "Objects",
+      "id": "309e6ee3"
+    },
+    {
+      "t": "festival lunare",
+      "ty": "Objects",
+      "id": "f2935def"
+    },
+    {
+      "t": "gharqad",
+      "ty": "Objects",
+      "id": "f4d62bd1"
+    },
+    {
+      "t": "goccia di ametista",
+      "ty": "Objects",
+      "id": "eb23f593"
+    },
+    {
+      "t": "helio hydro harvester",
+      "ty": "Objects",
+      "id": "08291e0e"
+    },
+    {
+      "t": "i s a",
+      "ty": "Objects",
+      "id": "1e0c7a93"
+    },
+    {
+      "t": "kala",
+      "ty": "Objects",
+      "id": "f137a63a"
+    },
+    {
+      "t": "kartik ai",
+      "ty": "Objects",
+      "id": "c9d86c94"
+    },
+    {
+      "t": "laurum o aura link",
+      "ty": "Objects",
+      "id": "bd90cb89"
+    },
+    {
+      "t": "qianliyan",
+      "ty": "Objects",
+      "id": "7f98d554"
+    },
+    {
+      "t": "r e e m",
+      "ty": "Objects",
+      "id": "15bd149d"
+    },
+    {
+      "t": "settima flotta",
+      "ty": "Objects",
+      "id": "0a00609e"
+    },
+    {
+      "t": "terrarium",
+      "ty": "Objects",
+      "id": "0762170e"
+    },
+    {
+      "t": "theo ai teddy",
+      "ty": "Objects",
+      "id": "ec0c05e2"
+    },
+    {
+      "t": "uss odyssey",
+      "ty": "Objects",
+      "id": "09c13073"
+    },
+    {
+      "t": "visore ar",
+      "ty": "Objects",
+      "id": "2c39f3f5"
+    },
+    {
+      "t": "zulfiq ai",
+      "ty": "Objects",
+      "id": "eda8f5e4"
+    },
+    {
+      "t": "abbas forze e debolezze",
+      "ty": "Other",
+      "id": "a13a72d2"
+    },
+    {
+      "t": "arriveremo a roma",
+      "ty": "Other",
+      "id": "fd121320"
+    },
+    {
+      "t": "meditazione artificiale",
+      "ty": "Other",
+      "id": "9bde6886"
+    },
+    {
+      "t": "psicologia del pomerium",
+      "ty": "Other",
+      "id": "ee04d049"
+    },
+    {
+      "t": "Davis-E-Janine-Bimba",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ss-Ia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B0Ouux1",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B11Jvb1",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B13Rbk2",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B14Shbn",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B15Hlun",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idea-Personaggio-Secondario",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Writing-Instructions",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B3Ttpa0",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B3Zfq7W",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B5Lpo4B",
+      "ty": "Snippets"
+    },
+    {
+      "t": "4-Version-Of-Creation",
+      "ty": "Snippets"
+    },
+    {
+      "t": "About-Hinduism",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idee-Per-La-Fondazione",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idea-Dialogo-Tra-Aurora-E-Un-Emissario-Di-Fei",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-Parlando-Dell-Eta-Dell-Oro",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Dying-And-Resurrected-Gods",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Enheduanna",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aurora-Che-Ragiona-Sul-Fatto-Di-Non-Poter-Parlare-Dei-Suoi-Brevetti-Con-La-Janus",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idee-Descrizioni-Lunari-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Sul-Visore-Ar-Interfaccia-Neurale",
+      "ty": "Snippets"
+    },
+    {
+      "t": "The-Seven-Basic-Plots",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Bngfsor",
+      "ty": "Snippets"
+    },
+    {
+      "t": "3-Act-Structure",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Conflitti-Di-Parvati",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Visionari-Della-Coscienza",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Active-Imagination",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Davis-E-Jennings",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Abbas",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idea-Personaggio-Lakota-Dei-Mardu-Korps",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Bwhilbm",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Forze-Nato",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Janus-Origin",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Onu",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Janus",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Imperatore-Rosso-E-La-Tomba-Di-Qin",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Le-Parole-Divine",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Notte-Rossa-Con-Teddy-E-Capitano",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Rabbi-E-Il-Toro-Celeste",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Sniper-Tricks",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Bmnxftj",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Stealth-Motorcycles",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Stelle-Old-Smokers",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Abbas-Gaia-E-La-Mentalita-Della-Folla",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aurora-E-Baumgartner",
+      "ty": "Snippets"
+    },
+    {
+      "t": "The-Godslayer-Davis",
+      "ty": "Snippets"
+    },
+    {
+      "t": "I-Pannolini-Di-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Lsd-E-Adam-Ant",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maya-Impara-Gas-Vitali",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Oxygen-And-Co-2",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Punti-Deboli-Assortiti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Il-Vero-Potere-Delle-Ia-Marziali",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Mamma-Gaia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Meditazione-Artificiale-Di-Gaia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Plot-Devices-Assortiti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Prospettive-Del-Secolo-Scorso-Sul-Futuro",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Blackwell-Mazu-E-Matsuda",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Davis-Aurora-E-Tesla-O-Baumgartner",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Gaia-Parvati-E-Cio-Che-Le-Manca-Per-Essere-Umana",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Hero-Tropes-Assortiti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Post-Singularity-Motivation",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Shinto-Si",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Caratteri-Speciali-Assortiti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Descrizione-Alba-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Intelligence-Through-Civilians",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Madness-Arc-Imperatore-Rosso",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maya-Argomento-Da-Smontare",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Gli-Umani-Infantili",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Scena-Cool-Kali-Fei",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Augmented-Detective",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Newton-E-Aurora-E-Molto-Molto-Altro",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Personaggio-Buono-New-Thunderbolts",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pionieri-By-Rocco",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Primo-Capitolo-Scena-4",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Storia-Medio-Oriente",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Abbas-Impara-A-Usare-Ladamant-Di-Noor",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Idee-Scene-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Il-Trigger-Finale-Di-Davis",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Kaliyuga-Accelerationism",
+      "ty": "Snippets"
+    },
+    {
+      "t": "La-Soluzione-Ai-Vs-Ai",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Super-Intro-By-Tom-Clancy",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Temi-Chiave-Ia-Da-Sviluppare",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Temi-Geopolitici-Per-Prologo-O-Introduzioni",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Villain-Recipe",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Antiparvati-1",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Antiparvati-2",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Antiparvati-3",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Advanced-Enlightenment",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aurora-Pole-Star",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maya-E-Il-Giardino",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Scena-Very-Cool",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aurora-Ouverture-By-Stuart",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Siberia-And-Ice-Age",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Agi-Vs-Anti-Agi-Arguments-Shapiro",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ai-Growth-Prossime-Decadi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ai-Smarter-Than-Us",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Argomenti-Anti-Agi-E-Neutri-Davis",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Argomenti-Pro-Agi-Duncan",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Astronaut-Humour-Ivanov",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Blockchain-Video",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Dialogo-Filosoficco-Parvati-Abbas-O-Davis-Duncan",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ai-Feeling-Vs-Human-Feeling-Gaia-Abbas-O-Omar",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Amygdala",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ballerina-And-Android",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Cereali",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Davis-E-Reagire-A-Eventi-Spaventosi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Il-Diluvio-Secondo-L-Induismo",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maha-Kala",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Mct-Meta-Cognitive-Therapy",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pavone",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Stuart-Travel-To-The-Heart-Of-The-Galaxy",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Triloka-Trailokya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Buddha-Spider-Web",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Elettroidrogenesi-Lunare",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Carrington-Like-Events-By-Anton",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Christmas-Tree",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Il-Simposio-Lunare",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Solomon-Favole-Ebraiche",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Kronos-Links",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Rabbi-Dopo-Catastrofe",
+      "ty": "Snippets"
+    },
+    {
+      "t": "First-Seder-In-Space",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maia-Nome-Segreto-Di-Roma",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Nowruz-And-Yalda",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2D3Y1Nj5",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Dea-Mariamman",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Future-Ideas-Salad",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Sensitive-Skin-For-Robots",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Okeanos-Teti-E-Achille",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Math-E-Aurora",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aurora",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Axial-Age-And-Rabbi-Shabtai",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Real-General-Register-Speaking",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Zeihan-On-New-Warfare",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-A-Rabbi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Su-Gaia-E-Davis",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Fotcqsp",
+      "ty": "Snippets"
+    },
+    {
+      "t": "About-War",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Chap-2-Scena-4-Estratti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pro-E-Contro-Alaska",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Deep-Ai-Themes",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Spunti-Dal-Giovane-Mossab",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2B3Qwomz",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Davis-E-Parvati",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Dialogo-Ivanov-Altri",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Ilbgaav",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Complesso-Eroe-Profeta-Dio-Conversazioni-Rabbi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Magic-According-To-Alan-Moore-Conversazioni-Rabbi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-Durga-Trascendente-Conversazioni-Rabbi",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Prospect-Real-Moon-Mining-Project-Shackleton-Crater",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Psychedelics-Mentoring-Teenage-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "The-Peaceful-Majority",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Burnout",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Descrizione-Alternativa-Krug",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Jaccuse-Di-Gaia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Older-Humans",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-E-Fei",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Eternal-Light-Ner-Tamid",
+      "ty": "Snippets"
+    },
+    {
+      "t": "In-Da-Sinagoga-Con-Rosone-Blu-Rabbi-Shabtai",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Krug-I-Superstiti-E-Il-Mare-Immagini-Potenti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Descrizioni-Cappadocia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Scaletta-American-Civil-War",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Conspiracy-Solution",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Mar-Rosso-Red-Sea-Or-Reed-Sea-Yam-Suph",
+      "ty": "Snippets"
+    },
+    {
+      "t": "The-Speed-Of-Change",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Stile-Bruce",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Hangar-Sotterraneo",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Scrittura-E-Magia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Le-Figlie-Di-Allah",
+      "ty": "Snippets"
+    },
+    {
+      "t": "New-Physics-Aurora",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Siberia-Mammoth-Velikovsky",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Non-Riesco-A-Smettere-Di-Pensarci",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Worthy-Successor-List-Nick-Bostrom",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ivanov-E-L-Universo",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Jacuzia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Misbeliefs",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Nautilus-North-Pole",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Aspettativa-Cinese",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maya-Matura-In-Biologia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Riti-Di-Passaggio",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Secret-Garden-Maya",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Kali-E-Il-Dolore-Fei",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Autonomous-Killing-Decisions",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Hijab-And-Iranian-Women",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Israel-Birth-Rates",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Possibili-Conflitti-Da-Risolvere-Per-Fei",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Teheran-Iran-Descrizioni-Assortite",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Enemies-And-Brain-Us-And-Them",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pitagora-E-Il-Vaticano",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Loukia",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Dialogo-Parvati-Abbas",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Conversazioni-Rabbi-Parvati",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Eyeh-Asher-Eyeh",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Papa-E-Pontifex-Maximus",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Roma-Celeste-Ciak-I",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Roma-Celeste-Ciak-Ii",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Roma-Celeste-Ciak-Iii",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Modifiche-Markelos-Scena-2",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Modifiche-Markelos-Scena-3",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Modifiche-Markelos-Scena-4",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Modifiche-Markelos-Scena-5",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Simposio",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Taiwan-Usa-China-Steps-To-War",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ivanov-Virtual",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Iranian-Revolution-1979",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Bruce-Springsteen-Backgrounds",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Scena-Rabbi-Risonante",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Flamen-E-Sacerdos",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Il-Concilio-Divino-12-Dodici",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Sacer-E-Sanctus",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Warriors-And-Scholars",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Consigli-Markelos-Scena-1-Claude",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pan",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pomerium-Per-Tutti",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Why-You-Dont-Like-Your-Character",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Romolo-E-Roma",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Abundance-The-Future-Is-Better-Than-You-Think",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Pyros",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Paragrafo-Stile",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Japanese-Writing",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Ai-Unreadiness-Yt-Comments",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Caco-E-Kaki",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Not-To-Do-Novel-Pitfalls",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Realistic-Fictional-Cult-Design",
+      "ty": "Snippets"
+    },
+    {
+      "t": "The-Dark-Arts-Of-Writing-Techniques-For-Manipulating-Readers",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Arctic-Scenario",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Swimming-On-The-Moon",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Future-With-Ai",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Iran-And-Israel-Relationship",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Constantine-Life",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Council-Of-Nicaea",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Rise-And-Fall-Of-British-Power",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Usa-Vs-China",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Micro-Robots",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Superare-Oligarchie",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Maya-High-School",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Girlboss",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Abraham-And-Brahma",
+      "ty": "Snippets"
+    },
+    {
+      "t": "2Satg5Ry",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Parvati-Su-Se-Stessa-Gpt-Surprise",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Rivers-Of-Life",
+      "ty": "Snippets"
+    },
+    {
+      "t": "Struttura-Romanzo",
+      "ty": "Snippets"
+    },
+    {
+      "t": "arco di abbas",
+      "ty": "Subplots",
+      "id": "b472c9b1"
+    },
+    {
+      "t": "arco di davis",
+      "ty": "Subplots",
+      "id": "f36e1cb5"
+    },
+    {
+      "t": "arco di ivanov",
+      "ty": "Subplots",
+      "id": "2ba45196"
+    },
+    {
+      "t": "arco di markelos",
+      "ty": "Subplots",
+      "id": "3980018c"
+    },
+    {
+      "t": "arco di maya",
+      "ty": "Subplots",
+      "id": "775fc8d3"
+    },
+    {
+      "t": "arco di parvati",
+      "ty": "Subplots",
+      "id": "ce5f4a25"
+    },
+    {
+      "t": "iaia vs cam",
+      "ty": "Subplots",
+      "id": "1a93e7e1"
+    }
+  ]
+}
