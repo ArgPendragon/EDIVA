@@ -5,6 +5,7 @@ import numpy as np
 import logging
 import re
 import argparse
+import shutil
 from pathlib import Path
 from natsort import natsorted, ns
 
@@ -26,6 +27,7 @@ def classify_page(image):
 def detect_image_configuration(image):
     """
     Determine the configuration (position) of the main image object on the page.
+    Returns an English description.
     """
     bbox = get_largest_contour_bbox(image)
     if bbox is None:
@@ -39,15 +41,15 @@ def detect_image_configuration(image):
     bottom = img_h - (y + h)
 
     if left < img_w * 0.1:
-        config = "immagine a lato sinistro"
+        config = "image on left"
     elif right < img_w * 0.1:
-        config = "immagine a lato destro"
+        config = "image on right"
     elif top < img_h * 0.1:
-        config = "immagine in alto"
+        config = "image at top"
     elif bottom < img_h * 0.1:
-        config = "immagine in basso"
+        config = "image at bottom"
     else:
-        config = "immagine centrata"
+        config = "centered image"
 
     logging.info(f"Detected configuration: {config} (x={x}, y={y}, w={w}, h={h})")
     return config
@@ -209,9 +211,9 @@ def detect_black_lines(image_path):
     """
     Detect horizontal black lines (for example, page separators)
     by processing the image at the given path.
-    Returns the y-coordinate of the most relevant separator, or None.
+    (The original logic is preserved here.)
     """
-    logging.info(f"Processing {image_path} for separator detection")
+    logging.info(f"Processing {image_path} for separator line detection")
     try:
         image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
         if image is None:
@@ -236,6 +238,46 @@ def detect_black_lines(image_path):
     except Exception as e:
         logging.exception("Exception in black line detection:", exc_info=e)
         return None
+
+def save_debug_reticle(image_path, debug_dir, image_bbox, image_configuration, caption_data=None):
+    """
+    Save a debug image with drawn bounding boxes for the main image,
+    caption regions, and any detected separators.
+    """
+    image = cv2.imread(image_path)
+    if image is None:
+        return
+    if image_bbox is not None:
+        x, y, w, h = image_bbox
+        cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2)
+        cv2.putText(image, f"Image: {x},{y},{w},{h}", (x, max(y - 10, 10)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+    sep_y = detect_black_lines(image_path)
+    if sep_y is not None:
+        cv2.line(image, (0, sep_y), (image.shape[1], sep_y), (255, 0, 0), 2)
+    cv2.putText(image, f"Classification: {image_configuration}", (10, 30),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
+    if caption_data is not None:
+        if "caption_box" in caption_data:
+            cx, cy, cw, ch = caption_data["caption_box"]
+            cv2.rectangle(image, (cx, cy), (cx + cw, cy + ch), (0, 255, 0), 2)
+            cv2.putText(image, "Caption: within", (cx, cy - 5),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+        elif "internal_caption" in caption_data or "external_caption" in caption_data:
+            internal = caption_data.get("internal_caption")
+            external = caption_data.get("external_caption")
+            if internal is not None:
+                ix, iy, iw, ih = internal
+                cv2.rectangle(image, (ix, iy), (ix + iw, iy + ih), (0, 255, 0), 2)
+                cv2.putText(image, "Internal", (ix, iy - 5),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+            if external is not None and "caption_box" in external:
+                ex, ey, ew, eh = external["caption_box"]
+                cv2.rectangle(image, (ex, ey), (ex + ew, ey + eh), (0, 200, 200), 2)
+                cv2.putText(image, "External", (ex, ey - 5),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 200, 200), 1)
+    cv2.imwrite(os.path.join(debug_dir, os.path.basename(image_path)), image)
+    logging.info(f"Debug image saved to: {os.path.join(debug_dir, os.path.basename(image_path))}")
 
 # =============================================================================
 # 4️⃣ Data Handling
@@ -275,6 +317,10 @@ def process_images(image_dir, bookindex_path, intro_pages=12):
     logging.info("Starting image processing...")
 
     ensure_json_exists(bookindex_path, image_dir, intro_pages)
+    debug_dir = os.path.join(image_dir, "debug")
+    if os.path.exists(debug_dir):
+        shutil.rmtree(debug_dir)
+    os.makedirs(debug_dir)
 
     try:
         with open(bookindex_path, 'r', encoding='utf-8') as f:
@@ -293,15 +339,20 @@ def process_images(image_dir, bookindex_path, intro_pages=12):
         entry['type'] = classify_page(image)
         entry['page_number'] = determine_page_number(index, intro_pages)
 
+        # Always detect and store the separator y-coordinate regardless of page type.
+        sep_y = detect_black_lines(image_path)
+        entry['separator_y'] = sep_y  # This will be an integer or None.
+
         if entry['type'] == "image-present":
             image_config = detect_image_configuration(image)
             entry['image_configuration'] = image_config
 
             bbox = get_largest_contour_bbox(image)
             if bbox:
+                # Store image coordinates as a dictionary.
                 entry['image_coordinates'] = {"x": bbox[0], "y": bbox[1], "w": bbox[2], "h": bbox[3]}
                 
-                # Caption detection using the image configuration and bounding box
+                # Pass the image configuration to caption detection.
                 caption_data = detect_caption_text(image, bbox, image_config)
 
                 if caption_data:
@@ -316,9 +367,7 @@ def process_images(image_dir, bookindex_path, intro_pages=12):
                     entry['caption_coordinates'] = None
                     entry['caption_position'] = None
 
-                # Detect separator (e.g., horizontal black line) and store its y coordinate
-                sep_y = detect_black_lines(image_path)
-                entry['separator_y'] = sep_y
+                save_debug_reticle(image_path, debug_dir, bbox, image_config, caption_data)
             else:
                 logging.info(f"No bounding box detected for image: {image_path}")
 

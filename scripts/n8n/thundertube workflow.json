@@ -1,0 +1,98 @@
+{
+    "name": "YouTube to GitHub Minimal",
+    "nodes": [
+      {
+        "parameters": {},
+        "id": "1",
+        "name": "Start",
+        "type": "n8n-nodes-base.start",
+        "typeVersion": 1,
+        "position": [
+          100,
+          200
+        ]
+      },
+      {
+        "parameters": {
+          "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UU_x5XG1OV2P6uZZ5FSM9Ttw&maxResults=50&key={{environment.YOUTUBE_API_KEY}}",
+          "method": "GET",
+          "responseFormat": "json"
+        },
+        "id": "2",
+        "name": "Fetch YouTube Videos",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [
+          300,
+          200
+        ]
+      },
+      {
+        "parameters": {
+          "functionCode": "return [{ json: { counter: $runIndex + 1, items: $json.items } }];"
+        },
+        "id": "3",
+        "name": "Generate Counter",
+        "type": "n8n-nodes-base.function",
+        "typeVersion": 1,
+        "position": [
+          500,
+          200
+        ]
+      },
+      {
+        "parameters": {
+          "operation": "createFile",
+          "owner": "your-github-username",
+          "repository": "your-repository-name",
+          "filePath": "youtube_pages/youtube_page_{{$json.counter}}.json",
+          "fileContent": "{{JSON.stringify($json.items, null, 2)}}"
+        },
+        "id": "4",
+        "name": "Save to GitHub",
+        "type": "n8n-nodes-base.github",
+        "typeVersion": 1,
+        "position": [
+          700,
+          200
+        ]
+      }
+    ],
+    "connections": {
+      "Start": {
+        "main": [
+          [
+            {
+              "node": "Fetch YouTube Videos",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Fetch YouTube Videos": {
+        "main": [
+          [
+            {
+              "node": "Generate Counter",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Generate Counter": {
+        "main": [
+          [
+            {
+              "node": "Save to GitHub",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "active": false,
+    "settings": {}
+  }  

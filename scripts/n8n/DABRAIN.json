@@ -1,0 +1,136 @@
+{
+    "name": "GitHub Context Filter - Unconnected",
+    "nodes": [
+      {
+        "parameters": {},
+        "id": "1",
+        "name": "Start",
+        "type": "n8n-nodes-base.start",
+        "typeVersion": 1,
+        "position": [100, 200]
+      },
+      {
+        "parameters": {
+          "url": "https://raw.githubusercontent.com/<YOUR-REPO>/metadiva.json",
+          "method": "GET",
+          "responseFormat": "json",
+          "jsonParameters": true
+        },
+        "id": "2",
+        "name": "Get metadiva.json",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [300, 200]
+      },
+      {
+        "parameters": {
+          "functionCode": "const metadiva = $json;\nreturn [\n  { json: { category: 'scenes', data: metadiva.novel } },\n  { json: { category: 'characters', data: metadiva.characters } },\n  { json: { category: 'objects', data: metadiva.objects } },\n  { json: { category: 'chats', data: metadiva.chats } }\n];"
+        },
+        "id": "3",
+        "name": "Split metadiva",
+        "type": "n8n-nodes-base.function",
+        "typeVersion": 1,
+        "position": [500, 200]
+      },
+      {
+        "parameters": {
+          "model": "gpt-3.5-turbo",
+          "prompt": "Sei un assistente che analizza query per selezionare la categoria giusta tra 'scenes', 'characters', 'objects', 'chats'.\nLa query dell'utente è: {{$json[\"query\"]}}.\nRestituisci solo il nome della categoria più rilevante.",
+          "temperature": 0,
+          "maxTokens": 50,
+          "options": {}
+        },
+        "id": "4",
+        "name": "OpenAI Query Processor",
+        "type": "n8n-nodes-base.openAIApi",
+        "typeVersion": 1,
+        "position": [700, 200]
+      },
+      {
+        "parameters": {
+          "url": "https://raw.githubusercontent.com/<YOUR-REPO>/indexdiva.json",
+          "method": "GET",
+          "responseFormat": "json",
+          "jsonParameters": true
+        },
+        "id": "5",
+        "name": "Get indexdiva.json",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [900, 200]
+      },
+      {
+        "parameters": {
+          "functionCode": "const indexdiva = $json;\nconst category = $json.selectedCategory || 'scenes';\nlet filteredData = {};\nif (category === 'scenes') {\n  filteredData = indexdiva.novel;\n} else if (category === 'characters') {\n  filteredData = indexdiva.characters;\n} else if (category === 'objects') {\n  filteredData = indexdiva.objects;\n} else if (category === 'chats') {\n  filteredData = indexdiva.chats;\n}\nreturn [{ json: { category, data: filteredData } }];"
+        },
+        "id": "6",
+        "name": "Filter indexdiva",
+        "type": "n8n-nodes-base.function",
+        "typeVersion": 1,
+        "position": [1100, 200]
+      },
+      {
+        "parameters": {
+          "url": "https://placeholder-for-autogen-agent-scenes.com/api",
+          "method": "POST",
+          "jsonParameters": true,
+          "bodyParametersJson": "={{ JSON.stringify({ context: $json.data }) }}"
+        },
+        "id": "7",
+        "name": "Agent: Scenes",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [1300, 100]
+      },
+      {
+        "parameters": {
+          "url": "https://placeholder-for-autogen-agent-characters.com/api",
+          "method": "POST",
+          "jsonParameters": true,
+          "bodyParametersJson": "={{ JSON.stringify({ context: $json.data }) }}"
+        },
+        "id": "8",
+        "name": "Agent: Characters",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [1300, 200]
+      },
+      {
+        "parameters": {
+          "url": "https://placeholder-for-autogen-agent-objects.com/api",
+          "method": "POST",
+          "jsonParameters": true,
+          "bodyParametersJson": "={{ JSON.stringify({ context: $json.data }) }}"
+        },
+        "id": "9",
+        "name": "Agent: Objects",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [1300, 300]
+      },
+      {
+        "parameters": {
+          "url": "https://placeholder-for-autogen-agent-chats.com/api",
+          "method": "POST",
+          "jsonParameters": true,
+          "bodyParametersJson": "={{ JSON.stringify({ context: $json.data }) }}"
+        },
+        "id": "10",
+        "name": "Agent: Chats",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 2,
+        "position": [1300, 400]
+      },
+      {
+        "parameters": {
+          "functionCode": "const merged = { results: items.map(item => item.json) };\nreturn [{ json: merged }];"
+        },
+        "id": "11",
+        "name": "Merge Agent Responses",
+        "type": "n8n-nodes-base.function",
+        "typeVersion": 1,
+        "position": [1500, 200]
+      }
+    ]
+  }
+  
