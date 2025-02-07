@@ -1,0 +1,107 @@
+📜 Lessons Learned: Debugging AutoGen + OpenRouter Like a Pro
+🔥 (or: What I Screwed Up & How Future Me Won’t Do It Again) 🔥
+
+Debugging AutoGen with OpenRouter was a wild ride—here’s a self-critical look at what I missed, what I should’ve done earlier, and how future me (and anyone else dealing with this) can debug smarter next time.
+
+💀 1. I Trusted AutoGen Too Much at First
+🔴 Mistake:
+I assumed AutoGen would correctly forward OpenRouter settings once llm_config was set up. Reality: It silently dropped key parameters, leading to API rejections.
+
+✅ Lesson Learned:
+🔹 Never assume AutoGen is correctly forwarding API settings—always print & verify what’s actually being sent.
+
+🔹 Debug earlier with print(llm_config), instead of assuming it’s formatted correctly.
+
+💀 2. I Didn’t Test OpenRouter API First
+🔴 Mistake:
+I started debugging inside AutoGen first, instead of checking if OpenRouter worked independently.
+
+✅ Lesson Learned:
+🔹 First rule of debugging: Test the API manually before blaming AutoGen.
+🔹 A 5-line requests.post() test would've instantly told us if OpenRouter was working.
+
+👉 Next time: The first step should always be a manual API test.
+
+💀 3. I Didn’t Force OpenAI’s Headers Correctly at First
+🔴 Mistake:
+I tried setting headers inside llm_config, but AutoGen doesn’t support that field.
+
+✅ Lesson Learned:
+🔹 AutoGen ignores extra keys in llm_config.
+🔹 Headers must be set globally using httpx.Client.
+
+👉 Next time: If AutoGen ignores a setting, try setting it globally instead of inside llm_config.
+
+💀 4. I Assumed OpenAI’s API Was Backward-Compatible
+🔴 Mistake:
+I didn’t realize OpenAI completely changed its API in version 1.x, breaking .create() calls.
+
+✅ Lesson Learned:
+🔹 Whenever OpenAI updates, check breaking changes first.
+🔹 Run:
+
+powershell
+Copia
+Modifica
+pip show openai
+to confirm what version is actually installed.
+
+👉 Next time: Before assuming the bug is in AutoGen, check if OpenAI itself changed.
+
+💀 5. I Didn’t Print Debug Info Early Enough
+🔴 Mistake:
+We wasted time guessing when we could have printed key settings immediately.
+
+✅ Lesson Learned:
+🔹 Print API keys (masked), URLs, headers, and requests early to see if things are being passed correctly.
+🔹 Debugging starts with checking what's actually being sent, not what's in the script.
+
+👉 Next time: Print everything important before the first request.
+
+💀 6. PowerShell’s curl Is Garbage for Testing APIs
+🔴 Mistake:
+Told you to run:
+
+powershell
+Copia
+Modifica
+curl -H "Authorization: Bearer sk-or-v1-..." -X POST https://openrouter.ai/api/v1/chat/completions
+…but PowerShell’s curl is actually Invoke-WebRequest, which needs different syntax.
+
+✅ Lesson Learned:
+🔹 Use Python (requests) instead of PowerShell for API testing.
+🔹 If using PowerShell, run:
+
+powershell
+Copia
+Modifica
+Invoke-RestMethod -Uri "https://openrouter.ai/api/v1/chat/completions" -Headers @{"Authorization"="Bearer sk-or-v1-..."} -Method POST
+👉 Next time: Stick to Python for API tests—PowerShell's syntax is too annoying.
+
+💀 7. I Should’ve Checked AutoGen’s Error Messages Sooner
+🔴 Mistake:
+AutoGen does log errors, but I didn’t check them early enough.
+
+✅ Lesson Learned:
+🔹 Use AutoGen’s logs (autogen.oai.client) to see what’s happening.
+🔹 Example:
+
+python
+Copia
+Modifica
+import logging
+logging.basicConfig(level=logging.DEBUG)
+This forces AutoGen to show more detailed logs.
+
+👉 Next time: Before debugging settings, check AutoGen’s own logs.
+
+
+🚀 Summary of What We Learned
+Issue	Lesson Learned
+Missing fields (api_key, description, model_client_stream)	Check required fields in JSON configs
+API key issues	Use environment variables instead of hardcoding API keys
+Model selection impact	Choose gpt-4o-mini for cost, gpt-4o for reasoning
+model_client_stream missing	Always set "model_client_stream": false
+Premature termination	Ensure termination conditions do not block responses
+Incorrect stop format	Use "stop": ["TERMINATE"] without extra brackets
+Tool execution untested	Explicitly test tools before assuming they work
