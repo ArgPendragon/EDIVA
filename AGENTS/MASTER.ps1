@@ -1,6 +1,6 @@
 # MASTER.ps1
-# 1) Activate virtual environment:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+ # 1) Activate virtual environment:
 . .\.venv\Scripts\activate
-
 # 2) Run your python script
-python .\autogengo.py
+py autogen_go.py
