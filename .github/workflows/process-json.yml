@@ -3,10 +3,13 @@ name: Process JSON files with GPT
 on:
   push:
     paths:
-      - 'cardonaproject/raw/1God/actionstest/*.json'  # I file di input devono trovarsi in questa cartella
+      - 'cardonaproject/raw/1God/actionstest/*.json'
 
 jobs:
   process-json:
+    if: >
+      (contains(join(github.event.head_commit.added, ','), 'cardonaproject/raw/1God/actionstest/') ||
+       contains(join(github.event.head_commit.modified, ','), 'cardonaproject/raw/1God/actionstest/'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -23,5 +26,5 @@ jobs:
 
       - name: Run processing script
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}  # Usa la chiave API di OpenRouter
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python .github/workflows/process_files.py

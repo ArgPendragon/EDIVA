@@ -15,7 +15,7 @@ client = OpenAI(
     default_headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
 )
 
-# Se possibile, aggiorna anche la sessione interna (potrebbe aiutare)
+# Se possibile, aggiorna anche la sessione interna degli header
 try:
     client._client.headers.update({"Authorization": f"Bearer {OPENROUTER_API_KEY}"})
 except Exception as ex:
@@ -106,15 +106,14 @@ def process_file(filepath):
     user_message = "Process the following JSON data:\n" + json.dumps(data)
 
     try:
-        # Passa esplicitamente la chiave API nella chiamata
+        # Effettua la richiesta senza passare 'api_key' come parametro qui
         response = client.chat.completions.create(
             model="openai/gpt-4o-mini",  # Scegli il modello che preferisci
             messages=[
                 {"role": "system", "content": FULL_PROMPT},
                 {"role": "user", "content": user_message}
             ],
-            temperature=0,
-            api_key=OPENROUTER_API_KEY  # Passa esplicitamente la chiave
+            temperature=0
         )
     except Exception as e:
         print(f"Errore nella chiamata a OpenRouter per il file {filepath}: {e}")
