@@ -13,8 +13,9 @@ client = OpenAI(
 )
 
 # Cartelle per i file di input e output
-INPUT_FOLDER = "cardonaproject/raw/1God/actionstest"
-OUTPUT_FOLDER = "cardonaproject/raw/1God/actionstest/processed_chunks"
+INPUT_FOLDER = "./cardonaproject/raw/1God/actionstest"
+OUTPUT_FOLDER = "./cardonaproject/raw/1God/actionstest/processed_chunks"
+
 
 # Crea la cartella di output se non esiste
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
