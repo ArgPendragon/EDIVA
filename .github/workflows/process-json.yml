@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai
+          pip install --upgrade openai
 
       - name: Run processing script
         env:
