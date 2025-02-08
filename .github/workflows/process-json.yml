@@ -7,9 +7,13 @@ on:
 
 jobs:
   process-json:
+    # Verifica che il commit abbia file aggiunti o modificati in quel percorso.
     if: >
-      (contains(join(github.event.head_commit.added, ','), 'cardonaproject/raw/1God/actionstest/') ||
-       contains(join(github.event.head_commit.modified, ','), 'cardonaproject/raw/1God/actionstest/'))
+      github.event.head_commit &&
+      (
+        contains(join(github.event.head_commit.added, ','), 'cardonaproject/raw/1God/actionstest') ||
+        contains(join(github.event.head_commit.modified, ','), 'cardonaproject/raw/1God/actionstest')
+      )
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
