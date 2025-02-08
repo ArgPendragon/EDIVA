@@ -24,4 +24,4 @@ jobs:
       - name: Run processing script
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}  # Usa la chiave API di OpenRouter
-        run: /.github/workflows/python process_files.py
+        run: python .github/workflows/process_files.py
