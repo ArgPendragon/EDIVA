@@ -9,7 +9,7 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 # Inizializza il client con il nuovo pattern (v1.0.0)
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
-    base_url=OPENROUTER_BASE_URL,  # Questo imposta la base API per OpenRouter
+    base_url=OPENROUTER_BASE_URL,  # Imposta la base API per OpenRouter
     default_headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
 )
 
@@ -122,7 +122,15 @@ def process_file(filepath):
     print(f"File processato e salvato: {output_filepath}")
 
 def main():
-    files = [os.path.join(INPUT_FOLDER, f) for f in os.listdir(INPUT_FOLDER) if f.endswith(".json")]
+    try:
+        all_files = os.listdir(INPUT_FOLDER)
+    except Exception as e:
+        print(f"Errore nell'aprire la cartella di input ({INPUT_FOLDER}): {e}")
+        return
+
+    print(f"Contenuto della cartella di input ({os.path.abspath(INPUT_FOLDER)}): {all_files}")
+
+    files = [os.path.join(INPUT_FOLDER, f) for f in all_files if f.endswith(".json")]
     if not files:
         print("Nessun file JSON trovato nella cartella di input.")
         return
