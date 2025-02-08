@@ -11,10 +11,15 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 # Inizializza il client con il nuovo pattern (v1.0.0)
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
-    base_url=OPENROUTER_BASE_URL
+    base_url=OPENROUTER_BASE_URL,
+    default_headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
 )
-# Aggiorna manualmente gli header di default per includere le credenziali
-client.default_headers.update({"Authorization": f"Bearer {OPENROUTER_API_KEY}"})
+
+# Se possibile, aggiorna anche la sessione interna (potrebbe aiutare)
+try:
+    client._client.headers.update({"Authorization": f"Bearer {OPENROUTER_API_KEY}"})
+except Exception as ex:
+    print("Impossibile aggiornare gli header della sessione interna:", ex)
 
 # Cartelle per i file di input e output
 INPUT_FOLDER = "./cardonaproject/raw/1God/actionstest"
@@ -101,14 +106,15 @@ def process_file(filepath):
     user_message = "Process the following JSON data:\n" + json.dumps(data)
 
     try:
-        # Utilizza il nuovo client per effettuare la richiesta
+        # Passa esplicitamente la chiave API nella chiamata
         response = client.chat.completions.create(
             model="openai/gpt-4o-mini",  # Scegli il modello che preferisci
             messages=[
                 {"role": "system", "content": FULL_PROMPT},
                 {"role": "user", "content": user_message}
             ],
-            temperature=0
+            temperature=0,
+            api_key=OPENROUTER_API_KEY  # Passa esplicitamente la chiave
         )
     except Exception as e:
         print(f"Errore nella chiamata a OpenRouter per il file {filepath}: {e}")
