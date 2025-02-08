@@ -2,6 +2,10 @@ import os
 import json
 import openai
 
+# Configurazione OpenRouter
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
 # Cartelle per i file di input e output
 INPUT_FOLDER = "cardonaproject/raw/1God/actionstest"
 OUTPUT_FOLDER = "cardonaproject/raw/1God/actionstest/processed_chunks"
@@ -71,7 +75,6 @@ FULL_PROMPT = (
 )
 
 def process_file(filepath):
-    # Legge il contenuto del file JSON
     with open(filepath, 'r', encoding='utf-8') as f:
         try:
             data = json.load(f)
@@ -79,26 +82,25 @@ def process_file(filepath):
             print(f"Errore nel decodificare il file {filepath}: {e}")
             return
 
-    # Prepara il messaggio utente includendo i dati JSON
     user_message = "Process the following JSON data:\n" + json.dumps(data)
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o-mini",  # Puoi scegliere un altro modello se necessario
+            model="openai/gpt-4-turbo",  # Usa il modello che preferisci, verificando che sia supportato da OpenRouter
+            base_url=OPENROUTER_BASE_URL,  # Specifica la base API per OpenRouter
+            api_key=OPENROUTER_API_KEY,
             messages=[
                 {"role": "system", "content": FULL_PROMPT},
                 {"role": "user", "content": user_message}
             ],
-            temperature=0  # Bassa temperatura per maggiore determinismo
+            temperature=0
         )
     except Exception as e:
-        print(f"Errore nella chiamata a OpenAI per il file {filepath}: {e}")
+        print(f"Errore nella chiamata a OpenRouter per il file {filepath}: {e}")
         return
 
-    # Estrae la risposta testuale
     output_text = response.choices[0].message['content'].strip()
 
-    # Salva l'output in un nuovo file nella cartella di output
     filename = os.path.basename(filepath)
     output_filepath = os.path.join(OUTPUT_FOLDER, filename)
     with open(output_filepath, 'w', encoding='utf-8') as f:
@@ -106,7 +108,6 @@ def process_file(filepath):
     print(f"File processato e salvato: {output_filepath}")
 
 def main():
-    # Ottiene la lista dei file JSON nella cartella di input
     files = [os.path.join(INPUT_FOLDER, f) for f in os.listdir(INPUT_FOLDER) if f.endswith('.json')]
     if not files:
         print("Nessun file JSON trovato nella cartella di input.")
