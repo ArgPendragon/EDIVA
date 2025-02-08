@@ -31,7 +31,7 @@
             "component_version": 1,
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-3.5-turbo",
+              "model": "gpt-4o-mini",
               "api_key": "${OPENAI_API_KEY}",
               "organization": "openrouter",
               "base_url": "https://openrouter.ai/api/v1",
@@ -45,8 +45,8 @@
                 "TERMINATE"
               ],
               "model_info": {
-                "name": "gpt-3.5-turbo",
-                "description": "GPT-3.5-turbo via OpenRouter, supporting function calling.",
+                "name": "gpt-4o-mini",
+                "description": "gpt-4o-mini via OpenRouter, supporting function calling.",
                 "vision": false,
                 "function_calling": true,
                 "json_output": true,
@@ -88,7 +88,7 @@
             "component_version": 1,
             "label": "OpenAIChatCompletionClient",
             "config": {
-              "model": "gpt-3.5-turbo",
+              "model": "gpt-4o-mini",
               "api_key": "${OPENAI_API_KEY}",
               "organization": "openrouter",
               "base_url": "https://openrouter.ai/api/v1",
@@ -102,8 +102,8 @@
                 "TERMINATE"
               ],
               "model_info": {
-                "name": "gpt-3.5-turbo",
-                "description": "GPT-3.5-turbo via OpenRouter, supporting function calling.",
+                "name": "gpt-4o-mini",
+                "description": "gpt-4o-mini via OpenRouter, supporting function calling.",
                 "vision": false,
                 "function_calling": true,
                 "json_output": true,
@@ -128,37 +128,6 @@
         }
       }
     ],
-    "model_client": {
-      "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
-      "component_type": "model",
-      "version": 1,
-      "component_version": 1,
-      "description": "Chat completion client for OpenAI hosted models.",
-      "label": "OpenAIChatCompletionClient",
-      "config": {
-        "model": "gpt-3.5-turbo",
-        "api_key": "${OPENAI_API_KEY}",
-        "organization": "openrouter",
-        "base_url": "https://openrouter.ai/api/v1",
-        "timeout": 90,
-        "temperature": 0.2,
-        "max_tokens": 750,
-        "top_p": 0.9,
-        "frequency_penalty": 0.1,
-        "presence_penalty": 0.2,
-        "stop": [
-          "TERMINATE"
-        ],
-        "model_info": {
-          "name": "gpt-3.5-turbo",
-          "description": "GPT-3.5-turbo via OpenRouter, supporting function calling.",
-          "vision": false,
-          "function_calling": true,
-          "json_output": true,
-          "family": "gpt-35"
-        }
-      }
-    },
     "termination_condition": {
       "provider": "autogen_agentchat.base.OrTerminationCondition",
       "component_type": "termination",

@@ -105,3 +105,63 @@ model_client_stream missing	Always set "model_client_stream": false
 Premature termination	Ensure termination conditions do not block responses
 Incorrect stop format	Use "stop": ["TERMINATE"] without extra brackets
 Tool execution untested	Explicitly test tools before assuming they work
+
+🔪 AutoGen Debugging Kill Bill List
+(aka WTF Went Wrong and How We Fixed It)
+
+☠️ The List
+1️⃣ API Key Not Found (401 Error) – 🔥 FIXED
+✅ Passed api_key inside extra_create_args instead of assuming it's a direct attribute.
+
+2️⃣ OpenRouter Timeout (No Response) – 🔥 FIXED
+✅ Verified OpenRouter is up (ping test worked).
+✅ PowerShell API call worked (Invoke-RestMethod returned models).
+✅ Issue likely inside AutoGen, not OpenRouter.
+
+3️⃣ OpenAIChatCompletionClient Missing 'model' – 🔥 FIXED
+✅ Added model="gpt-4o" when initializing OpenAIChatCompletionClient.
+
+4️⃣ 'api_key' Attribute Missing – 🔥 FIXED
+✅ Used model_client._create_args.get('api_key') instead of model_client.api_key.
+✅ Printed masked key to verify it's being read.
+
+5️⃣ Debugging Info Not Showing in Logs – 🔥 FIXED
+✅ Injected logging.basicConfig(level=logging.DEBUG).
+✅ Wrapped OpenRouter request in debug_request() before sending it.
+
+Ecco un riassunto di ciò che abbiamo imparato da questa lunga sessione di debug:
+
+Interfacce Instabili e Interni Cambiati
+
+OpenAI Client e Headers:
+Abbiamo provato a "monkey-patch" il client OpenAI per forzare la presenza dell’attributo headers, ma la struttura interna della libreria (ad esempio, la posizione e la disponibilità della classe Client) sembra essere cambiata. Gli errori come
+module 'openai._base_client' has no attribute 'Client'
+e
+'OpenAI' object has no attribute 'headers'
+indicano che l’API interna non corrisponde alle nostre aspettative. Questo significa che, per funzionare con OpenRouter, occorre una strategia diversa o aggiornare la versione della libreria, oppure adattare il nostro patching in base al nuovo schema interno.
+
+Differenze tra Modalità Singolo Agente e Team
+
+Singolo Agente:
+Il codice per la modalità singolo agente (con AssistantAgent e UserProxyAgent) funziona per quanto riguarda la configurazione delle variabili e la connessione all’API (almeno fino a quando non si incontra il problema degli header). Il problema principale rimane nel fatto che la libreria OpenAI non espone l’attributo headers come ci aspettavamo.
+
+Team Chat:
+La configurazione del team, derivata dal JSON, includeva campi che il costruttore del team non accetta (come initial_messages e persino il passaggio diretto di configurazioni che contengono il parametro llm_config). Abbiamo dovuto:
+
+Rimuovere manualmente chiavi non supportate.
+Convertire la lista dei partecipanti (inizialmente definita come dizionari) in vere istanze di AssistantAgent, poiché il team si aspetta oggetti dotati di attributi (ad esempio, il campo name).
+Notare che, in modalità team, passare llm_config direttamente a AssistantAgent non è accettato, evidenziando che la modalità team potrebbe richiedere una configurazione diversa o che le API per la creazione degli agenti sono cambiate.
+Integrazione con OpenRouter
+
+Abbiamo confermato che le variabili d’ambiente (come OPENROUTER_API_KEY e OPENROUTER_API_BASE) vengono lette correttamente e che, almeno in parte, la configurazione è corretta.
+Tuttavia, il collegamento tra la libreria OpenAI (modificata internamente) e il client utilizzato da autogen presenta ancora dei problemi non risolti, in particolare per quanto riguarda la gestione degli header nelle richieste.
+Lezione di Fondamenta:
+
+Le librerie sperimentali come autogen e relative integrazioni (OpenRouter, OpenAI) possono cambiare rapidamente. Le interfacce interne non sempre sono stabili e, quando si fa debug, occorre spesso “scavare” nel codice sorgente per capire dove e come intervenire.
+La configurazione in modalità team richiede un adattamento più “manuale” (conversione dei dizionari di configurazione in oggetti) rispetto a quella per il singolo agente.
+In sintesi:
+Abbiamo capito che la nostra integrazione è ostacolata da due grandi ostacoli:
+
+La struttura interna della libreria OpenAI non corrisponde alle nostre ipotesi (problemi con l'attributo headers e con il patching del client).
+La configurazione del team in autogen richiede la trasformazione dei dati (dizionari) in oggetti reali e la rimozione di parametri non supportati (come llm_config), indicando che la modalità team ha un'API diversa da quella del singolo agente.
+Questi sono i punti di sostanza che ci hanno aiutato a comprendere dove intervenire per rendere il sistema funzionante. Sembra che dovremo rivedere l'approccio di patching per OpenAI e ripensare il modo in cui istanziamo e configuriamo i partecipanti nel team.

@@ -1,0 +1,7 @@
+2025-02-08 03:23:46,708 - __main__ - DEBUG - Agent AgentA initialized with system message: Rispondi sempre con una citazione filosofica. Concludi con 'CHE PENSI?'.
+2025-02-08 03:23:46,829 - __main__ - DEBUG - Agent AgentB initialized with system message: Rispondi sempre in inglese con una metafora scientifica. Termina con 'NEXT STEP?'.
+2025-02-08 03:23:46,829 - __main__ - ERROR - Failed to create SelectorGroupChat: SelectorGroupChat.__init__() missing 1 required positional argument: 'model_client'
+Traceback (most recent call last):
+  File "D:\EDIVA\agents\debugr1selector.py", line 73, in <module>
+    team_chat = SelectorGroupChat(
+TypeError: SelectorGroupChat.__init__() missing 1 required positional argument: 'model_client'
