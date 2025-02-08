@@ -1,0 +1,97 @@
+[
+    {
+        "page_type": "main",
+        "image_present": false,
+        "page_number": null,
+        "content": "God Star Dwardu Cardona",
+        "bibliography": [],
+        "captions": []
+    },
+    {
+        "page_type": "main",
+        "image_present": false,
+        "page_number": null,
+        "content": "God Star Copyright © 2019 by Dwardu Cardona. Cover Illustration by Richard M. Smith. All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other non-commercial uses permitted by copyright law. Tellwell Talent www.tellwell.ca ISBN 978-0-2288-1605-8 (Paperback) 978-0-2288-4155-5 (eBook)",
+        "bibliography": [],
+        "captions": []
+    },
+    {
+        "page_type": "main",
+        "image_present": false,
+        "page_number": null,
+        "content": "",
+        "bibliography": [],
+        "captions": []
+    },
+    {
+        "page_type": "index",
+        "image_present": false,
+        "page_number": null,
+        "content": "",
+        "bibliography": [],
+        "captions": [],
+        "index": [
+            {
+                "chapter_number": "Chapter 8",
+                "chapter_title": "Further gratitude must also go to the Publishers of the journals KRONOS and AEON for permission to use various excerpts from my own published works.",
+                "entries": []
+            }
+        ]
+    },
+    {
+        "page_type": "index",
+        "image_present": false,
+        "page_number": null,
+        "content": "",
+        "bibliography": [],
+        "captions": [],
+        "index": [
+            {
+                "chapter_number": "Chapter 1",
+                "chapter_title": "Myths and Legends",
+                "entries": [
+                    {"text": "Myth", "page_number": "1"},
+                    {"text": "Ritual", "page_number": "2"},
+                    {"text": "Drama", "page_number": "4"},
+                    {"text": "Literacy", "page_number": "17"},
+                    {"text": "Perplexity", "page_number": "20"},
+                    {"text": "Mistranslations", "page_number": "22"},
+                    {"text": "Misinterpretations", "page_number": "23"},
+                    {"text": "Contradictions", "page_number": "26"},
+                    {"text": "Comparisons", "page_number": "29"},
+                    {"text": "Diffusion", "page_number": "35"},
+                    {"text": "Divine Revelry", "page_number": "43"},
+                    {"text": "Celestial Divinities", "page_number": "47"},
+                    {"text": "Astronomy in Mythology", "page_number": "65"},
+                    {"text": "The Historicity of the Events", "page_number": "69"}
+                ]
+            },
+            {
+                "chapter_number": "Chapter 2",
+                "chapter_title": "Ancient Astronomical Lore",
+                "entries": [
+                    {"text": "Sacred Images from the Sky", "page_number": "77"},
+                    {"text": "Cosmic Debris", "page_number": "82"},
+                    {"text": "Calendars", "page_number": "83"},
+                    {"text": "Venus", "page_number": "90"},
+                    {"text": "Sun Spots", "page_number": "92"},
+                    {"text": "The Eternal Planet", "page_number": "93"},
+                    {"text": "Guest Stars", "page_number": "95"},
+                    {"text": "The Surya Siddhanta", "page_number": "95"},
+                    {"text": "The Almagest", "page_number": "96"},
+                    {"text": "The Heliocentric System", "page_number": "99"},
+                    {"text": "The Well at Syene", "page_number": "101"},
+                    {"text": "Inclination to the South", "page_number": "102"},
+                    {"text": "The Precession of the Equinoxes", "page_number": "102"},
+                    {"text": "The Crime of Anaxagoras", "page_number": "105"},
+                    {"text": "Shadows Through Space", "page_number": "105"},
+                    {"text": "The Metonic Cycle", "page_number": "107"},
+                    {"text": "A Matter of Gravity.", "page_number": "107"},
+                    {"text": "The Rotation & Revolution of Planets", "page_number": "108"},
+                    {"text": "Planetary Conjunctions", "page_number": "108"},
+                    {"text": "The Periodicity of Comets", "page_number": "108"}
+                ]
+            }
+        ]
+    }
+]

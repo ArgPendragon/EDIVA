@@ -40,9 +40,6 @@ I didn’t realize OpenAI completely changed its API in version 1.x, breaking .c
 🔹 Whenever OpenAI updates, check breaking changes first.
 🔹 Run:
 
-powershell
-Copia
-Modifica
 pip show openai
 to confirm what version is actually installed.
 
@@ -62,9 +59,7 @@ We wasted time guessing when we could have printed key settings immediately.
 🔴 Mistake:
 Told you to run:
 
-powershell
-Copia
-Modifica
+
 curl -H "Authorization: Bearer sk-or-v1-..." -X POST https://openrouter.ai/api/v1/chat/completions
 …but PowerShell’s curl is actually Invoke-WebRequest, which needs different syntax.
 
@@ -73,8 +68,6 @@ curl -H "Authorization: Bearer sk-or-v1-..." -X POST https://openrouter.ai/api/v
 🔹 If using PowerShell, run:
 
 powershell
-Copia
-Modifica
 Invoke-RestMethod -Uri "https://openrouter.ai/api/v1/chat/completions" -Headers @{"Authorization"="Bearer sk-or-v1-..."} -Method POST
 👉 Next time: Stick to Python for API tests—PowerShell's syntax is too annoying.
 
@@ -86,9 +79,6 @@ AutoGen does log errors, but I didn’t check them early enough.
 🔹 Use AutoGen’s logs (autogen.oai.client) to see what’s happening.
 🔹 Example:
 
-python
-Copia
-Modifica
 import logging
 logging.basicConfig(level=logging.DEBUG)
 This forces AutoGen to show more detailed logs.
@@ -181,3 +171,7 @@ Console: una semplice interfaccia utente per interagire da terminale.
 OpenAIChatCompletionClient: il client che interfaccia il modello OpenAI (in questo esempio viene specificato il modello "gpt-4o-2024-08-06", ma naturalmente puoi sostituirlo con quello che preferisci).
 Modularità e Facilità d’Uso
 Il codice mostra come, grazie a autogen-agentchat e autogen-ext, è possibile configurare e far girare rapidamente un’applicazione basata su agenti. Basta definire l’agente, specificare gli strumenti (tool) e comporre il team: il framework si occupa del resto, gestendo il flusso conversazionale in modo automatico.
+
+----
+In other words, we want the SDK to use a custom HTTP client that forces all the required headers 
+----
