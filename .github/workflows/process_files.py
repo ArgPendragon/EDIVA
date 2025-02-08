@@ -9,13 +9,13 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 # Inizializza il client con il nuovo pattern (v1.0.0)
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
-    base_url=OPENROUTER_BASE_URL  # Questo imposta la base API per OpenRouter
+    base_url=OPENROUTER_BASE_URL,  # Questo imposta la base API per OpenRouter
+    default_headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
 )
 
 # Cartelle per i file di input e output
 INPUT_FOLDER = "./cardonaproject/raw/1God/actionstest"
 OUTPUT_FOLDER = "./cardonaproject/raw/1God/actionstest/processed_chunks"
-
 
 # Crea la cartella di output se non esiste
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
