@@ -84,7 +84,7 @@ def process_file(filepath):
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # Puoi scegliere un altro modello se necessario
+            model="gpt-4o-mini",  # Puoi scegliere un altro modello se necessario
             messages=[
                 {"role": "system", "content": FULL_PROMPT},
                 {"role": "user", "content": user_message}

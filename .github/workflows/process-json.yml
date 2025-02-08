@@ -24,4 +24,4 @@ jobs:
       - name: Run processing script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python process_files.py
+        run: \.github\workflows\python process_files.py
