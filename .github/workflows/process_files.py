@@ -4,14 +4,17 @@ from openai import OpenAI
 
 # Configurazione per OpenRouter
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    print("Warning: OPENROUTER_API_KEY is not set!")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 # Inizializza il client con il nuovo pattern (v1.0.0)
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
-    base_url=OPENROUTER_BASE_URL,  # Imposta la base API per OpenRouter
-    default_headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
+    base_url=OPENROUTER_BASE_URL
 )
+# Aggiorna manualmente gli header di default per includere le credenziali
+client.default_headers.update({"Authorization": f"Bearer {OPENROUTER_API_KEY}"})
 
 # Cartelle per i file di input e output
 INPUT_FOLDER = "./cardonaproject/raw/1God/actionstest"
