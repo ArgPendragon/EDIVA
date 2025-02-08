@@ -165,3 +165,19 @@ Abbiamo capito che la nostra integrazione è ostacolata da due grandi ostacoli:
 La struttura interna della libreria OpenAI non corrisponde alle nostre ipotesi (problemi con l'attributo headers e con il patching del client).
 La configurazione del team in autogen richiede la trasformazione dei dati (dizionari) in oggetti reali e la rimozione di parametri non supportati (come llm_config), indicando che la modalità team ha un'API diversa da quella del singolo agente.
 Questi sono i punti di sostanza che ci hanno aiutato a comprendere dove intervenire per rendere il sistema funzionante. Sembra che dovremo rivedere l'approccio di patching per OpenAI e ripensare il modo in cui istanziamo e configuriamo i partecipanti nel team.
+
+Utilizzo delle API Asincrone
+Il codice è completamente asincrono:
+
+Viene definito un tool (la funzione get_weather) che viene integrato come funzionalità dell’agente.
+L’interazione con l’utente avviene in un loop asincrono (usando await Console(stream) per visualizzare lo streaming delle risposte).
+Alla fine, il main viene eseguito con await main(), il che è particolarmente utile se usi un ambiente che supporta l’esecuzione di coroutine (oppure, se usi uno script standalone, potresti dover avviare il main con asyncio.run(main())).
+Integrazione dei Componenti Offerti da AgentChat
+Il quickstart mostra come combinare in modo “plug-and-play” vari componenti:
+
+AssistantAgent: l’agente che gestisce la conversazione.
+RoundRobinGroupChat: il team (anche se in questo esempio c’è un solo agente, la logica round-robin è già integrata) per gestire il flusso di conversazione.
+Console: una semplice interfaccia utente per interagire da terminale.
+OpenAIChatCompletionClient: il client che interfaccia il modello OpenAI (in questo esempio viene specificato il modello "gpt-4o-2024-08-06", ma naturalmente puoi sostituirlo con quello che preferisci).
+Modularità e Facilità d’Uso
+Il codice mostra come, grazie a autogen-agentchat e autogen-ext, è possibile configurare e far girare rapidamente un’applicazione basata su agenti. Basta definire l’agente, specificare gli strumenti (tool) e comporre il team: il framework si occupa del resto, gestendo il flusso conversazionale in modo automatico.
