@@ -24,9 +24,9 @@ def run_ocr_on_image(pil_img, config='--oem 3 --psm 6 -c preserve_interword_spac
 
 def remove_page_numbers_from_biblio(text):
     """
-    Remove leading page numbers from bibliography entries.
-    Assumes each entry is on a separate line and begins with a number,
-    optionally followed by punctuation (like . or -) and spaces.
+    Remove any leading page numbers from bibliography entries.
+    Assumes each entry starts with a number optionally followed by punctuation (e.g. '.' or '-')
+    and whitespace.
     """
     cleaned_lines = []
     for line in text.splitlines():
@@ -59,19 +59,19 @@ def sequential_number_score(text):
                 score += 1
                 expected += 1
             else:
-                # break on first non-sequential number
+                # stop counting if the sequence is broken
                 break
     return score
 
 def process_bibliography_page(image_path, page_info):
     """
     Process the bibliography area of a single page:
-      - Crop the area below separator_y.
+      - Crop the area below the provided separator_y.
       - Run three OCR passes with different configurations.
-      - Choose the best result based on a combined heuristic:
-            (sequential score, digit line count, text length)
-      - Remove leading page numbers from the result.
-      - Return the cleaned bibliography text.
+      - Choose the best result using a composite heuristic:
+            (sequential numbering score, digit line count, overall text length)
+      - Remove any spurious leading page numbers.
+      - Return the OCR text.
     """
     try:
         original_image = Image.open(image_path)
@@ -89,13 +89,13 @@ def process_bibliography_page(image_path, page_info):
         if not (0 < separator_y < height):
             logging.warning(f"separator_y value {separator_y} is out of bounds for image height {height}.")
             return ""
-        # Crop the bibliography region (everything below separator_y)
+        # Crop bibliography region (everything below separator_y)
         biblio_region = original_image.crop((0, separator_y, width, height))
     except Exception as e:
         logging.error(f"Error processing bibliography region: {e}")
         return ""
     
-    # Define three OCR configurations (these can be tweaked further)
+    # Run OCR with three different parameter sets.
     ocr_configs = [
         '--oem 3 --psm 6 -c preserve_interword_spaces=1',
         '--oem 3 --psm 4 -c preserve_interword_spaces=1',
@@ -107,21 +107,90 @@ def process_bibliography_page(image_path, page_info):
         text = run_ocr_on_image(biblio_region, config=config)
         ocr_results.append(text)
     
-    # Use a composite heuristic: primary factor is sequential numbering,
-    # then digit-line count, and finally overall text length.
+    # Choose the best OCR result based on our composite heuristic.
     best_text = max(ocr_results, key=lambda x: (sequential_number_score(x), digit_line_count(x), len(x)))
     
-    # Remove any leading page numbers from each bibliography entry.
+    # Remove any residual leading page numbers.
     cleaned_text = remove_page_numbers_from_biblio(best_text)
-    # Clean up extra spaces/newlines.
+    # Collapse extra spaces/newlines.
     cleaned_text = "\n".join([line.strip() for line in cleaned_text.splitlines() if line.strip()])
     return cleaned_text
 
+def parse_biblio_entries(text):
+    """
+    Parse the OCR output text into a list of bibliography entries.
+    Each nonempty line is assumed to be one entry.
+    """
+    entries = [line.strip() for line in text.splitlines() if line.strip()]
+    return entries
+
+def check_bibliography_entries(entries, page_info, reset_points):
+    """
+    Check that the bibliography numbering appears correct.
+      - If the page is a reset point (i.e. its page number is in reset_points),
+        the first entry should start with "1.".
+      - In any case, check that the entries are sequential.
+    Logs warnings if inconsistencies are detected.
+    """
+    page_num = page_info.get("page_number")
+    try:
+        page_num_int = int(page_num)
+    except Exception:
+        page_num_int = None
+
+    # If this page should start a new bibliography sequence, check that the first entry starts with 1.
+    if page_num_int and page_num_int in reset_points:
+        if entries:
+            m = re.match(r'^(\d+)', entries[0])
+            if m:
+                first_number = int(m.group(1))
+                if first_number != 1:
+                    logging.warning(f"Page {page_num_int}: Expected bibliography to reset to 1 but first entry starts with {first_number}.")
+            else:
+                logging.warning(f"Page {page_num_int}: Expected a numeric start in bibliography but got: {entries[0]}")
+    
+    # Check overall sequential numbering.
+    expected = 1
+    for entry in entries:
+        m = re.match(r'^(\d+)', entry)
+        if m:
+            number = int(m.group(1))
+            if number != expected:
+                logging.warning(f"Page {page_num_int}: Expected entry number {expected} but found {number} in: {entry}")
+                expected = number + 1
+            else:
+                expected += 1
+        else:
+            logging.warning(f"Page {page_num_int}: Entry does not start with a number: {entry}")
+
+def extract_reset_points(book_index):
+    """
+    Look through the index pages in the original book index to extract bibliography reset points.
+    Assumes that in index pages (page_type == "index") the parsed 'index' field contains chapters
+    with entries whose 'page_number' marks the bibliography reset for that chapter.
+    Returns a set of page numbers (as integers) where the bibliography numbering should reset.
+    """
+    reset_points = set()
+    for page in book_index:
+        if page.get("page_type") == "index" and "index" in page:
+            for chapter in page["index"]:
+                for entry in chapter.get("entries", []):
+                    try:
+                        pnum = int(entry.get("page_number", "0"))
+                        reset_points.add(pnum)
+                    except Exception:
+                        continue
+    return reset_points
+
 def process_bibliography(input_dir):
     """
-    Process the bibliography portion of each page listed in bookindex.json.
-    For pages with a 'separator_y' defined, process the bibliography using multi-scan OCR.
-    The new index (with updated bibliography fields) is saved in a separate file.
+    Process all pages with a bibliography region in the provided bookindex.
+      - For each page with a defined separator_y, process the bibliography area with multi‑scan OCR.
+      - Parse the OCR result into a list of bibliography entries.
+      - Check the numbering using reset points extracted from index pages.
+      - Build a new index structure (without altering the original bookindex.json).
+      - Save the new data into bookindexbiblio.json.
+    Returns both the original and new book indexes.
     """
     script_dir = Path(input_dir)
     input_file = script_dir / "bookindex.json"
@@ -138,12 +207,16 @@ def process_bibliography(input_dir):
         logging.error(f"ERROR loading bookindex.json: {e}")
         return None
 
-    new_book_index = []  # We'll create a new structure with updated bibliography only
+    # Extract reset page numbers from index pages.
+    reset_points = extract_reset_points(original_book_index)
+    logging.info(f"Detected bibliography reset points (from index pages): {sorted(reset_points)}")
+
+    new_book_index = []  # New structure with updated bibliography field (as a single formatted string)
     total_pages = len(original_book_index)
     logging.info(f"Processing bibliography for {total_pages} page(s).")
     
     for idx, page_info in enumerate(original_book_index, start=1):
-        new_page_info = dict(page_info)  # Copy other metadata
+        new_page_info = dict(page_info)  # Copy metadata
         image_file = page_info.get("file", "")
         image_path = script_dir / image_file
         if not image_path.exists():
@@ -151,8 +224,13 @@ def process_bibliography(input_dir):
             new_page_info["bibliography"] = ""
         elif page_info.get("separator_y") is not None:
             logging.info(f"Processing bibliography for {image_file} ({idx}/{total_pages})")
-            biblio_text = process_bibliography_page(image_path, page_info)
-            new_page_info["bibliography"] = biblio_text
+            ocr_text = process_bibliography_page(image_path, page_info)
+            entries = parse_biblio_entries(ocr_text)
+            # Check numbering consistency against reset points.
+            check_bibliography_entries(entries, page_info, reset_points)
+            # Format as a single string (one entry per line)
+            formatted_biblio = "\n".join(entries)
+            new_page_info["bibliography"] = formatted_biblio
         else:
             new_page_info["bibliography"] = ""
         new_book_index.append(new_page_info)
@@ -169,55 +247,27 @@ def process_bibliography(input_dir):
 def compare_bibliography(original_index, new_index):
     """
     Compare the bibliography fields from the original and new book indexes.
-    Logs per-page metrics and a summary:
-      - Digit-line count: Number of lines starting with a digit.
-      - Sequential numbering score: How many consecutive numbers starting with 1.
-      - Text length.
+    For each page, log:
+      - The number of bibliography entries (as determined by splitting the string by newline).
+      - The first entry (which should indicate a reset if appropriate).
     """
-    total_pages = len(original_index)
-    improved_seq = 0
-    improved_digit = 0
-    improved_length = 0
     compared_pages = 0
-
     for i, (orig_page, new_page) in enumerate(zip(original_index, new_index)):
-        orig_text = orig_page.get("bibliography", "")
-        new_text = new_page.get("bibliography", "")
-        # Only compare pages that have a bibliography region (either original or new)
-        if not (orig_text or new_text):
+        orig_biblio = orig_page.get("bibliography", "")
+        orig_entries = parse_biblio_entries(orig_biblio)
+        new_biblio = new_page.get("bibliography", "")
+        new_entries = parse_biblio_entries(new_biblio)
+        if not (orig_entries or new_entries):
             continue
-
-        orig_digit = digit_line_count(orig_text)
-        new_digit = digit_line_count(new_text)
-        orig_seq = sequential_number_score(orig_text)
-        new_seq = sequential_number_score(new_text)
-        orig_len = len(orig_text)
-        new_len = len(new_text)
         compared_pages += 1
-
-        logging.info(f"Page {i+1}:")
-        logging.info(f"  Original -> digit_count: {orig_digit}, sequential_score: {orig_seq}, length: {orig_len}")
-        logging.info(f"  New      -> digit_count: {new_digit}, sequential_score: {new_seq}, length: {new_len}")
-
-        if new_seq > orig_seq:
-            improved_seq += 1
-            logging.info("  Improvement: Better sequential numbering.")
-        if new_digit > orig_digit:
-            improved_digit += 1
-            logging.info("  Improvement: More bibliography lines starting with digits.")
-        if new_len > orig_len:
-            improved_length += 1
-            logging.info("  Improvement: Longer OCR output (more content captured).")
-    
-    logging.info("Comparison Summary:")
-    logging.info(f"  Pages compared: {compared_pages} out of {total_pages}")
-    logging.info(f"  Pages with improved sequential numbering: {improved_seq}")
-    logging.info(f"  Pages with more digit-leading lines: {improved_digit}")
-    logging.info(f"  Pages with longer text: {improved_length}")
+        logging.info(f"Page {i+1} comparison:")
+        logging.info(f"  Original: {len(orig_entries)} entries. First: {orig_entries[0] if orig_entries else 'N/A'}")
+        logging.info(f"  New     : {len(new_entries)} entries. First: {new_entries[0] if new_entries else 'N/A'}")
+    logging.info(f"Compared bibliography on {compared_pages} page(s).")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Bibliography OCR Script: Multi-scan OCR for improved bibliography extraction and page number removal."
+        description="Bibliography OCR Script: Multi-scan OCR with formatted single-string bibliography output and index‑based numbering checks."
     )
     parser.add_argument("--input", default=".", help="Directory containing images and bookindex.json")
     args = parser.parse_args()
