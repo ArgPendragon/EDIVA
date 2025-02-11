@@ -124,7 +124,7 @@ def process_page(image_path, page_info):
           2. Extract the bibliography region (if a separator_y is provided) and mask it.
           3. Run OCR on the remaining (masked) image to get the main text.
           4. Detect headers from the main text using a simple uppercase rule.
-      - Clean out newline characters in the final text.
+      - Clean out extraneous whitespace from the final text while preserving Markdown formatting.
     """
     try:
         original_image = Image.open(image_path)
@@ -160,7 +160,8 @@ def process_page(image_path, page_info):
         if internal_caption_img is not None:
             text_internal = run_ocr_on_image(internal_caption_img)
             if is_valid_caption(text_internal):
-                captions.append({"source": "internal", "text": text_internal.replace("\n", " ").strip()})
+                # Preserve newlines and spacing for Markdown formatting.
+                captions.append({"source": "internal", "text": text_internal.strip()})
                 exclusion_regions.append(coords)
         else:
             logging.error("Internal caption region could not be cropped.")
@@ -171,7 +172,8 @@ def process_page(image_path, page_info):
         if external_caption_img is not None:
             text_external = run_ocr_on_image(external_caption_img)
             if is_valid_caption(text_external):
-                captions.append({"source": "external", "text": text_external.replace("\n", " ").strip()})
+                # Preserve newlines and spacing for Markdown formatting.
+                captions.append({"source": "external", "text": text_external.strip()})
                 exclusion_regions.append(coords)
         else:
             logging.error("External caption region could not be cropped.")
@@ -185,8 +187,8 @@ def process_page(image_path, page_info):
             if 0 < separator_y < height:
                 biblio_region = original_image.crop((0, separator_y, width, height))
                 bibliography_raw = run_ocr_on_image(biblio_region)
-                # Clean newlines and extra spaces.
-                bibliography_text = " ".join(bibliography_raw.replace("\n", " ").split())
+                # Just strip extra whitespace, preserving any Markdown formatting (e.g. newlines).
+                bibliography_text = bibliography_raw.strip()
                 exclusion_regions.append([0, separator_y, width, height - separator_y])
             else:
                 logging.warning(f"separator_y value {separator_y} is out of bounds for image height {height}.")
@@ -201,7 +203,8 @@ def process_page(image_path, page_info):
     main_text_image = mask_exclusion_areas(original_image, exclusion_regions)
     main_text_raw = run_ocr_on_image(main_text_image)
     headers = detect_headers_simple(main_text_raw)
-    main_text = " ".join(main_text_raw.replace("\n", " ").split())
+    # Preserve the original newlines and spacing for Markdown formatting.
+    main_text = main_text_raw.strip()
 
     # Build output with main_text listed first.
     page_output = {
@@ -279,7 +282,7 @@ def process_images(input_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Refined OCR Script: Single-String Bibliography, Simple Header Detection, and Cleaned Text Output"
+        description="Refined OCR Script: Single-String Bibliography, Simple Header Detection, and Cleaned Text Output (Markdown formatting preserved)"
     )
     parser.add_argument("--input", default=".", help="Directory containing images and bookindex.json")
     args = parser.parse_args()
