@@ -1,0 +1,470 @@
+[
+    {
+        "page_type": "index",
+        "page_number": null,
+        "index": [
+            {
+                "chapter_number": "Chapter 1",
+                "chapter_title": "Myths and Legends",
+                "entries": [
+                    {
+                        "text": "Myth",
+                        "page_number": "1"
+                    },
+                    {
+                        "text": "Ritual",
+                        "page_number": "2"
+                    },
+                    {
+                        "text": "Drama",
+                        "page_number": "4"
+                    },
+                    {
+                        "text": "Literacy",
+                        "page_number": "17"
+                    },
+                    {
+                        "text": "Perplexity",
+                        "page_number": "20"
+                    },
+                    {
+                        "text": "Mistranslations",
+                        "page_number": "22"
+                    },
+                    {
+                        "text": "Misinterpretations",
+                        "page_number": "23"
+                    },
+                    {
+                        "text": "Contradictions",
+                        "page_number": "26"
+                    },
+                    {
+                        "text": "Comparisons",
+                        "page_number": "29"
+                    },
+                    {
+                        "text": "Diffusion",
+                        "page_number": "35"
+                    },
+                    {
+                        "text": "Divine Revelry",
+                        "page_number": "43"
+                    },
+                    {
+                        "text": "Celestial Divinities",
+                        "page_number": "47"
+                    },
+                    {
+                        "text": "Astronomy in Mythology",
+                        "page_number": "65"
+                    },
+                    {
+                        "text": "The Historicity of the Events",
+                        "page_number": "69"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 2",
+                "chapter_title": "Ancient Astronomical Lore",
+                "entries": [
+                    {
+                        "text": "Sacred Images from the Sky",
+                        "page_number": "77"
+                    },
+                    {
+                        "text": "Cosmic Debris",
+                        "page_number": "82"
+                    },
+                    {
+                        "text": "Calendars",
+                        "page_number": "83"
+                    },
+                    {
+                        "text": "Venus",
+                        "page_number": "90"
+                    },
+                    {
+                        "text": "Sun Spots",
+                        "page_number": "92"
+                    },
+                    {
+                        "text": "The Eternal Planet",
+                        "page_number": "93"
+                    },
+                    {
+                        "text": "Guest Stars",
+                        "page_number": "95"
+                    },
+                    {
+                        "text": "The Surya Siddhanta",
+                        "page_number": "95"
+                    },
+                    {
+                        "text": "The Almagest",
+                        "page_number": "96"
+                    },
+                    {
+                        "text": "The Heliocentric System",
+                        "page_number": "99"
+                    },
+                    {
+                        "text": "The Well at Syene",
+                        "page_number": "101"
+                    },
+                    {
+                        "text": "Inclination to the South",
+                        "page_number": "102"
+                    },
+                    {
+                        "text": "The Precession of the Equinoxes",
+                        "page_number": "102"
+                    },
+                    {
+                        "text": "The Crime of Anaxagoras",
+                        "page_number": "105"
+                    },
+                    {
+                        "text": "Shadows Through Space",
+                        "page_number": "105"
+                    },
+                    {
+                        "text": "The Metonic Cycle",
+                        "page_number": "107"
+                    },
+                    {
+                        "text": "A Matter of Gravity.",
+                        "page_number": "107"
+                    },
+                    {
+                        "text": "The Rotation & Revolution of Planets",
+                        "page_number": "108"
+                    },
+                    {
+                        "text": "Planetary Conjunctions",
+                        "page_number": "108"
+                    },
+                    {
+                        "text": "The Periodicity of Comets",
+                        "page_number": "108"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "page_type": "index",
+        "page_number": null,
+        "index": [
+            {
+                "chapter_number": "Chapter 3",
+                "chapter_title": "The Sun Star",
+                "entries": [
+                    {
+                        "text": "The Most Prominent of the Planets",
+                        "page_number": "120"
+                    },
+                    {
+                        "text": "Stella Solis",
+                        "page_number": "121"
+                    },
+                    {
+                        "text": "(Mul) Lu-Bat Sag-US",
+                        "page_number": "122"
+                    },
+                    {
+                        "text": "The Light of the Gods,",
+                        "page_number": "125"
+                    },
+                    {
+                        "text": "Ningirsu.",
+                        "page_number": "128"
+                    },
+                    {
+                        "text": "The True Sun",
+                        "page_number": "131"
+                    },
+                    {
+                        "text": "The Saturnian Sun",
+                        "page_number": "133"
+                    },
+                    {
+                        "text": "First Interlude",
+                        "page_number": "137"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 4",
+                "chapter_title": "The Sun of Night",
+                "entries": [
+                    {
+                        "text": "The Egyptian Night Sun",
+                        "page_number": "141"
+                    },
+                    {
+                        "text": "The Babylonian Exemplar",
+                        "page_number": "147"
+                    },
+                    {
+                        "text": "Nocturnal Deities",
+                        "page_number": "148"
+                    },
+                    {
+                        "text": "The God of Saturday Night",
+                        "page_number": "149"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 5",
+                "chapter_title": "Dead Suns",
+                "entries": [
+                    {
+                        "text": "Dark Stars",
+                        "page_number": "154"
+                    },
+                    {
+                        "text": "Potted Stars",
+                        "page_number": "154"
+                    },
+                    {
+                        "text": "Failed Stars",
+                        "page_number": "155"
+                    },
+                    {
+                        "text": "Proto-Stars",
+                        "page_number": "157"
+                    },
+                    {
+                        "text": "Red Dwarf Star",
+                        "page_number": "157"
+                    },
+                    {
+                        "text": "Failed Model",
+                        "page_number": "159"
+                    },
+                    {
+                        "text": "Brown Dwarfs",
+                        "page_number": "160"
+                    },
+                    {
+                        "text": "Second Interlude",
+                        "page_number": "162"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "page_type": "index",
+        "page_number": null,
+        "index": [
+            {
+                "chapter_number": "Chapter 6",
+                "chapter_title": "Primordial Satellite",
+                "entries": [
+                    {
+                        "text": "Starlight: Star Bright",
+                        "page_number": "165"
+                    },
+                    {
+                        "text": "Janus",
+                        "page_number": "165"
+                    },
+                    {
+                        "text": "Ouranos",
+                        "page_number": "168"
+                    },
+                    {
+                        "text": "Stella Proxima",
+                        "page_number": "172"
+                    },
+                    {
+                        "text": "The Dogon Mystery.",
+                        "page_number": "173"
+                    },
+                    {
+                        "text": "The Star of Nine Moons__",
+                        "page_number": "4"
+                    },
+                    {
+                        "text": "Third Interlude",
+                        "page_number": "176"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 7",
+                "chapter_title": "Planetary Shuffle",
+                "entries": [
+                    {
+                        "text": "The Unstable Solar System.",
+                        "page_number": "179"
+                    },
+                    {
+                        "text": "Former Orbits",
+                        "page_number": "185"
+                    },
+                    {
+                        "text": "The Shifting Earth",
+                        "page_number": "187"
+                    },
+                    {
+                        "text": "The Habitable Zone",
+                        "page_number": "190"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 8",
+                "chapter_title": "The Solitary Deity",
+                "entries": [
+                    {
+                        "text": "Prajapati",
+                        "page_number": "196"
+                    },
+                    {
+                        "text": "Four from the “Primitive” World.",
+                        "page_number": "196"
+                    },
+                    {
+                        "text": "Fourth Interlude",
+                        "page_number": "197"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 9",
+                "chapter_title": "The Immobile God",
+                "entries": [
+                    {
+                        "text": "The Sabbath Star",
+                        "page_number": "204"
+                    },
+                    {
+                        "text": "The God of the Jews",
+                        "page_number": "205"
+                    },
+                    {
+                        "text": "The Trouble With Amos___ C",
+                        "page_number": "206"
+                    },
+                    {
+                        "text": "The Stable One",
+                        "page_number": "207"
+                    },
+                    {
+                        "text": "The God of Jerusalem",
+                        "page_number": "208"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "page_type": "index",
+        "page_number": null,
+        "index": [
+            {
+                "chapter_number": "Chapter 10",
+                "chapter_title": "The Polar Station",
+                "entries": [
+                    {
+                        "text": "A Choice of Models",
+                        "page_number": "220"
+                    },
+                    {
+                        "text": "El—Eloah—Elohim",
+                        "page_number": "22"
+                    },
+                    {
+                        "text": "The Left Hand of God__",
+                        "page_number": "225"
+                    },
+                    {
+                        "text": "The Sacred Quarter",
+                        "page_number": "227"
+                    },
+                    {
+                        "text": "The Stars of Anu__",
+                        "page_number": "229"
+                    },
+                    {
+                        "text": "Unas and the Circumpolar Stars",
+                        "page_number": "230"
+                    },
+                    {
+                        "text": "The Egyptian Creed of Resurrection_____—",
+                        "page_number": "230"
+                    },
+                    {
+                        "text": "The Guardian of the Pole",
+                        "page_number": "231"
+                    },
+                    {
+                        "text": "Dhruva",
+                        "page_number": "232"
+                    },
+                    {
+                        "text": "The Genie of the Pivot C",
+                        "page_number": "2377"
+                    },
+                    {
+                        "text": "The European Evidence",
+                        "page_number": "239"
+                    },
+                    {
+                        "text": "The Sun of the Centre and Other Echoes__",
+                        "page_number": "240"
+                    },
+                    {
+                        "text": "Sinterklaas",
+                        "page_number": "241"
+                    },
+                    {
+                        "text": "Fifth Interlude",
+                        "page_number": "243"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 11",
+                "chapter_title": "Testing the Model",
+                "entries": [
+                    {
+                        "text": "The Demands of a Theory",
+                        "page_number": "248"
+                    },
+                    {
+                        "text": "The Lithospheric Bulge",
+                        "page_number": "253"
+                    },
+                    {
+                        "text": "The Nature of Tidal Forces",
+                        "page_number": "256"
+                    },
+                    {
+                        "text": "The Astronomical Dilemma.",
+                        "page_number": "259"
+                    }
+                ]
+            },
+            {
+                "chapter_number": "Chapter 12",
+                "chapter_title": ".            In the Beginning",
+                "entries": [
+                    {
+                        "text": "Being and not Being",
+                        "page_number": "261"
+                    },
+                    {
+                        "text": "Tohu wa Bohu",
+                        "page_number": "261"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -88,8 +88,8 @@ client = OpenAI(
 # ------------------------------------------------------------------------------
 # Define input and output directories
 # ------------------------------------------------------------------------------
-INPUT_FOLDER = "D:/EDIVA/cardonaproject/processed/1God/slim"   # Folder with JSON files
-OUTPUT_FOLDER = "D:/EDIVA/cardonaproject/tradotto/1God"  # Where processed files will be saved
+INPUT_FOLDER = "D:/EDIVA/cardonaproject/processed/1God/index"   # Folder with JSON files
+OUTPUT_FOLDER = "D:/EDIVA/cardonaproject/tradotto/1God/index"  # Where processed files will be saved
 
 
 

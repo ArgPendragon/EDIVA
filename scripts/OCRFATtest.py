@@ -6,9 +6,9 @@ import logging
 import numpy as np
 import argparse
 import re
+import markdown  # pip install markdown
 from pathlib import Path
 from PIL import Image
-from collections import defaultdict
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -34,11 +34,6 @@ def normalize_coords(coords):
     else:
         logging.error(f"Unknown coords format: {coords}")
         return None
-
-def is_valid_caption(text):
-    """Check if the OCR'd caption contains at least one word of 4 or more letters."""
-    words = re.findall(r'\b\w{4,}\b', text)
-    return len(words) > 0
 
 def crop_region(image, coords):
     """Crop a region from a PIL image using normalized coordinates."""
@@ -75,56 +70,72 @@ def run_ocr_on_image(pil_img, config='--oem 3 --psm 6 -c preserve_interword_spac
         logging.error(f"OCR error: {e}")
         return ""
 
-def detect_headers_simple(text):
+def convert_markdown_to_html(text):
     """
-    A simple header detection routine:
-      - Splits text into lines.
-      - If a line is nonempty, longer than 3 characters, and completely uppercase,
-        it is flagged as a header.
-    Returns a list of header strings.
+    Converte un testo formattato in markdown in HTML.
+    Utilizza l'estensione "nl2br" per trasformare le nuove righe in <br/>.
     """
-    headers = []
-    for line in text.splitlines():
-        stripped = line.strip()
-        if stripped and len(stripped) > 3 and stripped == stripped.upper():
-            headers.append(stripped)
-    return headers
+    html = markdown.markdown(text, extensions=["nl2br"])
+    return html
 
-def parse_index_page(index_text):
+def convert_page_markdown(page):
     """
-    Parse OCR text from an index page to extract chapter information.
-    If no chapters are found, the calling code may fall back to standard OCR.
+    Converte il testo della pagina in HTML:
+      - Se il campo "content" (inizialmente uguale a "main_text") non è vuoto e non è
+        già stato convertito (flag "markdown_converted"), allora lo converte in HTML.
+      - Il risultato viene salvato in "content" e viene impostato il flag "markdown_converted".
+      - Rimuove eventualmente il campo "main_text".
     """
-    lines = [line.strip() for line in index_text.splitlines() if line.strip()]
-    chapters = []
-    current_chapter = None
-    for line in lines:
-        if re.match(r'^Chapter\s+\d+', line, re.IGNORECASE):
-            if current_chapter:
-                chapters.append(current_chapter)
-            current_chapter = {"chapter_number": line, "chapter_title": "", "entries": []}
-        elif current_chapter and not current_chapter.get("chapter_title"):
-            current_chapter["chapter_title"] = line
-        else:
-            m = re.search(r'(\d+)$', line)
-            if m and current_chapter:
-                page_number = m.group(1)
-                entry_text = line[:m.start()].strip()
-                current_chapter["entries"].append({"text": entry_text, "page_number": page_number})
-    if current_chapter:
-        chapters.append(current_chapter)
-    return chapters
+    content = page.get("content", "")
+    if not content:
+        return page
+    if page.get("markdown_converted", False):
+        return page
+
+    new_content = convert_markdown_to_html(content)
+    page["content"] = new_content
+    page["markdown_converted"] = True
+    page.pop("main_text", None)
+    return page
+
+def format_header(text):
+    """
+    Format a header using HTML markup.
+    In questo esempio il testo viene centrato, ingrandito e reso in grassetto,
+    con newline prima e dopo.
+    """
+    return "\n\n<b><center style='font-size: larger;'>" + text + "</center></b>\n\n"
+
+def process_record(record):
+    """
+    Riordina le coordinate per le didascalie:
+      - Se esiste già "caption_coordinates", elimina le altre.
+      - Altrimenti, se esiste "internal_caption_coordinates" o "external_caption_coordinates",
+        assegna il primo disponibile a "caption_coordinates" e elimina gli altri.
+    """
+    if record.get("caption_coordinates"):
+        record.pop("internal_caption_coordinates", None)
+        record.pop("external_caption_coordinates", None)
+    else:
+        if record.get("internal_caption_coordinates"):
+            record["caption_coordinates"] = record["internal_caption_coordinates"]
+        elif record.get("external_caption_coordinates"):
+            record["caption_coordinates"] = record["external_caption_coordinates"]
+        record.pop("internal_caption_coordinates", None)
+        record.pop("external_caption_coordinates", None)
+    return record
 
 def process_page(image_path, page_info):
     """
-    Process a single page image.
-      - For index pages: if chapter info is extracted use it; otherwise, fall back to normal OCR.
-      - For main pages:
-          1. Extract caption areas (internal/external) and add valid ones.
-          2. Extract the bibliography region (if a separator_y is provided) and mask it.
-          3. Run OCR on the remaining (masked) image to get the main text.
-          4. Detect headers from the main text using a simple uppercase rule.
-      - Clean out extraneous whitespace from the final text while preserving Markdown formatting.
+    Processa una singola pagina:
+      - Per le pagine indice, esegue l'OCR e restituisce il testo indice.
+      - Per le pagine principali:
+          1. Se presente "caption_coordinates", estrae l'area didascalia e ne esegue l'OCR.
+          2. Se è presente un "separator_y", esclude l'area sottostante.
+          3. Maschera le aree escluse (didascalia, area sotto separator_y ed eventuali aree immagine)
+             e esegue l'OCR sul testo principale.
+          4. Rileva e formatta gli header nel testo principale.
+      - Imposta il campo "content" uguale al testo principale (con header formattati) e lo converte in HTML.
     """
     try:
         original_image = Image.open(image_path)
@@ -136,93 +147,108 @@ def process_page(image_path, page_info):
     image_present = page_info.get("type", "image-absent") == "image-present"
     page_type = page_info.get("page_type", "main")
 
-    # Special handling for index (or introductory) pages.
+    # Gestione per pagine indice
     if page_type == "index":
         index_text = run_ocr_on_image(original_image)
-        chapters = parse_index_page(index_text)
-        if chapters:
-            return {
-                "page_type": page_type,
-                "page_number": page_number,
-                "index": chapters
-            }
-        else:
-            logging.info("Index page parsing failed, reverting to normal OCR.")
-            page_type = "main"
+        page_output = {
+            "page_type": page_type,
+            "page_number": page_number,
+            "index_text": index_text
+        }
+        page_output["content"] = index_text
+        page_output = convert_page_markdown(page_output)
+        return page_output
 
     captions = []
     exclusion_regions = []
 
-    # Process caption areas.
-    if page_info.get("internal_caption_coordinates"):
-        coords = page_info["internal_caption_coordinates"]
-        internal_caption_img = crop_region(original_image, coords)
-        if internal_caption_img is not None:
-            text_internal = run_ocr_on_image(internal_caption_img)
-            if is_valid_caption(text_internal):
-                # Preserve newlines and spacing for Markdown formatting.
-                captions.append({"source": "internal", "text": text_internal.strip()})
+    # Elaborazione dell'area didascalia (se presente, unificata in "caption_coordinates")
+    if page_info.get("caption_coordinates"):
+        coords = page_info["caption_coordinates"]
+        caption_img = crop_region(original_image, coords)
+        if caption_img is not None:
+            text_caption = run_ocr_on_image(caption_img)
+            if text_caption:
+                captions.append({"source": "caption", "text": text_caption.replace("\n", " ").strip()})
                 exclusion_regions.append(coords)
         else:
-            logging.error("Internal caption region could not be cropped.")
+            logging.error("Caption region could not be cropped.")
 
-    if page_info.get("external_caption_coordinates"):
-        coords = page_info["external_caption_coordinates"]
-        external_caption_img = crop_region(original_image, coords)
-        if external_caption_img is not None:
-            text_external = run_ocr_on_image(external_caption_img)
-            if is_valid_caption(text_external):
-                # Preserve newlines and spacing for Markdown formatting.
-                captions.append({"source": "external", "text": text_external.strip()})
-                exclusion_regions.append(coords)
-        else:
-            logging.error("External caption region could not be cropped.")
-
-    # Process bibliography area.
-    bibliography_text = ""
+    # Esclusione dell'area sotto separator_y (senza estrarne il testo)
     if page_info.get("separator_y") is not None:
         try:
             separator_y = int(page_info["separator_y"])
             width, height = original_image.size
             if 0 < separator_y < height:
-                biblio_region = original_image.crop((0, separator_y, width, height))
-                bibliography_raw = run_ocr_on_image(biblio_region)
-                # Just strip extra whitespace, preserving any Markdown formatting (e.g. newlines).
-                bibliography_text = bibliography_raw.strip()
                 exclusion_regions.append([0, separator_y, width, height - separator_y])
             else:
                 logging.warning(f"separator_y value {separator_y} is out of bounds for image height {height}.")
         except Exception as e:
-            logging.error(f"Error processing bibliography region: {e}")
+            logging.error(f"Error processing separator_y: {e}")
 
-    # Exclude image areas (if any).
+    # Esclusione di ulteriori aree immagine, se presenti.
     if page_info.get("image_coordinates"):
         exclusion_regions.append(page_info["image_coordinates"])
 
-    # Process main text.
+    # Elaborazione del testo principale escludendo le regioni sopra.
     main_text_image = mask_exclusion_areas(original_image, exclusion_regions)
     main_text_raw = run_ocr_on_image(main_text_image)
-    headers = detect_headers_simple(main_text_raw)
-    # Preserve the original newlines and spacing for Markdown formatting.
-    main_text = main_text_raw.strip()
+    main_text = " ".join(main_text_raw.replace("\n", " ").split())
 
-    # Build output with main_text listed first.
+    # --- Gestione degli header ---
+    # Definiamo la classe di lettere (includendo lettere accentate)
+    letter_class = r'A-ZÀ-ÖØ-Þ'
+    # Pattern base per rilevare sequenze in maiuscolo (almeno una parola di 4+ lettere)
+    header_pattern = (
+        r'\b((?:[' + letter_class + r']+(?:\s+[' + letter_class + r']+)*))\b'
+    )
+    # Lista di eccezioni (termini comuni che non devono essere considerati header)
+    exceptions = {"NASA", "KRONIA", "KRONOS", "USA", "EU", "AEON", "UK"}
+    header_matches = []
+    headers_found = []
+    for match in re.finditer(header_pattern, main_text):
+        header_text = match.group(1).strip()
+        # Applichiamo le eccezioni:
+        if header_text in exceptions:
+            continue
+        # Se è una singola parola e consiste solo di lettere che potrebbero formare un numero romano, escludila
+        if " " not in header_text and re.fullmatch(r'[IVXLCDM]+', header_text):
+            continue
+        # Qui potresti aggiungere altre eccezioni simili, per esempio:
+        # Escludi se header_text è un acronimo molto breve (ad esempio 2 lettere) ma non se è TAO (3 lettere)
+        if len(header_text) <= 2:
+            continue
+        # Accetta il candidato
+        start_index = match.start()
+        end_index = match.end()
+        header_matches.append((start_index, end_index, header_text))
+        headers_found.append(header_text)
+
+    # Sostituisci gli header nel testo, elaborando in ordine inverso per non alterare gli indici
+    header_matches_sorted = sorted(header_matches, key=lambda x: x[0], reverse=True)
+    for start, end, header_text in header_matches_sorted:
+        formatted = format_header(header_text)
+        main_text = main_text[:start] + formatted + main_text[end:]
+
+    # Costruiamo l'output della pagina
     page_output = {
         "page_type": page_type,
         "image_present": image_present,
         "page_number": page_number,
         "main_text": main_text,
         "captions": captions,
-        "bibliography": bibliography_text,
-        "headers": headers
+        "headers": headers_found  # Solo i testi degli header rilevati
     }
+    # Impostiamo "content" uguale a "main_text" e applichiamo la conversione in HTML.
+    page_output["content"] = page_output["main_text"]
+    page_output = convert_page_markdown(page_output)
     return page_output
 
 def process_images(input_dir):
     """
-    Process images using the provided JSON index (bookindex.json).
-    Every 10 pages (or at the end), the current batch is saved.
-    If a batch's JSON exceeds 25k characters, it is split into two chunks.
+    Processa le immagini utilizzando il file JSON (bookindex.json).
+    L'output viene suddiviso in chunk da 3 pagine ciascuno.
+    Integra anche la logica per riordinare le coordinate delle didascalie.
     """
     script_dir = Path(input_dir)
     input_file = script_dir / "bookindex.json"
@@ -240,6 +266,9 @@ def process_images(input_dir):
         logging.error(f"ERROR loading bookindex.json: {e}")
         return
 
+    # Riordina i record per la didascalia
+    book_index = [process_record(record) for record in book_index]
+
     all_pages = []
     chunk_counter = 1
     total_pages = len(book_index)
@@ -254,36 +283,28 @@ def process_images(input_dir):
         if page_json:
             all_pages.append(page_json)
 
-        if index % 10 == 0 or index == total_pages:
-            batch_json = json.dumps(all_pages, indent=4, ensure_ascii=False)
-            if len(batch_json) > 25000 and len(all_pages) > 1:
-                mid = len(all_pages) // 2
-                first_half = all_pages[:mid]
-                second_half = all_pages[mid:]
-                chunk_file = output_dir / f"chunk_{chunk_counter:03d}.json"
-                with open(chunk_file, "w", encoding="utf-8") as f:
-                    json.dump(first_half, f, indent=4, ensure_ascii=False)
-                logging.info(f"Saved chunk: {chunk_file} (contains {len(first_half)} page(s))")
-                chunk_counter += 1
-                chunk_file = output_dir / f"chunk_{chunk_counter:03d}.json"
-                with open(chunk_file, "w", encoding="utf-8") as f:
-                    json.dump(second_half, f, indent=4, ensure_ascii=False)
-                logging.info(f"Saved chunk: {chunk_file} (contains {len(second_half)} page(s))")
-                chunk_counter += 1
-            else:
-                chunk_file = output_dir / f"chunk_{chunk_counter:03d}.json"
-                with open(chunk_file, "w", encoding="utf-8") as f:
-                    json.dump(all_pages, f, indent=4, ensure_ascii=False)
-                logging.info(f"Saved chunk: {chunk_file} (contains {len(all_pages)} page(s))")
-                chunk_counter += 1
+        # Salva ogni chunk da 3 pagine
+        if len(all_pages) == 3:
+            chunk_file = output_dir / f"chunk_{chunk_counter:03d}.json"
+            with open(chunk_file, "w", encoding="utf-8") as f:
+                json.dump(all_pages, f, indent=4, ensure_ascii=False)
+            logging.info(f"Saved chunk: {chunk_file} (contains {len(all_pages)} page(s))")
+            chunk_counter += 1
             all_pages = []
+
+    # Salva eventuali pagine residue in un ultimo chunk
+    if all_pages:
+        chunk_file = output_dir / f"chunk_{chunk_counter:03d}.json"
+        with open(chunk_file, "w", encoding="utf-8") as f:
+            json.dump(all_pages, f, indent=4, ensure_ascii=False)
+        logging.info(f"Saved chunk: {chunk_file} (contains {len(all_pages)} page(s))")
 
     logging.info(f"Processing complete! Chunks saved in {output_dir}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Refined OCR Script: Single-String Bibliography, Simple Header Detection, and Cleaned Text Output (Markdown formatting preserved)"
+        description="OCR Script aggiornato con conversione markdown -> HTML, rilevazione e formattazione degli header (con eccezioni) e output in chunk da 3 pagine ciascuno."
     )
-    parser.add_argument("--input", default=".", help="Directory containing images and bookindex.json")
+    parser.add_argument("--input", default=".", help="Directory contenente le immagini e il file bookindex.json")
     args = parser.parse_args()
     process_images(args.input)

@@ -1,0 +1,472 @@
+{
+  "data": [
+    {
+      "page_type": "index",
+      "page_number": null,
+      "index": [
+        {
+          "chapter_number": "Capitolo 1",
+          "chapter_title": "Miti e Leggende",
+          "entries": [
+            {
+              "text": "Mito",
+              "page_number": "1"
+            },
+            {
+              "text": "Rituale",
+              "page_number": "2"
+            },
+            {
+              "text": "Dramma",
+              "page_number": "4"
+            },
+            {
+              "text": "Alfabetizzazione",
+              "page_number": "17"
+            },
+            {
+              "text": "Perplessità",
+              "page_number": "20"
+            },
+            {
+              "text": "Errori di traduzione",
+              "page_number": "22"
+            },
+            {
+              "text": "Errori di interpretazione",
+              "page_number": "23"
+            },
+            {
+              "text": "Contraddizioni",
+              "page_number": "26"
+            },
+            {
+              "text": "Confronti",
+              "page_number": "29"
+            },
+            {
+              "text": "Diffusione",
+              "page_number": "35"
+            },
+            {
+              "text": "Festività Divina",
+              "page_number": "43"
+            },
+            {
+              "text": "Divinità Celesti",
+              "page_number": "47"
+            },
+            {
+              "text": "Astronomia nella Mitologia",
+              "page_number": "65"
+            },
+            {
+              "text": "La Storicità degli Eventi",
+              "page_number": "69"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 2",
+          "chapter_title": "Antiche Tradizioni Astronomiche",
+          "entries": [
+            {
+              "text": "Immagini Sacre dal Cielo",
+              "page_number": "77"
+            },
+            {
+              "text": "Detriti Cosmici",
+              "page_number": "82"
+            },
+            {
+              "text": "Calendari",
+              "page_number": "83"
+            },
+            {
+              "text": "Venere",
+              "page_number": "90"
+            },
+            {
+              "text": "Macchie Solari",
+              "page_number": "92"
+            },
+            {
+              "text": "Il Pianeta Eterno",
+              "page_number": "93"
+            },
+            {
+              "text": "Stelle Ospiti",
+              "page_number": "95"
+            },
+            {
+              "text": "Il Surya Siddhanta",
+              "page_number": "95"
+            },
+            {
+              "text": "L'Almagesto",
+              "page_number": "96"
+            },
+            {
+              "text": "Il Sistema Eliocentrico",
+              "page_number": "99"
+            },
+            {
+              "text": "Il Pozzo di Syene",
+              "page_number": "101"
+            },
+            {
+              "text": "Inclinazione verso Sud",
+              "page_number": "102"
+            },
+            {
+              "text": "La Precessione degli Equinozi",
+              "page_number": "102"
+            },
+            {
+              "text": "Il Crimine di Anassagora",
+              "page_number": "105"
+            },
+            {
+              "text": "Ombre nello Spazio",
+              "page_number": "105"
+            },
+            {
+              "text": "Il Ciclo Metonico",
+              "page_number": "107"
+            },
+            {
+              "text": "Una Questione di Gravità",
+              "page_number": "107"
+            },
+            {
+              "text": "La Rotazione e Rivoluzione dei Pianeti",
+              "page_number": "108"
+            },
+            {
+              "text": "Congiunzioni Planetarie",
+              "page_number": "108"
+            },
+            {
+              "text": "La Periodicità delle Comete",
+              "page_number": "108"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_type": "index",
+      "page_number": null,
+      "index": [
+        {
+          "chapter_number": "Capitolo 3",
+          "chapter_title": "La Stella del Sole",
+          "entries": [
+            {
+              "text": "Il Pianeta più Prominente",
+              "page_number": "120"
+            },
+            {
+              "text": "Stella Solis",
+              "page_number": "121"
+            },
+            {
+              "text": "(Mul) Lu-Bat Sag-US",
+              "page_number": "122"
+            },
+            {
+              "text": "La Luce degli Dei",
+              "page_number": "125"
+            },
+            {
+              "text": "Ningirsu",
+              "page_number": "128"
+            },
+            {
+              "text": "Il Vero Sole",
+              "page_number": "131"
+            },
+            {
+              "text": "Il Sole Saturniano",
+              "page_number": "133"
+            },
+            {
+              "text": "Primo Interludio",
+              "page_number": "137"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 4",
+          "chapter_title": "Il Sole della Notte",
+          "entries": [
+            {
+              "text": "Il Sole Notturno Egiziano",
+              "page_number": "141"
+            },
+            {
+              "text": "Il Modello Babilonese",
+              "page_number": "147"
+            },
+            {
+              "text": "Divinità Notturne",
+              "page_number": "148"
+            },
+            {
+              "text": "Il Dio del Sabato Notte",
+              "page_number": "149"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 5",
+          "chapter_title": "Soli Morti",
+          "entries": [
+            {
+              "text": "Stelle Oscure",
+              "page_number": "154"
+            },
+            {
+              "text": "Stelle Invasate",
+              "page_number": "154"
+            },
+            {
+              "text": "Stelle Fallite",
+              "page_number": "155"
+            },
+            {
+              "text": "Proto-Stelle",
+              "page_number": "157"
+            },
+            {
+              "text": "Stelle Nane Rossa",
+              "page_number": "157"
+            },
+            {
+              "text": "Modello Fallito",
+              "page_number": "159"
+            },
+            {
+              "text": "Nane Brune",
+              "page_number": "160"
+            },
+            {
+              "text": "Secondo Interludio",
+              "page_number": "162"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_type": "index",
+      "page_number": null,
+      "index": [
+        {
+          "chapter_number": "Capitolo 6",
+          "chapter_title": "Satellite Primordiale",
+          "entries": [
+            {
+              "text": "Luce Stellare: Stella Brillante",
+              "page_number": "165"
+            },
+            {
+              "text": "Giano",
+              "page_number": "165"
+            },
+            {
+              "text": "Ouranos",
+              "page_number": "168"
+            },
+            {
+              "text": "Stella Proxima",
+              "page_number": "172"
+            },
+            {
+              "text": "Il Mistero dei Dogon.",
+              "page_number": "173"
+            },
+            {
+              "text": "La Stella delle Nove Lune",
+              "page_number": "4"
+            },
+            {
+              "text": "Terzo Interludio",
+              "page_number": "176"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 7",
+          "chapter_title": "Rimescolamento Planetario",
+          "entries": [
+            {
+              "text": "Il Sistema Solare Instabile",
+              "page_number": "179"
+            },
+            {
+              "text": "Orbite Precedenti",
+              "page_number": "185"
+            },
+            {
+              "text": "La Terra che Cambia",
+              "page_number": "187"
+            },
+            {
+              "text": "La Zona Abitabile",
+              "page_number": "190"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 8",
+          "chapter_title": "La Divinità Solitaria",
+          "entries": [
+            {
+              "text": "Prajapati",
+              "page_number": "196"
+            },
+            {
+              "text": "Quattro dal “Mondo Primitivo”",
+              "page_number": "196"
+            },
+            {
+              "text": "Quarto Interludio",
+              "page_number": "197"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 9",
+          "chapter_title": "Il Dio Immobile",
+          "entries": [
+            {
+              "text": "La Stella del Sabato",
+              "page_number": "204"
+            },
+            {
+              "text": "Il Dio degli Ebrei",
+              "page_number": "205"
+            },
+            {
+              "text": "Il Problema con Amos",
+              "page_number": "206"
+            },
+            {
+              "text": "Colui Che è Stabile",
+              "page_number": "207"
+            },
+            {
+              "text": "Il Dio di Gerusalemme",
+              "page_number": "208"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_type": "index",
+      "page_number": null,
+      "index": [
+        {
+          "chapter_number": "Capitolo 10",
+          "chapter_title": "La Stazione Polare",
+          "entries": [
+            {
+              "text": "Una Scelta di Modelli",
+              "page_number": "220"
+            },
+            {
+              "text": "El—Eloah—Elohim",
+              "page_number": "22"
+            },
+            {
+              "text": "La Mano Sinistra di Dio",
+              "page_number": "225"
+            },
+            {
+              "text": "Il Quartiere Sacro",
+              "page_number": "227"
+            },
+            {
+              "text": "Le Stelle di Anu",
+              "page_number": "229"
+            },
+            {
+              "text": "Unas e le Stelle Circumpolari",
+              "page_number": "230"
+            },
+            {
+              "text": "Il Credo Egiziano della Resurrezione",
+              "page_number": "230"
+            },
+            {
+              "text": "Il Guardiano del Polo",
+              "page_number": "231"
+            },
+            {
+              "text": "Dhruva",
+              "page_number": "232"
+            },
+            {
+              "text": "Il Genio del Fulcro",
+              "page_number": "2377"
+            },
+            {
+              "text": "Le Evidenze Europee",
+              "page_number": "239"
+            },
+            {
+              "text": "Il Sole del Centro e Altri Echi",
+              "page_number": "240"
+            },
+            {
+              "text": "Sinterklaas",
+              "page_number": "241"
+            },
+            {
+              "text": "Quinto Interludio",
+              "page_number": "243"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 11",
+          "chapter_title": "Testare il Modello",
+          "entries": [
+            {
+              "text": "Le Richieste di una Teoria",
+              "page_number": "248"
+            },
+            {
+              "text": "L'Innalzamento Litosferico",
+              "page_number": "253"
+            },
+            {
+              "text": "La Natura delle Forze di Marea",
+              "page_number": "256"
+            },
+            {
+              "text": "Il Dilemma Astronomico",
+              "page_number": "259"
+            }
+          ]
+        },
+        {
+          "chapter_number": "Capitolo 12",
+          "chapter_title": "All'Inizio",
+          "entries": [
+            {
+              "text": "Essere e non Essere",
+              "page_number": "261"
+            },
+            {
+              "text": "Tohu wa Bohu",
+              "page_number": "261"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

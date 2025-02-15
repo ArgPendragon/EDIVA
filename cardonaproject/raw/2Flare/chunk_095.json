@@ -1,0 +1,39 @@
+[
+    {
+        "page_type": "main",
+        "image_present": true,
+        "page_number": 271,
+        "captions": [
+            {
+                "source": "caption",
+                "text": "Simulation of proto-Saturn’s jet-like polar column showing the magnetic crush of the original plasmoids. Compare with Fig. 3 opposite. (illustration by Richard M. Smith.)"
+            }
+        ],
+        "headers": [],
+        "content": "<p>271</p>",
+        "markdown_converted": true
+    },
+    {
+        "page_type": "main",
+        "image_present": false,
+        "page_number": 272,
+        "captions": [],
+        "headers": [],
+        "content": "<p>between the [other two instabilities].”! He was astute enough to realize, without actually hav- ing been told, that these three items are “probably all of the same age,” that is “all carved about the same time,” as in fact they are. More than that, they seem to have been carved by the same hand. If that turns out to be the case, it would strengthen my own belief that they were carved by an eye-witness and that the entire sequence could not have lasted more than a person’s lifetime. When asked how long each of the instabilities depicted on these items could have lasted, Peratt was of the opinion that the item shown in the middle (Fig. 2) depicted the instability- event 10 years after that recorded in the one to the left (Fig. 1), The last one of the three (Fig. 3), depicts the instability-event that would have followed 50 years after the one shown in the middle This, then, again bespeaks an instability-sequence that would have taken place within the span of a person’s lifetime. The time taken for the instabilities to pass from one phase to the other are calculated through the scaling up from laboratory experiments. Because of this, Peratt himself does not accept this author’s surmise and opts for a much longer time-span—even centuries.&gt; As he explains, experimentally, plasmas have been found to scale over fourteen orders of magnitude. Earlier, Alfvén had even hypothesized that they scale up to twenty-eight orders of magnitude. Once the amplitude of an experimental plasma, or its instability, is known, its size in the laboratory and the time it lasts can be scaled up to cosmic parameters. Also, once a criterion is altered in a computer simulation, the programmed model has the ability to adjust all the others. If, for instance, the magnitude, the strength of the current, the magnetic field, etc., of a plasma is known and entered into the program’s code, the other parameters, such as the length of time involved in each phase of the plasma’s instability sequence, will be output by the computer.&gt; There might, however, be something of a pitfall inherent in such scaling. As Warren Carey admonished, “a small correction may become significant, even overwhelming, when length or time becomes large.” As he continues: “Where parameters involve different powers of size or time, change of scale affects one property more than another. Thus the most succesful airplane design, if faithfully copied at twice the size, could not fly. The weight would have been increased eight times, but the wing area to support it only four times. A double-size airplane can of course be built, but not to the same proportions.”</p>",
+        "markdown_converted": true
+    },
+    {
+        "page_type": "main",
+        "image_present": true,
+        "page_number": 273,
+        "captions": [
+            {
+                "source": "caption",
+                "text": "Decorated point—Epipaleolithic period—north-west Germany"
+            }
+        ],
+        "headers": [],
+        "content": "<p>Peratt, on the other hand, has warned this writer that, while Carey is correct in his particular example, the same does not necessarily apply to plasma scalability! —note well taken. And yet, as I have already pointed out,? Hannes Alfvén had stressed that: “Following Birkeland, the first laboratory experiments with reference to cosmic physics had the character of scale-model exper- iments...Such investigations demonstrated, however, that no real scaling of cosmic phenomena down to laboratory size is pos- sible, partly because of the large number of parameters involved which obey different scaling laws.”3 And: “There are good reasons to believe that in several respects, the basic properties of laboratory plasmas and space plasmas are the same. [However] as different plasma para- meters obey different scaling laws, translation from one region to another is often difficult.” Moreover, Alfvén cautioned those who were to follow him to give precedence to plasma behavior over that of scaling. “Hence,” he wrote, “lab- oratory experiments should aim at clarifying a number of basic phenomena of importance in cosmic physics rather than trying to reproduce a scaled-down version of the cosmic example.”&gt; Needless to say, this does not imply that Peratt is necessarily wrong. It merely indicates that in this, as in other matters, great caution should</p>",
+        "markdown_converted": true
+    }
+]
